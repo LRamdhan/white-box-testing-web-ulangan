@@ -8,49 +8,103 @@ use App\utils\CookieUtils;
 use App\utils\WebUtils;
 
 beforeAll(function () {
+  // buat dummy user
   UserModel::createUser();
 });
 
 afterAll(function () {
+  // hapus dummy user
   UserModel::deleteUser();
+
+  // hapus log login
   UserModel::deleteLogLogin();
 });
 
 describe("1) 1-2-3-11", function() {
+  test("T001: Form harus menampilkan teks 'Harap di Isi', jika nis dan password kosong", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
 
+    // Kasus uji : 
+    // - field nis dan password kosong
+    // - tombol submit/login diklik
 
-
-
-  
-
-  it("should display validation error message 'Harap di Isi' with no input filled", function() {
     $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
     $page->click('#submit');
 
+    // Hasil yang diharapkan :
+    // - tetap berada di halaman login
+    // - menampilkan teks "Harap di Isi"
+
+    $page->assertPathEndsWith("/login.php");
     $page->assertSee("Harap di Isi");
   });
 
-  it("should display validation error message 'Harap di Isi' with space input filled to nis", function() {
+  test("T002: Form harus menampilkan teks 'Harap di Isi', jika nis diisi space kosong", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+
+    // Kasus uji : 
+    // - field nis diisi space kosong
+    // - field password diisi
+    // - tombol submit/login diklik
+
+    $spaceNis = "     ";
+    $wrongPassword = "abcdefg";
+
     $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
-    $page->fill("#nis", "  ");
-    $page->fill("#password", "a");
+    $page->fill("#nis", $spaceNis);
+    $page->fill("#password", $wrongPassword);
     $page->click('#submit');
 
+    // Hasil yang diharapkan :
+    // - tetap berada di halaman login
+    // - menampilkan teks "Harap di Isi"
+
+    $page->assertPathEndsWith("/login.php");
     $page->assertSee("Harap di Isi");
   });
 
-  it("should display validation error message 'Harap di Isi' with space input filled to password", function() {
+  test("T003: Form harus menampilkan teks 'Harap di Isi', jika password diisi space kosong", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+
+    // Kasus uji : 
+    // - field nis diisi 
+    // - field password diisi space kosong
+    // - tombol submit/login diklik
+
+    $wrongNis = "1234567890";
+    $spacePassword = "    ";
+
     $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
-    $page->fill("#nis", "a");
-    $page->fill("#password", "    ");
+    $page->fill("#nis", $wrongNis);
+    $page->fill("#password", $spacePassword);
     $page->click('#submit');
 
+    // Hasil yang diharapkan :
+    // - tetap berada di halaman login
+    // - menampilkan teks "Harap di Isi"
+
+    $page->assertPathEndsWith("/login.php");
     $page->assertSee("Harap di Isi");
   });
 });
 
 describe("2) 1-2-3-4-5-12-13-11", function() {
-  it("should redirect to login page without error with nis length more than 20", function() {
+  test("T004: Halaman tidak menampilkan error, jika login menggunakan nis dengan panjang lebih dari 20 karakter", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+
+    // Kasus uji : 
+    // - field nis diisi dengan panjang lebih dari 20 karakter
+    // - field password diisi
+    // - tombol submit/login diklik
+
     $longNis = "123456789012345678901234567890";
     $wrongPassword = "abcdefghijkl";
 
@@ -59,10 +113,22 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     $page->fill("#password", $wrongPassword);
     $page->click('#submit');
 
+    // Hasil yang diharapkan :
+    // - tetap berada di halaman login
+
     $page->assertPathEndsWith("/login.php");
   });
   
-  it("should redirect to login page without error with password length more than 20", function() {
+  test("T005: Halaman tidak menampilkan error, jika login menggunakan password dengan panjang lebih dari 20 karakter", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+
+    // Kasus uji : 
+    // - field nis diisi 
+    // - field password diisi dengan panjang lebih dari 20 karakter
+    // - tombol submit/login diklik
+
     $wrongNis = "1234567890";
     $longPassword = "123456789012345678901234567890";
 
@@ -71,10 +137,22 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     $page->fill("#password", $longPassword);
     $page->click('#submit');
 
+    // Hasil yang diharapkan :
+    // - tetap berada di halaman login
+
     $page->assertPathEndsWith("/login.php");
   });
   
-  it("should redirect to login page without error with code filled to nis", function() {
+  test("T006: Halaman tidak menampilkan error, jika login menggunakan nis yang berisi karakter kode", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+
+    // Kasus uji : 
+    // - field nis diisi dengan kareakter kode
+    // - field password diisi
+    // - tombol submit/login diklik
+
     $codeNis = "p@ss\"word\'<script>";
     $wrongPassword = "abcdefghijkl";
 
@@ -83,10 +161,22 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     $page->fill("#password", $wrongPassword);
     $page->click('#submit');
 
+    // Hasil yang diharapkan :
+    // - tetap berada di halaman login
+
     $page->assertPathEndsWith("/login.php");
   });
 
-  it("should redirect to login page without error with code filled to password", function() {
+  test("T007: Halaman tidak menampilkan error, jika login menggunakan password yang berisi karakter kode", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+
+    // Kasus uji : 
+    // - field nis diisi 
+    // - field password diisi dengan kareakter kode
+    // - tombol submit/login diklik
+
     $wrongNis = "1234567890";
     $codePassword = "p@ss\"word\'<script>";
 
@@ -95,10 +185,22 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     $page->fill("#password", $codePassword);
     $page->click('#submit');
 
+    // Hasil yang diharapkan :
+    // - tetap berada di halaman login
+
     $page->assertPathEndsWith("/login.php");
   });
 
-  it("should redirect to login page with error notification when login with wrong nis", function() {
+  test("T008: Halaman menampilkan notifikasi, jika login dengan nis yang salah", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+
+    // Kasus uji : 
+    // - field nis diisi dengan nis salah
+    // - field password diisi
+    // - tombol submit/login diklik
+
     $wrongNis = "2937103853";
     $wrongPassword = "dummypass";
 
@@ -106,13 +208,28 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     $page->fill("#nis", $wrongNis);
     $page->fill("#password", $wrongPassword);
     $page->click('#submit');
+
+    // Hasil yang diharapkan :
+    // - tetap berada di halaman login
+    // - menampilkan teks "Kata-sandi atau nis tidak ditemukan"
+    // - field nis tetap terisi dengan value sebelumnya
+
     $page->assertPathEndsWith("/login.php");
     $page->assertSee("Kata-sandi atau nis tidak ditemukan");
-
     $page->assertValue("#nis", $wrongNis);
   });
 
-  it("should redirect to login page with error notification when login with wrong password", function() {
+  test("T009: Halaman menampilkan notifikasi, jika login dengan nis yang benar dan password yang salah", function() {
+
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+
+    // Kasus uji : 
+    // - field nis diisi dengan nis yang benar
+    // - field password diisi dengan password yang salah
+    // - tombol submit/login diklik
+
     $correctNis = DummyUser::$nis;
     $wrongPassword = "dummypass";
 
@@ -120,6 +237,11 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     $page->fill("#nis", $correctNis);
     $page->fill("#password", $wrongPassword);
     $page->click('#submit');
+
+    // Hasil yang diharapkan :
+    // - tetap berada di halaman login
+    // - menampilkan teks "Kata-sandi atau nis tidak ditemukan"
+    // - field nis tetap terisi dengan value sebelumnya
 
     $page->assertPathEndsWith("/login.php");
     $page->assertSee("Kata-sandi atau nis tidak ditemukan");
@@ -128,16 +250,32 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
 });
 
 describe("3) 1-2-3-4-5-6-7-8-9-10-11", function() {
-  it("should successfully login with correct nis and password, without user cookie", function() {
+  test("T010: Halaman menampilkan beranda, jika login menggunakan nis dan password yang benar", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+    // - tidak memiliki cookie_nama dan cookie_kelas
+
+    // Kasus uji : 
+    // - field nis diisi dengan nis yang benar
+    // - field password diisi dengan password yang benar
+    // - tombol submit/login diklik
+
     $correctNis = DummyUser::$nis;
     $correctPassword = DummyUser::$password;
-
     $nama = "Udin";
     $kelas = "XII-RPL-1";
+
     $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
     $page->fill("#nis", $correctNis);
     $page->fill("#password", $correctPassword);
     $page->click('#submit');
+
+    // Hasil yang diharapkan :
+    // - berpindah ke halaman beranda
+    // - menampilkan nama, nis, dan kelas yang benar
+    // - cookie_nama dan cookie_kelas terisi dengan value yang benar
+    // - PHPSESSID terisi
 
     $page->assertPathEndsWith("/index.php");
     $page->assertSee($nama);
@@ -152,26 +290,22 @@ describe("3) 1-2-3-4-5-6-7-8-9-10-11", function() {
     expect($cookieKelas)->toBe($kelas);
     expect($phpsessid)->not->toBeNull();
   });
-
-  // intial condition :
-  // tidak ada cookie
-  // belum login
-
-  // success if : 
-  // di beranda data siswa benar
-  // footer berisi contact guru yang benar sesuai kelasnya
-  // url harus di /
-  // harus ada cookie sesuai dengan data
-
-
-
 });
 
 describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
-  // success condition : value dari cookie_nama dan cookie_kelas harus ada di database
+  test("T011: Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_nama tidak ada di database", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+    // - cookie_nama tidak ada di database
+    // - cookie_kelas ada di database
 
-  // input : value cookie_nama tidak ada di database, value cookie_kelas ada di database
-  it("value cookie_nama tidak ada di database, value cookie_kelas ada di database", function() {
+
+    // Kasus uji : 
+    // - field nis diisi dengan nis yang benar
+    // - field password diisi dengan password yang benar
+    // - tombol submit/login diklik
+
     $unExistingNama = "Sjieijf";
     $existingNama = DummyUser::$nama;
     $ExistingKelas = DummyUser::$kelas;
@@ -185,14 +319,30 @@ describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
     $page->fill("#password", $correctPassword);
     $page->click('#submit');
 
+    // Hasil yang diharapkan :
+    // - berpindah ke halaman beranda
+    // - cookie_nama tersisi dengan value yang ada di database
+    // - cookie_kelas tersisi dengan value yang ada di database
+
+    $page->assertPathEndsWith("/index.php");
     $cookieNamaValue = CookieUtils::getCookie($page, "cookie_nama");
     $cookieKelasValue = CookieUtils::getCookie($page, "cookie_kelas");
     expect($cookieNamaValue)->toBe($existingNama);
     expect($cookieKelasValue)->toBe($existingKelas);
   });
 
-  // input : value cookie_kelas tidak ada di database, value cookie_nama ada di database
-  it("value cookie_kelas tidak ada di database, value cookie_nama ada di database", function() {
+  test("T012: Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_kelas tidak ada di database", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+    // - cookie_nama ada di database
+    // - cookie_kelas tidak ada di database
+
+    // Kasus uji : 
+    // - field nis diisi dengan nis yang benar
+    // - field password diisi dengan password yang benar
+    // - tombol submit/login diklik
+
     $existingNama = DummyUser::$nama;
     $unExistingKelas = "unexist_class";
     $existingKelas = DummyUser::$kelas;
@@ -206,14 +356,30 @@ describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
     $page->fill("#password", $correctPassword);
     $page->click('#submit');
 
+    // Hasil yang diharapkan :
+    // - berpindah ke halaman beranda
+    // - cookie_nama tersisi dengan value yang ada di database
+    // - cookie_kelas tersisi dengan value yang ada di database
+    
+    $page->assertPathEndsWith("/index.php");
     $cookieNamaValue = CookieUtils::getCookie($page, "cookie_nama");
     $cookieKelasValue = CookieUtils::getCookie($page, "cookie_kelas");
     expect($cookieKelasValue)->toBe($existingKelas);
     expect($cookieNamaValue)->toBe($existingNama);
   });
   
-  // input : cookie_nama tidak ada, cookie kelas ada
-  it("cookie_nama tidak ada, cookie kelas ada", function() {
+  test("T013: Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_nama tidak ada", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+    // - cookie_nama tidak ada
+    // - cookie_kelas ada
+
+    // Kasus uji : 
+    // - field nis diisi dengan nis yang benar
+    // - field password diisi dengan password yang benar
+    // - tombol submit/login diklik
+
     $existingNama = DummyUser::$nama;
     $existingKelas = DummyUser::$kelas;
     $correctNis = DummyUser::$nis;
@@ -225,15 +391,30 @@ describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
     $page->fill("#password", $correctPassword);
     $page->click('#submit');
 
+    // Hasil yang diharapkan :
+    // - berpindah ke halaman beranda
+    // - cookie_nama tersisi dengan value yang ada di database
+    // - cookie_kelas tersisi dengan value yang ada di database
+    
+    $page->assertPathEndsWith("/index.php");
     $cookieNamaValue = CookieUtils::getCookie($page, "cookie_nama");
     $cookieKelasValue = CookieUtils::getCookie($page, "cookie_kelas");
-
     expect($cookieNamaValue)->toBe($existingNama);
     expect($cookieKelasValue)->toBe($existingKelas);
   });
   
-  // cookie_kelas tidak ada, cookie_nama ada
-  it("cookie_kelas tidak ada, cookie_nama ada", function() {
+  test("T014: Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_kelas tidak ada", function() {
+    // Prakondisi
+    // - berada di halaman login
+    // - belum login
+    // - cookie_nama ada
+    // - cookie_kelas tidak ada
+
+    // Kasus uji : 
+    // - field nis diisi dengan nis yang benar
+    // - field password diisi dengan password yang benar
+    // - tombol submit/login diklik
+
     $existingNama = DummyUser::$nama;
     $existingKelas = DummyUser::$kelas;
     $correctNis = DummyUser::$nis;
@@ -245,11 +426,15 @@ describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
     $page->fill("#password", $correctPassword);
     $page->click('#submit');
 
+    // Hasil yang diharapkan :
+    // - berpindah ke halaman beranda
+    // - cookie_nama tersisi dengan value yang ada di database
+    // - cookie_kelas tersisi dengan value yang ada di database
+    
+    $page->assertPathEndsWith("/index.php");
     $cookieNamaValue = CookieUtils::getCookie($page, "cookie_nama");
     $cookieKelasValue = CookieUtils::getCookie($page, "cookie_kelas");
-
     expect($cookieNamaValue)->toBe($existingNama);
     expect($cookieKelasValue)->toBe($existingKelas);
   });
-
 });

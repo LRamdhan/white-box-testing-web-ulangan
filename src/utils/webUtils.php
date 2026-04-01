@@ -2,7 +2,7 @@
 
 namespace App\utils;
 
-include ".loadenv.php";
+include "./loadenv.php";
 
 Class WebUtils {
   public static function url($path) {
