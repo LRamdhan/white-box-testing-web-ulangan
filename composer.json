@@ -1,0 +1,33 @@
+{
+    "name": "asus/pengujian-white-box-pestphp",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/", 
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LRamdhan",
+            "email": "luzirmdhn@gmail.com"
+        }
+    ],
+    "scripts": {
+        "test-init": "./vendor/bin/pest --init",
+        "test-all": "./vendor/bin/pest --headed",
+        "test-file": "./vendor/bin/pest tests/Feature/LoginTest.php --headed",
+        "test-group": "./vendor/bin/pest --headed --group=current"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4.4",
+        "pestphp/pest-plugin-browser": "^4.3"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
