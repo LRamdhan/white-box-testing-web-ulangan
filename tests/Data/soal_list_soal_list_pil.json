@@ -1,0 +1,2322 @@
+[
+  {
+      "id_soal": "12863",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "jVvpbeOLbc",
+      "number": "1",
+      "type": "text",
+      "soal": "&lt;p&gt;Bacalah contoh teks &lt;strong&gt;anekdot&lt;\/strong&gt; berikut ini dengan saksama!\n&lt;\/p&gt;&lt;p style=&quot;margin-left: 32pt&quot;&gt;Pada saat dosen memberikan kuliah Hukum Perdata, bertanyalah ia kepada Andi.\n&lt;\/p&gt;&lt;p style=&quot;margin-left: 32pt&quot;&gt;Dosen&nbsp;&nbsp;&nbsp;&nbsp;: Saudara Andi, coba ceritakan secara ringkas kondisi hukum di negara kita.\n&lt;\/p&gt;&lt;p style=&quot;margin-left: 32pt&quot;&gt;Andi&nbsp;&nbsp;&nbsp;&nbsp;: Bagaikan sarang laba-laba, Pa.\n&lt;\/p&gt;&lt;p style=&quot;margin-left: 32pt&quot;&gt;Dosen&nbsp;&nbsp;&nbsp;&nbsp;: Maksudnya?\n&lt;\/p&gt;&lt;p style=&quot;margin-left: 32pt&quot;&gt;Andi   &nbsp;&nbsp;&nbsp;&nbsp;: Kalau kelas nyamuk akan tertangkap, Pak. Namun kalau kelas kumbang, wah sarang laba-laba jebol, Pak.\n&lt;\/p&gt;&lt;p style=&quot;margin-left: 32pt&quot;&gt;Dosen &nbsp;&nbsp;&nbsp;&nbsp;: Lalu, kalau kelas elang, bagaimana?\n&lt;\/p&gt;&lt;p style=&quot;margin-left: 32pt&quot;&gt;Andi &nbsp;&nbsp;&nbsp;&nbsp;: Anak ayam bisa habis semua, Pak.\n&lt;\/p&gt;&lt;p style=&quot;margin-left: 32pt&quot;&gt;Mahasiswa&nbsp;&nbsp;&nbsp;&nbsp;: (Tertawa terbahak-bahak).\n&lt;\/p&gt;&lt;p style=&quot;margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p style=&quot;margin-left: 32pt&quot;&gt;Manakah dari teks diatas yang termasuk isi makna tersurat teks &lt;strong&gt;anekdot&lt;\/strong&gt; adalah...\n&lt;\/p&gt;",
+      "jawaban": "D",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63562",
+              "id_info_soal": "999",
+              "key_list": "jVvpbeOLbc",
+              "key_list_pil": "fHdnfCtEgG",
+              "list_pil": "A",
+              "pilihan": "Penegakan hukum di Indonesia seperti sarang laba-laba.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63563",
+              "id_info_soal": "999",
+              "key_list": "jVvpbeOLbc",
+              "key_list_pil": "kowwRvsGlQ",
+              "list_pil": "B",
+              "pilihan": "Kondisi hukum di Indonesia tidak memihak kepada rakyat jelata.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63564",
+              "id_info_soal": "999",
+              "key_list": "jVvpbeOLbc",
+              "key_list_pil": "xvMSLOXzzY",
+              "list_pil": "C",
+              "pilihan": "Penegakan hukum di Indonesia tidak berlaku bagi pejabat.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63565",
+              "id_info_soal": "999",
+              "key_list": "jVvpbeOLbc",
+              "key_list_pil": "CFGFSLimpo",
+              "list_pil": "D",
+              "pilihan": "Pertanyaan dosen tentang kondisi hukum di Indonesia.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63566",
+              "id_info_soal": "999",
+              "key_list": "jVvpbeOLbc",
+              "key_list_pil": "SzDoVuJobV",
+              "list_pil": "E",
+              "pilihan": "Seorang dosen yang sedang memberikan kuliah Hukum Perdata.",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12864",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "fyrRrcFoCf",
+      "number": "2",
+      "type": "text",
+      "soal": "&lt;p&gt;Bacalah kutipan teks laporan hasil observasi berikut dengan saksama!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Banyak yang percaya bahwa umur kupu-kupu sangat singkat. Sebenarnya kupu-kupa dewasa mampu hidup selama seminggu atau hampir setahun tergantung pada spesiesnya. Kebanyakan spesies melalui tingkat larva yang cukup lama, dan ada yang mampu menjadi dorman ketika dalam tingkat pupa atau telur agar dapat mengarungi musim dingin.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p style=&quot;margin-left: 32pt&quot;&gt;Makna kata &lt;em&gt;spesies&lt;\/em&gt; dalam kutipan teks laporan hasil observasi tersebut adalah.... ( kata spesies dimiringkan)\n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63567",
+              "id_info_soal": "999",
+              "key_list": "fyrRrcFoCf",
+              "key_list_pil": "neKTKDETPU",
+              "list_pil": "A",
+              "pilihan": "Jenis",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63568",
+              "id_info_soal": "999",
+              "key_list": "fyrRrcFoCf",
+              "key_list_pil": "hIuLXpfHEh",
+              "list_pil": "B",
+              "pilihan": "Satuan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63569",
+              "id_info_soal": "999",
+              "key_list": "fyrRrcFoCf",
+              "key_list_pil": "CJGUAXWgmz",
+              "list_pil": "C",
+              "pilihan": "Kelompok",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63570",
+              "id_info_soal": "999",
+              "key_list": "fyrRrcFoCf",
+              "key_list_pil": "lzDWsoAXhq",
+              "list_pil": "D",
+              "pilihan": "Kumpulan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63571",
+              "id_info_soal": "999",
+              "key_list": "fyrRrcFoCf",
+              "key_list_pil": "SpYmaVCgCg",
+              "list_pil": "E",
+              "pilihan": "Golongan",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12865",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "ofPUapRWwd",
+      "number": "3",
+      "type": "text",
+      "soal": "&lt;p&gt;&lt;strong&gt;Bacalah teks hikayat berikut!\n&lt;\/strong&gt;&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Setelah sudahlah baginda &lt;strong&gt;bertitah&lt;\/strong&gt; demikian itu maka ananda Cendera Hasan pun menangislah terlalu sangat, serta dengan tersedu-sedu bunyi tangisnya, seraya mengeluarkan kata-kata, &quot;Aduh ayah dan bunda, sebelum lagi ananda bercerai dengan ayah dan bunda ke dua, ananda minta halalkan air susu bunda dari dunia sampai akhirat. Apakah untung ananda yang malang ini, yang tiada serupa pula dengan makhluk yang banyak? Apalah gunanya pula ananda ini telah dilahirkan Allah Swt., maka ananda patut merasai dan menanggung azab dan kesukaran pada tiap-tiap masa dan ketika di dalam sepanjang umur ananda ini? Wahai ayah dan bunda, menerima kasihlah ananda kepada ayah dan bunda, serta ananda minta halalkan barang suatu penat dan kesukaran sebab telah memeliharakan ananda ini.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Kata arkais yang bercetak tebal pada teks tersebut bermakna &hellip;.\n&lt;\/p&gt;",
+      "jawaban": "E",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63572",
+              "id_info_soal": "999",
+              "key_list": "ofPUapRWwd",
+              "key_list_pil": "wHCZEVoeTv",
+              "list_pil": "A",
+              "pilihan": "berjanji",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63573",
+              "id_info_soal": "999",
+              "key_list": "ofPUapRWwd",
+              "key_list_pil": "uLLtYMpASS",
+              "list_pil": "B",
+              "pilihan": "berunding",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63574",
+              "id_info_soal": "999",
+              "key_list": "ofPUapRWwd",
+              "key_list_pil": "HgXwaYMSVi",
+              "list_pil": "C",
+              "pilihan": "bertemu",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63575",
+              "id_info_soal": "999",
+              "key_list": "ofPUapRWwd",
+              "key_list_pil": "VrQyrvuFzn",
+              "list_pil": "D",
+              "pilihan": "bertanya",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63576",
+              "id_info_soal": "999",
+              "key_list": "ofPUapRWwd",
+              "key_list_pil": "bUZMnXyCyr",
+              "list_pil": "E",
+              "pilihan": "berkata",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12866",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "ufysCyqorl",
+      "number": "4",
+      "type": "text",
+      "soal": "&lt;p&gt;Pembeli&nbsp;&nbsp;&nbsp;&nbsp;: Permisi, Mas, saya ingin beli laptop.\n&lt;\/p&gt;&lt;p&gt;Penjual&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Ingin laptop merek apa, mbak?\n&lt;\/p&gt;&lt;p&gt;Pembeli&nbsp;&nbsp;&nbsp;&nbsp;: kalau yang bagus itu merek apa, ya?\n&lt;\/p&gt;&lt;p&gt;Penjual &nbsp;&nbsp;&nbsp;&nbsp;:  wah,kalau masalah bagus atau tidaknya  itu relatif, Mbak.  (&hellip;.)\n&lt;\/p&gt;&lt;p&gt;Pembeli&nbsp;&nbsp;&nbsp;&nbsp;: Oh, begitu,ya. Untuk sekarang, saya pakai untuk kuliah saja, sih . Aplikasi yang \n&lt;\/p&gt;&lt;p style=&quot;margin-left: 68pt&quot;&gt;  digunakan juga standar.\n&lt;\/p&gt;&lt;p&gt;Penjual&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Kalau begitu, model yang ini cocok, Mbak\n&lt;\/p&gt;&lt;p&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Kalimat yang tepat untuk melengkapi teks &lt;strong&gt;negosiasi&lt;\/strong&gt; tersebut adalah ...\n&lt;\/p&gt;",
+      "jawaban": "E",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63577",
+              "id_info_soal": "999",
+              "key_list": "ufysCyqorl",
+              "key_list_pil": "xmDnLUIgzi",
+              "list_pil": "A",
+              "pilihan": "Semua merek laptop yang kami jual pasti berkualitas, Mbak.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63578",
+              "id_info_soal": "999",
+              "key_list": "ufysCyqorl",
+              "key_list_pil": "uBctoqrNTP",
+              "list_pil": "B",
+              "pilihan": "Lagi pula, toko kami tidak menjual laptop dengan kualitas rendah, Mbak.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63579",
+              "id_info_soal": "999",
+              "key_list": "ufysCyqorl",
+              "key_list_pil": "fnVDGxbXMs",
+              "list_pil": "C",
+              "pilihan": "Kami tidak bisa memastikan karena kami tidak mencoba semua laptop yang dijual",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63580",
+              "id_info_soal": "999",
+              "key_list": "ufysCyqorl",
+              "key_list_pil": "jjFMxrGgxg",
+              "list_pil": "D",
+              "pilihan": "Saya rekomendasikan laptop buatan dalam negeri, Mbak, lebih tangguh daripada buatan luar negeri.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63581",
+              "id_info_soal": "999",
+              "key_list": "ufysCyqorl",
+              "key_list_pil": "oRIrlWHCKA",
+              "list_pil": "E",
+              "pilihan": "Memangnya mau digunakan untuk apa, Mbak? Penggunaan aplikasinya standar atau ada yang berat?",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12867",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "sPOosuLurx",
+      "number": "5",
+      "type": "text",
+      "soal": "&lt;p&gt;Perhatikan kutipan biografi berikut ini! Raden Ajeng Kartini atau lebih dikenal dengan Ibu Kartini merupakan keturunan keluarga terpandang di Jawa. Dia lahir 21 April 1879. Saat itu, adat istiadat masih kukuh dipegang oleh masyarakat Jawa, termasuk keluarganya. Satu hal yang diwariskan dari keluarganya adalah pendidikan. Kutipan biografi R.A. Kartini tersebut termasuk bagian dari &hellip;.\n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63582",
+              "id_info_soal": "999",
+              "key_list": "sPOosuLurx",
+              "key_list_pil": "NAHtmeKTki",
+              "list_pil": "A",
+              "pilihan": "0rientasi",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63583",
+              "id_info_soal": "999",
+              "key_list": "sPOosuLurx",
+              "key_list_pil": "ZzZHQkEyNo",
+              "list_pil": "B",
+              "pilihan": "reorientasi",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63584",
+              "id_info_soal": "999",
+              "key_list": "sPOosuLurx",
+              "key_list_pil": "YgdMuwhgQz",
+              "list_pil": "C",
+              "pilihan": "peristiwa atau masalah",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63585",
+              "id_info_soal": "999",
+              "key_list": "sPOosuLurx",
+              "key_list_pil": "EDZmWmqHgB",
+              "list_pil": "D",
+              "pilihan": "permasalahan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63586",
+              "id_info_soal": "999",
+              "key_list": "sPOosuLurx",
+              "key_list_pil": "PgaOOQZsoN",
+              "list_pil": "E",
+              "pilihan": "puncak konflik",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12868",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "HnULaohivX",
+      "number": "6",
+      "type": "text",
+      "soal": "&lt;p&gt;Covid-19 menjangkiti masyarakat di berbagai belahan dunia. Beberapa cara dilakukan untuk meningkatkan kekebalan terhadap serangan virus covid-19. Kita bisa melakukannya dengan mengonsumsi makanan bergizi. Selain itu, pemerintah menggalakkan vaksinasi covid-19. Pada proses vaksinasi, suntikan vaksin diberikan kepada masyarakat yang menerimanya.\n&lt;\/p&gt;&lt;p&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;&lt;em&gt;Sinonim&lt;\/em&gt; kata suntikan pada paragraf tersebut adalah &hellip;.\n&lt;\/p&gt;",
+      "jawaban": "D",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63587",
+              "id_info_soal": "999",
+              "key_list": "HnULaohivX",
+              "key_list_pil": "HaBHmxUCea",
+              "list_pil": "A",
+              "pilihan": "Imunisasi",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63588",
+              "id_info_soal": "999",
+              "key_list": "HnULaohivX",
+              "key_list_pil": "eUgeIUVImk",
+              "list_pil": "B",
+              "pilihan": "Transfusi",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63589",
+              "id_info_soal": "999",
+              "key_list": "HnULaohivX",
+              "key_list_pil": "wUxqFyFMGa",
+              "list_pil": "C",
+              "pilihan": "Terapi",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63590",
+              "id_info_soal": "999",
+              "key_list": "HnULaohivX",
+              "key_list_pil": "KnalVnJPQO",
+              "list_pil": "D",
+              "pilihan": "Injeksi",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63591",
+              "id_info_soal": "999",
+              "key_list": "HnULaohivX",
+              "key_list_pil": "PUIVYrPUac",
+              "list_pil": "E",
+              "pilihan": "Kontribusi",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12869",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "ewXCMCbrpH",
+      "number": "7",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Cermati kutipan teks di bawah ini!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Persebaran virus corona menimbulkan banyak evek yang kurang baik pada kehidupan yang dijalani oleh masyarakat saat ini.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Segala bentuk aktifitas yang perlu untuk dilakukan seperti belajar, beribadah, hingga bekerja harus dilakukan di rumah saja.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Jika perlu untuk melakukannya di luar rumah, maka diimbau untuk tetap menerapkan protocol kesehatan dengan ketat dan disiplin.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Dalam bagian teks di atas, kesalahan dalam penggunaan kata baku yang ada yaitu&hellip;.\n&lt;\/p&gt;",
+      "jawaban": "B",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63592",
+              "id_info_soal": "999",
+              "key_list": "ewXCMCbrpH",
+              "key_list_pil": "sZVtlQGVGw",
+              "list_pil": "A",
+              "pilihan": "virus, kehidupan, masyarakat",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63593",
+              "id_info_soal": "999",
+              "key_list": "ewXCMCbrpH",
+              "key_list_pil": "JvqsrpKhjK",
+              "list_pil": "B",
+              "pilihan": "evek, aktifitas, protocol",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63594",
+              "id_info_soal": "999",
+              "key_list": "ewXCMCbrpH",
+              "key_list_pil": "koghRTJSkZ",
+              "list_pil": "C",
+              "pilihan": "baik, beribadah, bekerja",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63595",
+              "id_info_soal": "999",
+              "key_list": "ewXCMCbrpH",
+              "key_list_pil": "zCZvWkmCfS",
+              "list_pil": "D",
+              "pilihan": "kehidupan, dilakukan, ketat",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63596",
+              "id_info_soal": "999",
+              "key_list": "ewXCMCbrpH",
+              "key_list_pil": "YPnpiEESLO",
+              "list_pil": "E",
+              "pilihan": "aktifitas, Virus, disiplin, ketat",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12870",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "CVdIdUBMMM",
+      "number": "8",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Perhatikan paragraph berikut!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;&quot; Jadilah manusia yang selalu bersyukur. Kita semua yang ada disini harus tetap bersyukur. Bukan untuk hal-hal besar, tetapi cobalah untuk mensyukuri hal-hal kecil yang mungkin orang di luar sana tidak seberuntung kita, karena hidup itu seperti roda berputar, kadang di atas, kadang pula di bawah.&quot;\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Pernyataan yang mengandung majas alegori adalah &hellip;.\n&lt;\/p&gt;",
+      "jawaban": "E",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63597",
+              "id_info_soal": "999",
+              "key_list": "CVdIdUBMMM",
+              "key_list_pil": "LmpKHlVTNb",
+              "list_pil": "A",
+              "pilihan": "jadilah manusia yang terpelajar",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63598",
+              "id_info_soal": "999",
+              "key_list": "CVdIdUBMMM",
+              "key_list_pil": "LMQZbYEGRq",
+              "list_pil": "B",
+              "pilihan": "sebagai orang yang belajar",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63599",
+              "id_info_soal": "999",
+              "key_list": "CVdIdUBMMM",
+              "key_list_pil": "utlycpsDbe",
+              "list_pil": "C",
+              "pilihan": "sebagai pendengar ilmu",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63600",
+              "id_info_soal": "999",
+              "key_list": "CVdIdUBMMM",
+              "key_list_pil": "qNrFyYQuSE",
+              "list_pil": "D",
+              "pilihan": "kamu dalam rugi dan kerugian",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63601",
+              "id_info_soal": "999",
+              "key_list": "CVdIdUBMMM",
+              "key_list_pil": "vErmDslhZc",
+              "list_pil": "E",
+              "pilihan": "hidup itu seperti roda berputar, kadang di atas, kadang pula di bawah.",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12871",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "yuvKSxZkba",
+      "number": "9",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Fokus sopir dalam kendaraan yang sedang melaju adalah melihat ke depan melalui kaca depan, bukan pada kaca spion. Fokus pada kaca spion akan memengaruhi laju kendaraan dan bukan tidak mungkin berakibat kecelakaan. Penggunaan kaca spion pun hanya sewaktu-waktu dan setiap kali penggunaannya hanya untuk sekejap, tidak untuk berlama-lama. \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Ide pokok paragraf di atas adalah..\n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63602",
+              "id_info_soal": "999",
+              "key_list": "yuvKSxZkba",
+              "key_list_pil": "prOGXnFOHy",
+              "list_pil": "A",
+              "pilihan": "penggunaan kaca spion cukup sewaktu-waktu",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63603",
+              "id_info_soal": "999",
+              "key_list": "yuvKSxZkba",
+              "key_list_pil": "sccJpGcAOb",
+              "list_pil": "B",
+              "pilihan": "Tugas utama sopir adalah melihat kaca depan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63604",
+              "id_info_soal": "999",
+              "key_list": "yuvKSxZkba",
+              "key_list_pil": "DmvYWnwVyy",
+              "list_pil": "C",
+              "pilihan": "Pengaruh kaca spion terhadap laju kendaraan dan kecelakaan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63605",
+              "id_info_soal": "999",
+              "key_list": "yuvKSxZkba",
+              "key_list_pil": "WNPLuMYaAF",
+              "list_pil": "D",
+              "pilihan": "Sopir harus melihat ke depan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63606",
+              "id_info_soal": "999",
+              "key_list": "yuvKSxZkba",
+              "key_list_pil": "yTIBDYiFzX",
+              "list_pil": "E",
+              "pilihan": "Sopir kunci utama keselamatan-",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12872",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "GckcbgpxcN",
+      "number": "10",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Sayuran organik sulit didapatkan pada zaman sekarang ini. Sayuran ini menjadi mahal harganya karena susah pemeliharaannya. Pupuk yang digunakan hanya pupuk kompos dan kandang. Tanaman organik mudah mati karena mudah diserang oleh hama. Pemberantasan hama pada sayuran organik juga tidak mudah. Hama tersebut harus diambil satu persatu, bisa langsung menggunakan tangan ataupun suatu alat. Tidak heran, jika sayuran organik bentuk daunnya cenderung tidak mulus karena sempat dimakan oleh hama pengganggu.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Kesimpulan paragraf tersebut adalah &hellip;\n&lt;\/p&gt;",
+      "jawaban": "B",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63607",
+              "id_info_soal": "999",
+              "key_list": "GckcbgpxcN",
+              "key_list_pil": "VZBLKWyJWZ",
+              "list_pil": "A",
+              "pilihan": "Tanaman organik mudah diserang hama karena tidak disemprot zat kimia.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63608",
+              "id_info_soal": "999",
+              "key_list": "GckcbgpxcN",
+              "key_list_pil": "pvTXXwWfbv",
+              "list_pil": "B",
+              "pilihan": "Sayuran organik sulit didapat dan mahal harganya karena susah pemeliharaannya.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63609",
+              "id_info_soal": "999",
+              "key_list": "GckcbgpxcN",
+              "key_list_pil": "dIxnLyuaWx",
+              "list_pil": "C",
+              "pilihan": "Produk sayuran organik tidak bagus karena sempat dimakan hama pengganggu.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63610",
+              "id_info_soal": "999",
+              "key_list": "GckcbgpxcN",
+              "key_list_pil": "OSwqDhmcQj",
+              "list_pil": "D",
+              "pilihan": "Perawatan sayuran nonorganik lebih mudah dibandingkan dengan sayuran organic.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63611",
+              "id_info_soal": "999",
+              "key_list": "GckcbgpxcN",
+              "key_list_pil": "cfEVdBrZHt",
+              "list_pil": "E",
+              "pilihan": "Tanaman organik harganya mahal.",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12873",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "uKcSYNrsNn",
+      "number": "11",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Perhatikan teks eksposisi berikut ini!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Air sangat penting bagi tubuh kita. Anjuran agar kita minum air sedikitnya 8 gelas sehari atau sekitar dua hingga dua setengah liter air benar-benar harus kita lakukan. Apabila asupan air mencukupi, hal ini dapat membantu distribusi nutrisi ke seluruh tubuh menjadi lancar sehingga semua sel dalam tubuh dapat memperbaiki diri dengan nutrisi tersebut. Dengan minum air sesuai anjuran juga akan meringankan kerja ginjal dan hati sehingga dapat membantu kita terhindar dari penyakit ginjal dan hati.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Inti dari kutipan teks eksposisi di atas adalah ...\n&lt;\/p&gt;",
+      "jawaban": "C",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63612",
+              "id_info_soal": "999",
+              "key_list": "uKcSYNrsNn",
+              "key_list_pil": "PCfmTJtfMj",
+              "list_pil": "A",
+              "pilihan": "Air didistribusikan tubuh kita. Kita perlu minum 8 gelas sehari untuk membantu mencegah penyakit ginjal dan hati.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63613",
+              "id_info_soal": "999",
+              "key_list": "uKcSYNrsNn",
+              "key_list_pil": "oOpTJsuasc",
+              "list_pil": "B",
+              "pilihan": "Air sangat penting bagi tubuh kita. Kita minum 8 gelas sehari untuk membantu distribusi nutrisi ke seluruh tubuh serta mencegah penyakit ginjal dan hati.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63614",
+              "id_info_soal": "999",
+              "key_list": "uKcSYNrsNn",
+              "key_list_pil": "uNNwFLjWeX",
+              "list_pil": "C",
+              "pilihan": "Air sangat penting bagi tubuh kita karena air dapat membantu distribusi nutrisi ke seluruh tubuh dan mencegah penyakit ginjal dan hati.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63615",
+              "id_info_soal": "999",
+              "key_list": "uKcSYNrsNn",
+              "key_list_pil": "kUApgtZAyL",
+              "list_pil": "D",
+              "pilihan": "Tubuh kita perlu air dan nutrisi. Oleh karena itu, kita perlu minum 8 gelas sehari agar nutrisi ke seluruh tubuh dapat didistribusikan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63616",
+              "id_info_soal": "999",
+              "key_list": "uKcSYNrsNn",
+              "key_list_pil": "KNzZGjsbkK",
+              "list_pil": "E",
+              "pilihan": "Kita perlu minum 8 gelas sehari untuk membantu distribusi nutrisi ke seluruh tubuh. Sehingga, penyakit ginjal dan hati pun dapat dihindari",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12874",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "eEyRbdDkaH",
+      "number": "12",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Cermati kedua teks berikut!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Teks 1\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Ozon berenergi tinggi ke dalam tubuh melalui darah. Ozone therapy merupakan terapi yang sangat bermanfaat bagi kesehatan, baik untuk penyembuhan penyakit yang kita derita  maupun sebagai pencegah penyakit.Ozone therapy adalah pengobatan suatu penyakit dengan cara memasukan oksigen murni \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Teks 2\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Setiap hari kita temukan aneka kendaraan melintas di jalan raya. Sepeda motor baru, mobil pun baru. Ini menandakan bahwa taraf hidup masyarakat mulai membaik. Indikator lain seperti daya beli masyarakat akan kebutuhan sandang, pangan, dan papan. Dalam bidang papan, misalnya, banyak warga masyarakat yang membangun tempat tinggal yang permanen.Sebenarnya, kondisi ekonomi kita sudah relatif membaik. Indikatornya dapat dilihat dari berbagai aspek. \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Dari kedua teks di atas menggunakan pola pengembangan &hellip;\n&lt;\/p&gt;",
+      "jawaban": "D",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63617",
+              "id_info_soal": "999",
+              "key_list": "eEyRbdDkaH",
+              "key_list_pil": "ikCIAIbAiA",
+              "list_pil": "A",
+              "pilihan": "Pola pengembangan proses dan pola pengembangan ilustrasi",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63618",
+              "id_info_soal": "999",
+              "key_list": "eEyRbdDkaH",
+              "key_list_pil": "mSnMSUVkWg",
+              "list_pil": "B",
+              "pilihan": "Pola pengembangan perbandingan dan pola pengembangan analogi",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63619",
+              "id_info_soal": "999",
+              "key_list": "eEyRbdDkaH",
+              "key_list_pil": "VaKtSLwvWx",
+              "list_pil": "C",
+              "pilihan": "Pola pengembangan pertentangan dan pola pengembangan klarifikasi",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63620",
+              "id_info_soal": "999",
+              "key_list": "eEyRbdDkaH",
+              "key_list_pil": "deIFMjoOJx",
+              "list_pil": "D",
+              "pilihan": "Pola pengembangan sebab-akibat dan pola pengembangan umum-khusu",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63621",
+              "id_info_soal": "999",
+              "key_list": "eEyRbdDkaH",
+              "key_list_pil": "oVqCHixDst",
+              "list_pil": "E",
+              "pilihan": "Pola pengembangan definisi dan pola pengembangan ilustrasi",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12875",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "JnuuGngdJc",
+      "number": "13",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify;&quot;&gt;Perhatikan cuplikan teks biografi di bawah ini!&lt;\/p&gt; &lt;p style=&quot;text-align: justify;&quot;&gt;Bapak Muhammad Natsir ialah tokoh politik Indonesia yang memiliki penampilan paling sederhana sepanjang sejarah pemerintahan negeri ini. Ia bahkan memiliki jas yang bertambal.&lt;\/p&gt; &lt;p style=&quot;text-align: justify; margin-left: 32pt;&quot;&gt;&amp;nbsp;&lt;\/p&gt; &lt;p style=&quot;text-align: justify;&quot;&gt;Selain itu, Ia juga tidak memiliki rumah dan tidak mau diberi mobil mewah. Presiden Soekarno mengangkat beliau pada 17 Agustus 1950 sebagai perdana Menteri.&lt;\/p&gt; &lt;p style=&quot;text-align: justify; margin-left: 32pt;&quot;&gt;&amp;nbsp;&lt;\/p&gt; &lt;p style=&quot;text-align: justify;&quot;&gt;Tak hanya sampai di situ, beliau juga menguasai lebih dari dua Bahasa asing seperti diantaranya Bahasa Arab, Jerman, Prancis, Belanda, dan Inggris&lt;\/p&gt; &lt;p style=&quot;text-align: justify; margin-left: 32pt;&quot;&gt;&amp;nbsp;&lt;\/p&gt; &lt;p&gt;Apa keistimewaan dari tokoh yang terdapat dalam biografi di atas&amp;hellip;&lt;\/p&gt;",
+      "jawaban": "D",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63622",
+              "id_info_soal": "999",
+              "key_list": "JnuuGngdJc",
+              "key_list_pil": "BMhjsUsHIc",
+              "list_pil": "A",
+              "pilihan": "Karyanya yang banyak membahas teknologi, sosial, budaya, dan ilmu pengetahuan.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63623",
+              "id_info_soal": "999",
+              "key_list": "JnuuGngdJc",
+              "key_list_pil": "eWXuyFCWjV",
+              "list_pil": "B",
+              "pilihan": "Diangkat menjadi seorang perdana Menteri oleh pemerintahan saat itu",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63624",
+              "id_info_soal": "999",
+              "key_list": "JnuuGngdJc",
+              "key_list_pil": "pSiKmPXsTG",
+              "list_pil": "C",
+              "pilihan": "Seorang Menteri yang bahkan rumah pun tidak punya",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63625",
+              "id_info_soal": "999",
+              "key_list": "JnuuGngdJc",
+              "key_list_pil": "vutDDMxWtf",
+              "list_pil": "D",
+              "pilihan": "Beliau adalah tokoh politik Indonesia yang berpenampilan paling sederhana sepanjang sejarah pemerintahan negeri ini",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63626",
+              "id_info_soal": "999",
+              "key_list": "JnuuGngdJc",
+              "key_list_pil": "YycWSBBvxK",
+              "list_pil": "E",
+              "pilihan": "Kepiawaian beliau menguasai banyak Bahasa asing",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12876",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "qNDzxQovjh",
+      "number": "14",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Cermati penggalan teks novel sejarah berikut!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Kala itu tahun 1309, segenap rakyat berkumpul di alun-alun Kerajaan Majapahit. Semua berdoa, apapun warna agamanya, apakah Siwa, Buddha, maupun Hindu. Semua arah perhatian ditujukan dalam satu pandang, ke Purawaktra yang tidak dijaga terlampau ketat.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Latar tempat yang digambarkan pada teks novel sejarah di atas yaitu.....\n&lt;\/p&gt;",
+      "jawaban": "C",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63627",
+              "id_info_soal": "999",
+              "key_list": "qNDzxQovjh",
+              "key_list_pil": "cEBwhfiEbC",
+              "list_pil": "A",
+              "pilihan": "Kerajaan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63628",
+              "id_info_soal": "999",
+              "key_list": "qNDzxQovjh",
+              "key_list_pil": "KZaMVTnxoK",
+              "list_pil": "B",
+              "pilihan": "Pura",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63629",
+              "id_info_soal": "999",
+              "key_list": "qNDzxQovjh",
+              "key_list_pil": "iExLdVBsrK",
+              "list_pil": "C",
+              "pilihan": "Alun- alun kerajaan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63630",
+              "id_info_soal": "999",
+              "key_list": "qNDzxQovjh",
+              "key_list_pil": "ztpbQxgYbh",
+              "list_pil": "D",
+              "pilihan": "Keraton",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63631",
+              "id_info_soal": "999",
+              "key_list": "qNDzxQovjh",
+              "key_list_pil": "BMhCycvMAK",
+              "list_pil": "E",
+              "pilihan": "Purawakarta",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12877",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "wIoUtsQVKh",
+      "number": "15",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Bacalah penggalan cerpen berikut dengan cermat!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Lebih tidak enak lagi kalau orang itu adalah Parmin. Tukang kebun yang rajin dan tak banyak cakap itu. Yang kerjanya cekatan, dengan wajah yang senantiasa memancarkan kesabaran. Tak pernah kedapatan sedikit saja membayang kemarahan pada wajah itu. Namun, tertawa berkepanjangan pun jarang lepas dari mulutnya. Senyum, itu saja. Senyum yang bisa muncul pada banyak kesempatan. Saat ia bicara. Saai ia menerima tugas, menerima gaji. Juga saat Mami memberi tahu bahwa gaji akan dibayarkan terlambat.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Pendeskripsian watak tokoh Parmin yang penyabar dalam kutipan cerpen tersebut diungkapkan melalui ....\n&lt;\/p&gt;",
+      "jawaban": "D",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63632",
+              "id_info_soal": "999",
+              "key_list": "wIoUtsQVKh",
+              "key_list_pil": "FkBVmrssqu",
+              "list_pil": "A",
+              "pilihan": "Gambaran fisik tokoh",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63633",
+              "id_info_soal": "999",
+              "key_list": "wIoUtsQVKh",
+              "key_list_pil": "ARgHtFKPrk",
+              "list_pil": "B",
+              "pilihan": "Uraian pengarang",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63634",
+              "id_info_soal": "999",
+              "key_list": "wIoUtsQVKh",
+              "key_list_pil": "zOTOImhzhS",
+              "list_pil": "C",
+              "pilihan": "Suasana sekitar tokoh",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63635",
+              "id_info_soal": "999",
+              "key_list": "wIoUtsQVKh",
+              "key_list_pil": "GNchJpybHO",
+              "list_pil": "D",
+              "pilihan": "Tanggapan tokoh lain",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63636",
+              "id_info_soal": "999",
+              "key_list": "wIoUtsQVKh",
+              "key_list_pil": "viGCQahBQy",
+              "list_pil": "E",
+              "pilihan": "Tingkah laku tokoh",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12878",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "LpmEeVRlvZ",
+      "number": "16",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Bacalah penggalan teks drama di bawah!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Tina&nbsp;&nbsp;&nbsp;&nbsp;: Tuhan menakdirkan semua nasib manusia. Kita hanya menjalani.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Ibu   &nbsp;&nbsp;&nbsp;&nbsp;: Nah, pikiran begitu itulah yang tak kusuka. Kau sudah ditakdirkan Tuhan punya \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 36pt&quot;&gt;  suami buta, tak adakah niatmu, tidak adakah usahamu untuk mengubah takdir itu? \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 72pt&quot;&gt;  Sebab takdir itu baru jatuhmsetelah manusia berusaha.Tina, kau bukan anakku jika    \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 72pt&quot;&gt;  kau tidak berani melawan takdir yang pahit.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Tina &nbsp;&nbsp;&nbsp;&nbsp;: Aku sudah berusaha. Abas juga sudah. Aku sudah berusaha, dan inilah hasilnya. \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 68pt&quot;&gt;  Kami dapat membelanjai diri untuk hidup sehari-hari.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Konflik yang terjadi antara Tina dan Ibu adalah ....\n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63637",
+              "id_info_soal": "999",
+              "key_list": "LpmEeVRlvZ",
+              "key_list_pil": "ebNhjwwIxd",
+              "list_pil": "A",
+              "pilihan": "perbedaan pandangan mengenai takdir",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63638",
+              "id_info_soal": "999",
+              "key_list": "LpmEeVRlvZ",
+              "key_list_pil": "xTmevceDDU",
+              "list_pil": "B",
+              "pilihan": "usaha melawan takdir",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63639",
+              "id_info_soal": "999",
+              "key_list": "LpmEeVRlvZ",
+              "key_list_pil": "bpkoUpkMBF",
+              "list_pil": "C",
+              "pilihan": "nasib merupakan takdir",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63640",
+              "id_info_soal": "999",
+              "key_list": "LpmEeVRlvZ",
+              "key_list_pil": "LFHzMRVizt",
+              "list_pil": "D",
+              "pilihan": "perbedaan takdir manusia",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63641",
+              "id_info_soal": "999",
+              "key_list": "LpmEeVRlvZ",
+              "key_list_pil": "mWnyaIBflf",
+              "list_pil": "E",
+              "pilihan": "pasrah menjalani takdir",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12879",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "anukCpAMbb",
+      "number": "17",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Bacalah penggalan cerpen berikut!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;&quot;Silakan, Bapak. Saya belakangan saja karena waktu saya masih banyak untuk kembali ke kantor.&quot; Begitulah saya katakana ke Pak Sastro yang sedang antre ambil obat sambil saya berikan resi nomor saya.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;&quot;Lho, bukankah Nak Sultan lebih dulu datang?&quot; begitu kata beliau sambil mendongak.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;&#039;Sudah, Pak. Nggak apa-apa. Betul.&quot; \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Aku lalu duduk ke belakang di barisan kursi merah.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Nilai moral yang terdapat dalam teks tersebut adalah &hellip;\n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63642",
+              "id_info_soal": "999",
+              "key_list": "anukCpAMbb",
+              "key_list_pil": "sNGZmsQiBq",
+              "list_pil": "A",
+              "pilihan": "Orang tua harus mendapat layanan lebih dulu daripada pasien lain.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63643",
+              "id_info_soal": "999",
+              "key_list": "anukCpAMbb",
+              "key_list_pil": "CNnPmoyNtK",
+              "list_pil": "B",
+              "pilihan": "Anak harus menghormati orang tua yang telah membesarkannya.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63644",
+              "id_info_soal": "999",
+              "key_list": "anukCpAMbb",
+              "key_list_pil": "SuXnFACfmE",
+              "list_pil": "C",
+              "pilihan": "Sopan santun akan memudahkan seseorang bergaul dengan orang lain.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63645",
+              "id_info_soal": "999",
+              "key_list": "anukCpAMbb",
+              "key_list_pil": "gFrNFEfwNH",
+              "list_pil": "D",
+              "pilihan": "Kesediaan mengalah demi kebaikan orang lain.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63646",
+              "id_info_soal": "999",
+              "key_list": "anukCpAMbb",
+              "key_list_pil": "MpuafGoDuI",
+              "list_pil": "E",
+              "pilihan": "Bersikaplah tenggang rasa agar tidak terjadi perselisihan dengan tetangga.",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12880",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "nmclzHLcMY",
+      "number": "18",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Bacalah secara cermat kedua teks sastra tersebut untuk menjawab soal nomor 18! \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Teks 1: Cerita Rakyat &quot;Legenda Sang Bawang Putih&quot;\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Dahulu kala, di sebuah desa terpencil, hiduplah seorang gadis cantik bernama Bawang Putih. Kehidupannya penuh liku-liku, namun dia selalu menjunjung tinggi nilai kejujuran dan kesabaran. \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Teks 2: Cerpen &quot;Melodi Cinta yang Terlupakan&quot;\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Di sudut kota besar, Ajun, seorang pemuda pekerja keras, menemukan sebuah buku harian tua yang membawanya pada kenangan cinta yang terlupakan. \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Bandingkan bahasa yang digunakan dalam kedua teks tersebut. Manakah yang lebih cenderung menggunakan ungkapan formal dari kedua teks tersebut?\n&lt;\/p&gt;",
+      "jawaban": "B",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63647",
+              "id_info_soal": "999",
+              "key_list": "nmclzHLcMY",
+              "key_list_pil": "GTDYGjDMFq",
+              "list_pil": "A",
+              "pilihan": "Cerita rakyat",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63648",
+              "id_info_soal": "999",
+              "key_list": "nmclzHLcMY",
+              "key_list_pil": "trGOrMuGpO",
+              "list_pil": "B",
+              "pilihan": "Cerpen",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63649",
+              "id_info_soal": "999",
+              "key_list": "nmclzHLcMY",
+              "key_list_pil": "oDbrPBYBDL",
+              "list_pil": "C",
+              "pilihan": "Puisi",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63650",
+              "id_info_soal": "999",
+              "key_list": "nmclzHLcMY",
+              "key_list_pil": "zkEdilmMXR",
+              "list_pil": "D",
+              "pilihan": "Novel",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63651",
+              "id_info_soal": "999",
+              "key_list": "nmclzHLcMY",
+              "key_list_pil": "drjJfBvAhL",
+              "list_pil": "E",
+              "pilihan": "Syair",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12881",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "pwpqNeRMFv",
+      "number": "19",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Perhatikan contoh teks eksplanasi yang berjudul &quot;Proses Terjadinya Pelangi&quot; di bawah ini!\n&lt;\/p&gt;&lt;ol style=&quot;margin-left: 56pt&quot;&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;Cahaya matahari tersebut kemudian memasuki tetesan air yang ada di udara dan mengalami pembiasan pertama.\n&lt;\/div&gt;&lt;\/li&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;Cahaya yang telah dibiasakan tersebut kemudian mengenai permukaan dalam tetesan air dan mengalami pemantulan\n&lt;\/div&gt;&lt;\/li&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;Cahaya matahari yang datang ke bumi berupa cahaya putih yang mengandung berbagai warna.\n&lt;\/div&gt;&lt;\/li&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;Warna-warna tersebut kemudian mencapai mata pengamat dan membentuk pelangi.\n&lt;\/div&gt;&lt;\/li&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;Cahaya yang telah dibiasakan kedua kali tersebut kemudian mengalami penguraian menjadi warna-warnanya\n&lt;\/div&gt;&lt;\/li&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;Pelangi memiliki tujuh warna yang disebut dengan singkatan ROYGBIV, yaitu Red (merah), Orange (jingga), Yellow (kuning), Green (hijau), Blue (biru), Indigo (nila), dan Violet (ungu). Warna-warna ini disusun berdasarkan urutan panjang gelombangnya, dimana warna merah memiliki panjang gelombang terpanjang dan warna ungu memiliki panjang gelombang terpendek.\n&lt;\/div&gt;&lt;\/li&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;Cahaya yang telah dipantulkan tersebut kemudian keluar dari tetesan air dan mengalami pembiasan kedua.\n&lt;\/div&gt;&lt;\/li&gt;&lt;\/ol&gt;&lt;p style=&quot;text-align: justify&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Susunan kalimat tersebut agar menjadi kalimat yang padu adalah ....\n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63652",
+              "id_info_soal": "999",
+              "key_list": "pwpqNeRMFv",
+              "key_list_pil": "yfFciOouBm",
+              "list_pil": "A",
+              "pilihan": "3-1-2-7-5-4-6",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63653",
+              "id_info_soal": "999",
+              "key_list": "pwpqNeRMFv",
+              "key_list_pil": "mEDvnJWJje",
+              "list_pil": "B",
+              "pilihan": "3-1-2-7-4-5-6",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63654",
+              "id_info_soal": "999",
+              "key_list": "pwpqNeRMFv",
+              "key_list_pil": "uyAKOoOGat",
+              "list_pil": "C",
+              "pilihan": "3-1-2-4-5-6-7",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63655",
+              "id_info_soal": "999",
+              "key_list": "pwpqNeRMFv",
+              "key_list_pil": "czyIBHwQcY",
+              "list_pil": "D",
+              "pilihan": "1-2-3-4-6-7-5",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63656",
+              "id_info_soal": "999",
+              "key_list": "pwpqNeRMFv",
+              "key_list_pil": "coCGKQpHzy",
+              "list_pil": "E",
+              "pilihan": "1-2-3-7-6-5-4",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12882",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "LUWmELBssC",
+      "number": "20",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Cermatilah penggalan surat lamaran pekerjaan berikut!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Dengan hormat,\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Berdasarkan iklan perusahaan Bapak yang dimuat di harian Kompas, 07 Februari 2024, yang menyatakan bahwa perusahaan Bapak memerlukan tenaga kerja bidang editor, saya yang bertanda tangan di bawah ini.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;nama         &nbsp;&nbsp;&nbsp;&nbsp;: Muhammad Rasyiqul\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;umur          &nbsp;&nbsp;&nbsp;&nbsp;: 25 tahun\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;pendidikan &nbsp;&nbsp;&nbsp;&nbsp;: S1 Fakultas Bahasa dan Sastra Indonesia Universitas Negeri Yogyakarta\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;alamat        &nbsp;&nbsp;&nbsp;&nbsp;: Jalan Raya Nagreg Bandung\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;[ .... ]\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Kalimat yang tepat untuk mengisi bagian yang rumpang yaitu ....\n&lt;\/p&gt;",
+      "jawaban": "C",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63657",
+              "id_info_soal": "999",
+              "key_list": "LUWmELBssC",
+              "key_list_pil": "MublcDTztV",
+              "list_pil": "A",
+              "pilihan": "ingin bekerja di perusahaan Bapak",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63658",
+              "id_info_soal": "999",
+              "key_list": "LUWmELBssC",
+              "key_list_pil": "xwjZcUQrBp",
+              "list_pil": "B",
+              "pilihan": "berharap dapat bekerja sama dengan Bapak",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63659",
+              "id_info_soal": "999",
+              "key_list": "LUWmELBssC",
+              "key_list_pil": "PnjMzOybhQ",
+              "list_pil": "C",
+              "pilihan": "bermaksud mengajukan lamaran sebagai karyawan di perusahaan yang Bapak pimpin",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63660",
+              "id_info_soal": "999",
+              "key_list": "LUWmELBssC",
+              "key_list_pil": "DUlEfoiZNB",
+              "list_pil": "D",
+              "pilihan": "memohon dapat diterima di perusahaan Bapak",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63661",
+              "id_info_soal": "999",
+              "key_list": "LUWmELBssC",
+              "key_list_pil": "UlYelaYbrz",
+              "list_pil": "E",
+              "pilihan": "berharap dapat bergabung di perusahaan Bapak",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12883",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "rhMBUmptnw",
+      "number": "21",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Perhatikan contoh teks eksposisi berikut ini!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Terumbu karang adalah ekosistem yang sangat sensitif terhadap suhu air laut yang naik. Peningkatan suhu laut akibat perubahan iklim telah menyebabkan pemutihan massal terumbu karang, mengancam berbagai spesies yang bergantung padanya.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Peningkatan suhu global memengaruhi habitat hewan, baik di darat maupun di laut. Hewan-hewan tertentu yang hidup di lingkungan tertentu mungkin mengalami kesulitan beradaptasi atau terpaksa bermigrasi untuk mencari kondisi yang lebih sesuai.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Perubahan iklim juga telah mempercepat tingkat kepunahan spesies. Kenaikan suhu dan perubahan ekosistem mengancam banyak spesies tumbuhan dan hewan yang tidak dapat beradaptasi dengan cepat.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Tanggapan logis yang sesuai dengan teks diatas adalah....\n&lt;\/p&gt;",
+      "jawaban": "B",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63662",
+              "id_info_soal": "999",
+              "key_list": "rhMBUmptnw",
+              "key_list_pil": "jRqvwwJEvx",
+              "list_pil": "A",
+              "pilihan": "Terumbu karang dapat tumbuh dimana saja.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63663",
+              "id_info_soal": "999",
+              "key_list": "rhMBUmptnw",
+              "key_list_pil": "gqJeuVfsWx",
+              "list_pil": "B",
+              "pilihan": "Meningkatnya suhu global dapat memengaruhi semua habitat",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63664",
+              "id_info_soal": "999",
+              "key_list": "rhMBUmptnw",
+              "key_list_pil": "SnEEOzReSf",
+              "list_pil": "C",
+              "pilihan": "Perubahan iklim dapat memperlambat kepunahan spesies.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63665",
+              "id_info_soal": "999",
+              "key_list": "rhMBUmptnw",
+              "key_list_pil": "BcWRxsohXK",
+              "list_pil": "D",
+              "pilihan": "Spesies-spesies harus beradaptasi atau punah sesuai dengan kondisi baru.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63666",
+              "id_info_soal": "999",
+              "key_list": "rhMBUmptnw",
+              "key_list_pil": "FdaoivjnNg",
+              "list_pil": "E",
+              "pilihan": "Kenaikan suhu dan perubahan ekosistem memengaruhi adaptasi spesies dengan lambat",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12884",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "KGupljOcoH",
+      "number": "22",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Perhatikan karya ilmiah berikut!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Lapisan ozon\n&lt;\/p&gt;&lt;p&gt;Kerangka yang sesuai dengan judul karya ilmiah tersebut adalah....\n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63667",
+              "id_info_soal": "999",
+              "key_list": "KGupljOcoH",
+              "key_list_pil": "hPJeHhxVpu",
+              "list_pil": "A",
+              "pilihan": "&lt;div style=&quot;text-align: justify&quot;&gt;1. Identifikasi fenomena &lt;\/div&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt; Definisi lapisan ozon dan masalahnya &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt;2. Deretan penjelas &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt; Proses penipisan lapisan ozon serta penyebab dan dampaknya &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt;3. Interprestasi &lt;\/p&gt;&lt;p&gt; Upaya mengurangi penipisan lapisan ozon &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63668",
+              "id_info_soal": "999",
+              "key_list": "KGupljOcoH",
+              "key_list_pil": "GVyGkGbuUP",
+              "list_pil": "B",
+              "pilihan": "&lt;div style=&quot;text-align: justify&quot;&gt;1. Identitas fenomena &lt;\/div&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt; Proses penipisan lapisan ozon serta penyebab dan dampaknya &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt;2. Deretan penjelas &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt; Definisi ozon dan masalahnya &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt;3. Interprestasi &lt;\/p&gt;&lt;p&gt; Upaya mengurangi penipisan lapisan ozon &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63669",
+              "id_info_soal": "999",
+              "key_list": "KGupljOcoH",
+              "key_list_pil": "AFvVUGeJJs",
+              "list_pil": "C",
+              "pilihan": "&lt;div style=&quot;text-align: justify&quot;&gt;1. Identifikasi fenomena &lt;\/div&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt; Definisi lapisan ozon dan masalahnya &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt;2. Deretan penjelas &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt; Upaya mengurangi penipisan lapisan ozon &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt;3. Interprestasi &lt;\/p&gt;&lt;p&gt; Proses penipisan lapisan ozon serta penyebab dan dampaknya &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63670",
+              "id_info_soal": "999",
+              "key_list": "KGupljOcoH",
+              "key_list_pil": "rRibVPisKy",
+              "list_pil": "D",
+              "pilihan": "&lt;div style=&quot;text-align: justify&quot;&gt;1. Interpretasi &lt;\/div&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt; Upaya mengurangi lapisan ozon &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt;2. Deretan penjelas &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt; Proses penipisan lapisan ozon serta penyebab dan dampaknya &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt;3. Identifikasi fenomena &lt;\/p&gt;&lt;p&gt; Definisi lapisan ozon dan masalahnya &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63671",
+              "id_info_soal": "999",
+              "key_list": "KGupljOcoH",
+              "key_list_pil": "MqtlXDSZXM",
+              "list_pil": "E",
+              "pilihan": "&lt;div style=&quot;text-align: justify&quot;&gt;1. Identifikasi fenomena &lt;\/div&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt; Definis lapisan ozon dan masalahnya &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt;2. Interpretasi &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt; Upaya mengurangi penipisan lapisan ozon &lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 14pt&quot;&gt;3. Deretan penjelas &lt;\/p&gt;&lt;p&gt; Proses penipisan lapisan ozon serta penyebab dan dampaknya &lt;\/p&gt;",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12885",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "OysktnRyWA",
+      "number": "23",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Bacalah puisi di bawah ini dengan seksama!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Bencana\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Deras hujan mendera\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Gemuruh sungai menguap\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;......\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Hanyutkan harapan\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Yang tersimpan di dada\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Desa Pandaisari tercinta\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Larik bermajas untuk melengkapi puisi tersebut agar memiliki kesatuan makna adalah ...\n&lt;\/p&gt;",
+      "jawaban": "B",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63672",
+              "id_info_soal": "999",
+              "key_list": "OysktnRyWA",
+              "key_list_pil": "RorZpnOyGz",
+              "list_pil": "A",
+              "pilihan": "Air mengalir",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63673",
+              "id_info_soal": "999",
+              "key_list": "OysktnRyWA",
+              "key_list_pil": "WtQqENUwMR",
+              "list_pil": "B",
+              "pilihan": "Menelan jutaan korban",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63674",
+              "id_info_soal": "999",
+              "key_list": "OysktnRyWA",
+              "key_list_pil": "jBqBLJOCiL",
+              "list_pil": "C",
+              "pilihan": "Membanjiri perkampungan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63675",
+              "id_info_soal": "999",
+              "key_list": "OysktnRyWA",
+              "key_list_pil": "dZavZpIONo",
+              "list_pil": "D",
+              "pilihan": "Mengairi sawah lading",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63676",
+              "id_info_soal": "999",
+              "key_list": "OysktnRyWA",
+              "key_list_pil": "nKHdbmRVIE",
+              "list_pil": "E",
+              "pilihan": "Ciptakan harapan",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12886",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "NSfduRNjuV",
+      "number": "24",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Caitlin &nbsp;&nbsp;&nbsp;&nbsp;: Apa yang sedang kamu pikirkan, Nurul?\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;milea &nbsp;&nbsp;&nbsp;&nbsp;: [...] (1)\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Caitlin &nbsp;&nbsp;&nbsp;&nbsp;: Kamu jangan berbohong, Nur. Dari tatapan matamu sedang memikirkan sesuatu.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Milea &nbsp;&nbsp;&nbsp;&nbsp;: [...] (2)\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Caitlin &nbsp;&nbsp;&nbsp;&nbsp;: O, itu masalahmu.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Pertanyaan yang tepat untuk melengkapi naskah drama tersebut adalah...\n&lt;\/p&gt;",
+      "jawaban": "D",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63677",
+              "id_info_soal": "999",
+              "key_list": "NSfduRNjuV",
+              "key_list_pil": "UxVVTVkCJY",
+              "list_pil": "A",
+              "pilihan": "&lt;div&gt;(1) Aku sedang memikirkan tugasku yang belum selesai-selesai. &lt;\/div&gt;&lt;p&gt;(2) Betul. Aku tidak bohong. &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63678",
+              "id_info_soal": "999",
+              "key_list": "NSfduRNjuV",
+              "key_list_pil": "RWJzaKLSGu",
+              "list_pil": "B",
+              "pilihan": "&lt;div&gt;(1) Ada yang aneh pada diri Pak Suhendra. &lt;\/div&gt;&lt;p&gt;(2) Tepat, apa yang kamu katakan. &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63679",
+              "id_info_soal": "999",
+              "key_list": "NSfduRNjuV",
+              "key_list_pil": "wumCxHulQO",
+              "list_pil": "C",
+              "pilihan": "&lt;div&gt;(1) Aku memang mengalami sedikit masalah, Yet. &lt;\/div&gt;&lt;p&gt;(2) Aku bingung, Yet. Mengapa akhir-akhir ini sering di marahi Pak Suhendra? &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63680",
+              "id_info_soal": "999",
+              "key_list": "NSfduRNjuV",
+              "key_list_pil": "hLmcGfXRHG",
+              "list_pil": "D",
+              "pilihan": "&lt;div&gt;(1) Aku memang mengalami sedikit masalah, Yet. &lt;\/div&gt;&lt;p&gt;(2) Yah, aku cuma sedang memikirkan rencanaku besok pagi. Apa yang perlu aku kerjakan terlebih dahulu. &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63681",
+              "id_info_soal": "999",
+              "key_list": "NSfduRNjuV",
+              "key_list_pil": "PzDzYDkJwQ",
+              "list_pil": "E",
+              "pilihan": "&lt;div&gt;(1) Apakah aku terlihat sedang memikirkan sesuatu? &lt;\/div&gt;&lt;p&gt;(2) Tidak ada. Aku cuma bingung, bagaimana komputer ini bisa berfungsi dengan baik? &lt;\/p&gt;",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12887",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "dSkqvIXPTO",
+      "number": "25",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;(1) Manusia memiliki tiga jenis pembuluh darah, yaitu arteri, vena dan capiler (2) Pembuluh darah arteri adalah pembuluh darah yang lebar (3) Pembuluhdarah jenis ini menyalurkan darah keseluruh tubuh (4) Darah pada pembuluh darah arteri berwarna merah cerah dan mengandung oksigen (5) Pembuluh darah vena adalah pembuluh darah yang sempit. \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Penulisan kata yang salah terdapat dalam kalimat...\n&lt;\/p&gt;",
+      "jawaban": "E",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63682",
+              "id_info_soal": "999",
+              "key_list": "dSkqvIXPTO",
+              "key_list_pil": "EazRdfXbWE",
+              "list_pil": "A",
+              "pilihan": "1",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63683",
+              "id_info_soal": "999",
+              "key_list": "dSkqvIXPTO",
+              "key_list_pil": "IMdllcPvLl",
+              "list_pil": "B",
+              "pilihan": "2",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63684",
+              "id_info_soal": "999",
+              "key_list": "dSkqvIXPTO",
+              "key_list_pil": "mPexfAgdqa",
+              "list_pil": "C",
+              "pilihan": "3",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63685",
+              "id_info_soal": "999",
+              "key_list": "dSkqvIXPTO",
+              "key_list_pil": "RUarMexJft",
+              "list_pil": "D",
+              "pilihan": "4",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63686",
+              "id_info_soal": "999",
+              "key_list": "dSkqvIXPTO",
+              "key_list_pil": "oNgsZsuOOf",
+              "list_pil": "E",
+              "pilihan": "5",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12888",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "aaUeyaEEeV",
+      "number": "26",
+      "type": "text",
+      "soal": "&lt;p&gt;Salah satu unsur kebahasaan dalam teks ceramah adalah penggunaan kata ganti orang pertama. Berikut ini kalimat yang di dalamnya terdapat kata ganti orang pertama adalah&hellip;.\n&lt;\/p&gt;",
+      "jawaban": "E",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63687",
+              "id_info_soal": "999",
+              "key_list": "aaUeyaEEeV",
+              "key_list_pil": "EWQFnCJKlP",
+              "list_pil": "A",
+              "pilihan": "Kamu seharusnya bersyukur tinggal di negeri yang makmur ini.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63688",
+              "id_info_soal": "999",
+              "key_list": "aaUeyaEEeV",
+              "key_list_pil": "ezDlRCDlrr",
+              "list_pil": "B",
+              "pilihan": "Mereka terlahir sebagai orang-orang yang memiliki kehidupan bahagia.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63689",
+              "id_info_soal": "999",
+              "key_list": "aaUeyaEEeV",
+              "key_list_pil": "rrsmvQmavr",
+              "list_pil": "C",
+              "pilihan": "Dia tak tau harus berkata apa, perjuangannya sangat melelahkan.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63690",
+              "id_info_soal": "999",
+              "key_list": "aaUeyaEEeV",
+              "key_list_pil": "VZnLFBnpmz",
+              "list_pil": "D",
+              "pilihan": "Budi tidak bisa hidup sendiri, ia masih membutuhkan kasih sayang orangtuanya",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63691",
+              "id_info_soal": "999",
+              "key_list": "aaUeyaEEeV",
+              "key_list_pil": "erYICQkgbB",
+              "list_pil": "E",
+              "pilihan": "Dunia seolah berbicara kepadaku, bahwa negeri ini harus diperjuangkan.&lt;strong&gt; &lt;\/strong&gt;",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12889",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "xsTPEpGRpb",
+      "number": "27",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Cermati kutipan berikut!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Jumlah tenaga medis yang meninggal selama menangani Covid-19 terus bertambah. Mereka bekerja keras melawan pandemi, mengesampingkan kepentingan pribadi demi kemanusiaan. Kematian tenaga medis tersebut berkaitan &lt;em&gt;agar&lt;\/em&gt; kebijakan pemerintah dan kepatuhan masyarakat terhadap protokol kesehatan. Terhitung per Kamis 15 Oktober 2020, Ikatan Dokter Indonesia (IDI) mencatat ada total 136 dokter meninggal akibat Covid-19. Terdiri atas 71 dokter umum, 63 dokter spesialis, dan dua dokter residen.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Konjungsi yang tepat untuk memperbaiki kalimat yang dicetak miring pada teks editorial di atas adalah &hellip;.\n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63692",
+              "id_info_soal": "999",
+              "key_list": "xsTPEpGRpb",
+              "key_list_pil": "ilawXFYlUk",
+              "list_pil": "A",
+              "pilihan": "dengan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63693",
+              "id_info_soal": "999",
+              "key_list": "xsTPEpGRpb",
+              "key_list_pil": "KZBJHezSkA",
+              "list_pil": "B",
+              "pilihan": "dari",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63694",
+              "id_info_soal": "999",
+              "key_list": "xsTPEpGRpb",
+              "key_list_pil": "uITnxyCepS",
+              "list_pil": "C",
+              "pilihan": "tetapi",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63695",
+              "id_info_soal": "999",
+              "key_list": "xsTPEpGRpb",
+              "key_list_pil": "fydgVbMTmH",
+              "list_pil": "D",
+              "pilihan": "meskipun",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63696",
+              "id_info_soal": "999",
+              "key_list": "xsTPEpGRpb",
+              "key_list_pil": "eXGGGoKfhV",
+              "list_pil": "E",
+              "pilihan": "daripada",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12890",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "FBDzPbXsfn",
+      "number": "28",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Bacalah teks berikut!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Sejumlah penelitian menyatakan bahwa otak anak menyerap radiasi ponsel lebih banyak dari orang dewasa (1). Radiasi ini memberikan pengaruh buruk bagi kesehatan (2). Meskipun temuan penelitian tersebut belum final, kita tetap harus waspada (3). Ada baiknya  kita menjauhkan ponsel dari anak- anak sejak dini (4). Anak harus didampingi dalam menggunakan produk tehnologi informasi dan komunikasi tersebut (5). \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Penggunaan kata  yang tidak tepat terdapat pada kalimat nomor ....\n&lt;\/p&gt;",
+      "jawaban": "E",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63697",
+              "id_info_soal": "999",
+              "key_list": "FBDzPbXsfn",
+              "key_list_pil": "klMorHqeBC",
+              "list_pil": "A",
+              "pilihan": "(1)",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63698",
+              "id_info_soal": "999",
+              "key_list": "FBDzPbXsfn",
+              "key_list_pil": "LFzslfHWlO",
+              "list_pil": "B",
+              "pilihan": "(2)",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63699",
+              "id_info_soal": "999",
+              "key_list": "FBDzPbXsfn",
+              "key_list_pil": "SQqvqgxnyD",
+              "list_pil": "C",
+              "pilihan": "(3)",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63700",
+              "id_info_soal": "999",
+              "key_list": "FBDzPbXsfn",
+              "key_list_pil": "BJPnYgVolw",
+              "list_pil": "D",
+              "pilihan": "(4)",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63701",
+              "id_info_soal": "999",
+              "key_list": "FBDzPbXsfn",
+              "key_list_pil": "QWbqpnwWjH",
+              "list_pil": "E",
+              "pilihan": "(5)",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12891",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "LbybxOiVcG",
+      "number": "29",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Bacalah penggalan isi proposal berikut!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Adanya pelatihan MC merupakan upaya melatih kemampuan berbicara dan kepercayaan diri siswa. Oleh karena itu, melalui pelatihan ini para pelajar diharapkan mampu berbicara di depan umum dengan bahasa yang baik dan penuh rasa percaya diri.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Penggalan proposal di atas termasuk sistematika proposal bagian ....\n&lt;\/p&gt;",
+      "jawaban": "E",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63702",
+              "id_info_soal": "999",
+              "key_list": "LbybxOiVcG",
+              "key_list_pil": "yDqnRouMCG",
+              "list_pil": "A",
+              "pilihan": "Bentuk kegiatan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63703",
+              "id_info_soal": "999",
+              "key_list": "LbybxOiVcG",
+              "key_list_pil": "itCkKRxgNG",
+              "list_pil": "B",
+              "pilihan": "Pelaksanaan kegiatan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63704",
+              "id_info_soal": "999",
+              "key_list": "LbybxOiVcG",
+              "key_list_pil": "OzImAgbIbd",
+              "list_pil": "C",
+              "pilihan": "Rumusan masalah",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63705",
+              "id_info_soal": "999",
+              "key_list": "LbybxOiVcG",
+              "key_list_pil": "pAHFOzUjlx",
+              "list_pil": "D",
+              "pilihan": "tujuan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63706",
+              "id_info_soal": "999",
+              "key_list": "LbybxOiVcG",
+              "key_list_pil": "PuQrEAjbHX",
+              "list_pil": "E",
+              "pilihan": "Latar belakang",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12892",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "IvwrHXxJFy",
+      "number": "30",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Bacalah kutipan teks berikut!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Ardi dan para relawan bergegas menyiapkan barak untuk para pengungsi. Tenda, tikar, dan lampu penerangan segera dia pasang. Tak lupa dapur umum juga dia siapkan. Obat-obatan, selimut, dan pos kesehatan pun telah didirikannya. Lapangan desa yang siang tadi masih lengang kini telah berubah drastis. Hiruk pikuk para relawan bertambah ramai dengan kedatangan para pengungsi. Mereka telah meninggalkan rumah di lereng gunung. Kesehatan jiwa lebih mereka utamakan.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Watak Ardi pada cerita tersebut adalah &hellip;.\n&lt;\/p&gt;",
+      "jawaban": "B",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63707",
+              "id_info_soal": "999",
+              "key_list": "IvwrHXxJFy",
+              "key_list_pil": "MVZuBNTvWf",
+              "list_pil": "A",
+              "pilihan": "Pandai",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63708",
+              "id_info_soal": "999",
+              "key_list": "IvwrHXxJFy",
+              "key_list_pil": "SLzJddjmfR",
+              "list_pil": "B",
+              "pilihan": "cekatan",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63709",
+              "id_info_soal": "999",
+              "key_list": "IvwrHXxJFy",
+              "key_list_pil": "kNmGeUDCDj",
+              "list_pil": "C",
+              "pilihan": "sabar",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63710",
+              "id_info_soal": "999",
+              "key_list": "IvwrHXxJFy",
+              "key_list_pil": "aqfaLGNEcJ",
+              "list_pil": "D",
+              "pilihan": "disiplin",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63711",
+              "id_info_soal": "999",
+              "key_list": "IvwrHXxJFy",
+              "key_list_pil": "KUvjEynOLt",
+              "list_pil": "E",
+              "pilihan": "ceria",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12893",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "FVgSBlMfNq",
+      "number": "31",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Malam ini, perkampungan nelayan itu, di rumah Mat Kontan dan Soleman tampak sepi. Barangkali hampir seisi kampung melihat ubruk, sebab bunyi ubruk disebelah Timur begitu sayu menikam-nikam.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Latar suasana yang terkandung dalam penggalan teks drama di atas adalah...\n&lt;\/p&gt;",
+      "jawaban": "E",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63712",
+              "id_info_soal": "999",
+              "key_list": "FVgSBlMfNq",
+              "key_list_pil": "oOGtOraCWc",
+              "list_pil": "A",
+              "pilihan": "Ceria",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63713",
+              "id_info_soal": "999",
+              "key_list": "FVgSBlMfNq",
+              "key_list_pil": "lHXHRBgfpR",
+              "list_pil": "B",
+              "pilihan": "Bahagia",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63714",
+              "id_info_soal": "999",
+              "key_list": "FVgSBlMfNq",
+              "key_list_pil": "yVMENoQAtD",
+              "list_pil": "C",
+              "pilihan": "Sedih",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63715",
+              "id_info_soal": "999",
+              "key_list": "FVgSBlMfNq",
+              "key_list_pil": "QIsxchOcJL",
+              "list_pil": "D",
+              "pilihan": "Mencekam",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63716",
+              "id_info_soal": "999",
+              "key_list": "FVgSBlMfNq",
+              "key_list_pil": "eVtcCkDIpT",
+              "list_pil": "E",
+              "pilihan": "Sepi",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12894",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "ANPmsCBicV",
+      "number": "32",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Bacalah kutipan cerita pendek berikut ini!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Dua hari sebelum kenduri berlangsung, Azrial anak lelaki Makaji datang dari Jakarta. Ia datang untuk menjemput Makaji. Kini, juru masak itu sudah berada di Jakarta, mungkin tak akan kembali sebab ia akan menghabiskan masa tuadi dekat anaknya. Orang-orang Lareh Panjangakan kehilangan juru masakandal yang pernah ada di kampung itu. Kabar kepergian Makaji sampai juga ke telinga pengantin baru Renggogeni. Perempuan itu dapat membayangkan betapa terpiuhnya perasaan Azrial setelah mendengar kabar kekasih pujaannya telah dipersunting lelaki lain.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Isi dalam kutipan yang terkait dengan kehidupan masa kini adalah ...\n&lt;\/p&gt;",
+      "jawaban": "E",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63717",
+              "id_info_soal": "999",
+              "key_list": "ANPmsCBicV",
+              "key_list_pil": "MTDfqGmfIV",
+              "list_pil": "A",
+              "pilihan": "Azrial merantau karena cintanya ditolak.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63718",
+              "id_info_soal": "999",
+              "key_list": "ANPmsCBicV",
+              "key_list_pil": "QNQkPsutbK",
+              "list_pil": "B",
+              "pilihan": "Orang lareh panjang umumnya merantau.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63719",
+              "id_info_soal": "999",
+              "key_list": "ANPmsCBicV",
+              "key_list_pil": "nBxcOQEqYH",
+              "list_pil": "C",
+              "pilihan": "Dalam setiap kenduri selalu diperlukan \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0 juru masak.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63720",
+              "id_info_soal": "999",
+              "key_list": "ANPmsCBicV",
+              "key_list_pil": "lLAPQQvdVe",
+              "list_pil": "D",
+              "pilihan": "Makaji terkenal sebagai juru masak di lareh \u00c2\u00a0 Panjang.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63721",
+              "id_info_soal": "999",
+              "key_list": "ANPmsCBicV",
+              "key_list_pil": "YMRPWHiraj",
+              "list_pil": "E",
+              "pilihan": "Perempuan itu membayangkan betapa \u00c2\u00a0 terpiuhnya hati Azrial.",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12895",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "bnLzpzpUQo",
+      "number": "33",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Sulit sekali menemukan kekurangan novel ini. Semua unsur karya fiksi telah dipenuhi oleh pengarang dengan cara yang cerdik. Novel ini cukup menghibur untuk dibaca oleh masyarakat umum.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Masalah yang dinilai dari kutipan tersebut adalah &hellip;\n&lt;\/p&gt;",
+      "jawaban": "E",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63722",
+              "id_info_soal": "999",
+              "key_list": "bnLzpzpUQo",
+              "key_list_pil": "CbZcRQTmTP",
+              "list_pil": "A",
+              "pilihan": "kekurangan atau kelemahan novel",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63723",
+              "id_info_soal": "999",
+              "key_list": "bnLzpzpUQo",
+              "key_list_pil": "qSCiHzPPQP",
+              "list_pil": "B",
+              "pilihan": "gaya bahasa yang dipakai",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63724",
+              "id_info_soal": "999",
+              "key_list": "bnLzpzpUQo",
+              "key_list_pil": "YSdKrtkGna",
+              "list_pil": "C",
+              "pilihan": "kelebihan dan kekurangan isi novel",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63725",
+              "id_info_soal": "999",
+              "key_list": "bnLzpzpUQo",
+              "key_list_pil": "UPbUSTKMfE",
+              "list_pil": "D",
+              "pilihan": "latar belakang pengaran",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63726",
+              "id_info_soal": "999",
+              "key_list": "bnLzpzpUQo",
+              "key_list_pil": "BwwdEeCtTs",
+              "list_pil": "E",
+              "pilihan": "kelebihan novel",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12896",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "jSkmCCFMiT",
+      "number": "34",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Perhatikan penulisan judul karya ilmiah berikut! \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;PENINGKATAN, KETERAMPILAN BERBICARA SISWA KELAS X SMK NEGERI SUMEDANG \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Manakah penulisan judul karya tulis  yang tepat!\n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63727",
+              "id_info_soal": "999",
+              "key_list": "jSkmCCFMiT",
+              "key_list_pil": "NdJPXCIIoN",
+              "list_pil": "A",
+              "pilihan": "PENINGKATAN KETERAMPILAN BERBICARA SISWA KELAS X SMK NEGERI SUMEDANG",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63728",
+              "id_info_soal": "999",
+              "key_list": "jSkmCCFMiT",
+              "key_list_pil": "nPjKTOOvhH",
+              "list_pil": "B",
+              "pilihan": "PENINGKATAN KETERAMPILAN BERBICARA, SISWA KELAS X SMK NEGERI SUMEDANG",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63729",
+              "id_info_soal": "999",
+              "key_list": "jSkmCCFMiT",
+              "key_list_pil": "OqAZDcBjPK",
+              "list_pil": "C",
+              "pilihan": "PENINGKATAN KETERAMPILAN, BERBICARA, SISWA KELAS X SMK NEGERI SUMEDANG",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63730",
+              "id_info_soal": "999",
+              "key_list": "jSkmCCFMiT",
+              "key_list_pil": "dCNNsKpatE",
+              "list_pil": "D",
+              "pilihan": "PENINGKATAN KETERAMPILAN BERBICARA, SISWA, KELAS X SMK NEGERI SUMEDANG",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63731",
+              "id_info_soal": "999",
+              "key_list": "jSkmCCFMiT",
+              "key_list_pil": "NGtXqnMfIT",
+              "list_pil": "E",
+              "pilihan": "PENINGKATAN KETERAMPLAN BERBICARA, SISWA, KELAS X, SMK NEGERI SUMEDANG",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12897",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "MxknxOqZXf",
+      "number": "35",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Perhatikan teks drama berikut ini!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Ibu Kos&nbsp;&nbsp;&nbsp;&nbsp;: Ke mana Vika, Bi? Ini sudah jam 10 malam, kok belum pulang. Vika tadi \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;&nbsp;&nbsp;&nbsp;&nbsp;  pamit tidak, Bi?\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Bi Manik&nbsp;&nbsp;&nbsp;&nbsp;: Maaf, Bu. Tadi pulang jam 3 lalu keluar lagi dengan Rina. Katanya mau ke \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;&nbsp;&nbsp;&nbsp;&nbsp;  Toko Pamelia. Apakah Ibu tidak dipamiti?\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Ibu Kos&nbsp;&nbsp;&nbsp;&nbsp;: Pak, tadi Vika gak bilang mau ke mana? Dia kana nak kos kita yang harus \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;&nbsp;&nbsp;&nbsp;&nbsp;  dijagai agar tidak terjadi apa-apa. Coba, hubungi pakai WA-nya, Pa!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Bapak Kos&nbsp;&nbsp;&nbsp;&nbsp;: Sudahlah, Ma. Nanti &#039;kan pulang sendiri. Dia sudah besar dan bisa \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;&nbsp;&nbsp;&nbsp;&nbsp;  bertanggung jawab untuk diri sendiri juga.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Ibu Kos&nbsp;&nbsp;&nbsp;&nbsp;: Ah, Papa ini gak ada perhatian dengan anak-anak. Orang tuanya sudah titip ke \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;&nbsp;&nbsp;&nbsp;&nbsp;  kita, Pa.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Isi penggalan teks drama di atas adalah &hellip;\n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63732",
+              "id_info_soal": "999",
+              "key_list": "MxknxOqZXf",
+              "key_list_pil": "JbIwOahdaA",
+              "list_pil": "A",
+              "pilihan": "Ibu Kos mengkhawatirkan salah satu anak kosnya yang belum pulang ke kamarnya.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63733",
+              "id_info_soal": "999",
+              "key_list": "MxknxOqZXf",
+              "key_list_pil": "HOhbMxoyCX",
+              "list_pil": "B",
+              "pilihan": "Pasangan pemilik kos-kosan yang sedang mengobrol santai.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63734",
+              "id_info_soal": "999",
+              "key_list": "MxknxOqZXf",
+              "key_list_pil": "spvDDSrTRp",
+              "list_pil": "C",
+              "pilihan": "Bi Manik cemas karena pemilik kos belum pulang.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63735",
+              "id_info_soal": "999",
+              "key_list": "MxknxOqZXf",
+              "key_list_pil": "ZBqIXeIfiJ",
+              "list_pil": "D",
+              "pilihan": "Vika sudah pulang sejak sore hari bersama Rina.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63736",
+              "id_info_soal": "999",
+              "key_list": "MxknxOqZXf",
+              "key_list_pil": "GQyNSllgKO",
+              "list_pil": "E",
+              "pilihan": "Ibu dan Bapak Kos sedang berdiskusi mengenai semua penghuni kosannya.",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12898",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "eceAGHtXAk",
+      "number": "36",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Setelah membaca iklan lowongan pekerjaan. Siska mengajukan surat lamaran. Identitas yang ditulis dalam surat lamaran mencakup nama lengkap, tempat dan tanggal lahir, alamat,dan pendidikan.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Penulisan identitas yang tepat adalah....\n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63737",
+              "id_info_soal": "999",
+              "key_list": "eceAGHtXAk",
+              "key_list_pil": "nAMEiJJRPS",
+              "list_pil": "A",
+              "pilihan": "&lt;div&gt;Yang bertanda tangan di bawah ini, saya: &lt;\/div&gt;&lt;p&gt;nama. \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Fransiska Nurweni Utami &lt;\/p&gt;&lt;p&gt;tempat, tanggal lahir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Surabaya, 25 Oktober 1977 &lt;\/p&gt;&lt;p&gt;alamat \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Jl. Prajurit 24 Surabaya &lt;\/p&gt;&lt;p&gt;Pendidikan \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: S-1 Pendidikan Fisika &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63738",
+              "id_info_soal": "999",
+              "key_list": "eceAGHtXAk",
+              "key_list_pil": "BvIZiAltHV",
+              "list_pil": "B",
+              "pilihan": "&lt;div&gt;Yang bertanda tangan di bawah ini, saya: &lt;\/div&gt;&lt;p&gt;Nama. \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Fransiska Nurweni Utami &lt;\/p&gt;&lt;p&gt;Tempat, tanggal lahir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Surabaya, 25 Oktober 1977 &lt;\/p&gt;&lt;p&gt;Alamat \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Jalan Prajurit 24 Surabaya &lt;\/p&gt;&lt;p&gt;Pendidikan \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: S-1 Pendidikan Fisika &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63739",
+              "id_info_soal": "999",
+              "key_list": "eceAGHtXAk",
+              "key_list_pil": "iMYmmEUFCv",
+              "list_pil": "C",
+              "pilihan": "&lt;div&gt;Yang bertanda tangan di bawah ini, saya: &lt;\/div&gt;&lt;p&gt;Tempat , tanggal lahir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Surabaya , 25 Oktober 1977 &lt;\/p&gt;&lt;p&gt;Alamat \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Jl. Prajurit No.24 SURABAYA &lt;\/p&gt;&lt;p&gt;Pendidikan \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: S-1 Pendidikan Fisika &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63740",
+              "id_info_soal": "999",
+              "key_list": "eceAGHtXAk",
+              "key_list_pil": "QQVCudmeUb",
+              "list_pil": "D",
+              "pilihan": "&lt;div&gt;Yang bertanda tangan di bawah ini, saya &lt;\/div&gt;&lt;p&gt;Nama \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: FRANSISKA NURWENI UTAMI &lt;\/p&gt;&lt;p&gt;tempat, tanggal lahir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: SURABAYA,25 OKTOBER 1977 &lt;\/p&gt;&lt;p&gt;alamat \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: JL. PRAJURIT 24 SURABAYA &lt;\/p&gt;&lt;p&gt;pendidikan \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: S-1 PENDIDIKAN FISIKA &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63741",
+              "id_info_soal": "999",
+              "key_list": "eceAGHtXAk",
+              "key_list_pil": "WwwEwFfHZM",
+              "list_pil": "E",
+              "pilihan": "&lt;div&gt;Yang bertanda tangan di bawah ini, saya: &lt;\/div&gt;&lt;p&gt;nama. \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Fransiska Nurweni Utami &lt;\/p&gt;&lt;p&gt;tempat, tanggal lahir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Surabaya, 25 - 10 \u00e2\u20ac\u201c 1977 &lt;\/p&gt;&lt;p&gt;alamat. \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Jl. Prajurit No. 24 Surabaya &lt;\/p&gt;&lt;p&gt;pendidikan \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: S- 1 Pendidokan Fisika &lt;\/p&gt;",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12899",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "DhzBtLgorJ",
+      "number": "37",
+      "type": "text",
+      "soal": "&lt;p&gt;Kalimat berikut ini yang menggunakan konjungsi adalah&hellip;.\n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63742",
+              "id_info_soal": "999",
+              "key_list": "DhzBtLgorJ",
+              "key_list_pil": "JizELUIXYD",
+              "list_pil": "A",
+              "pilihan": "Banyak orang tua yang tidak tahu efek negatif dari media sosial padahal media sosial tanpa bimbingan yang benar akan berpeluang lebih besar mengarah ke efek negatif.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63743",
+              "id_info_soal": "999",
+              "key_list": "DhzBtLgorJ",
+              "key_list_pil": "ZUZvzvaEca",
+              "list_pil": "B",
+              "pilihan": "Penerapan Pendidikan moral harus benar-benar dilakukan sedini mungkin",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63744",
+              "id_info_soal": "999",
+              "key_list": "DhzBtLgorJ",
+              "key_list_pil": "rFhQhBCoPU",
+              "list_pil": "C",
+              "pilihan": "Handphone atau gadget adalah salah satu media budaya asing sangat mudah masuk ke Indonesia",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63745",
+              "id_info_soal": "999",
+              "key_list": "DhzBtLgorJ",
+              "key_list_pil": "XycwdNrLLp",
+              "list_pil": "D",
+              "pilihan": "Jadi, jangan sia-siakan kesempatan emas untuk menjadikan anak yang memiliki karakter baik",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63746",
+              "id_info_soal": "999",
+              "key_list": "DhzBtLgorJ",
+              "key_list_pil": "oKkofKJgpM",
+              "list_pil": "E",
+              "pilihan": "Ternyata kemudahan bertransportasi tak selamanya mendatangkan keuntungan",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12900",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "gGsoxAPaOF",
+      "number": "38",
+      "type": "text",
+      "soal": "&lt;p&gt;Perhatikan penggalan surat lamaran berikut!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Semarang , 12 November 2021\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Hal &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Lamaran Kerja\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Lampiran &nbsp;&nbsp;&nbsp;&nbsp;: Satu lembar\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Yth. Pemasang iklan\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;di Harian Suara Merdeka\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;d.a. PO BOX 2234 SMG\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Dengan hormat,\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Berdasarkan iklan di harian suara Merdeka , hari senin tanggal 10 November 2021, dengan ini saya,\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;nama &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Ulia handayani ,\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;tempat, tanggal lahir &nbsp;&nbsp;&nbsp;&nbsp;: Semarang, 24 April 1997 ,\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;alamat &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Jalan Beruang Dalam VII\/27 Semarang,\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;pendidikan terakhir &nbsp;&nbsp;&nbsp;&nbsp;: Strata 1 Jurusan Teknik Kimia.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Mengajukan lamaran kerja ke perusahaan yang bapak\/ibu pimpin untuk bisa ditempatkan pada staf manajer teknik.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;Sebagai bahan pertimbangan, bersama surat ini saya lampirkan ;\n&lt;\/p&gt;&lt;ol style=&quot;margin-left: 49pt&quot;&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;fotokopi ijasah terakhir ;\n&lt;\/div&gt;&lt;\/li&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;pasfoto ukuran 4x6 ;\n&lt;\/div&gt;&lt;\/li&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;daftar riwayat hidup ;\n&lt;\/div&gt;&lt;\/li&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;skck ( Surat Keterangan Catatan Kepolisian );\n&lt;\/div&gt;&lt;\/li&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;fotokopi KTP ;\n&lt;\/div&gt;&lt;\/li&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;fotokopi sertifikat pelatihan bahasa inggris ; dan\n&lt;\/div&gt;&lt;\/li&gt;&lt;li&gt;&lt;div style=&quot;text-align: justify&quot;&gt;fotokopi sertifikat pelatihan komputer .\n&lt;\/div&gt;&lt;\/li&gt;&lt;\/ol&gt;&lt;p style=&quot;text-align: justify&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 35pt&quot;&gt;Demikian surat lamaran kerja ini dibuat, atas perhatian Bapak\/Ibu ,saya sampaikan ucapan terima kasih.\n&lt;\/p&gt;&lt;p style=&quot;margin-left: 324pt&quot;&gt;Hormat saya,\n&lt;\/p&gt;&lt;p style=&quot;margin-left: 324pt&quot;&gt;Ulia handayani\n&lt;\/p&gt;&lt;p&gt;Dalam surat lamaran pekerjaan tersebut, perbaikan penggunaan tanda baca yang tepat pada bagian penulisan identitas pelamar adalah ...\n&lt;\/p&gt;",
+      "jawaban": "E",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63747",
+              "id_info_soal": "999",
+              "key_list": "gGsoxAPaOF",
+              "key_list_pil": "ULdWihKzSv",
+              "list_pil": "A",
+              "pilihan": "&lt;div&gt;nama \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Ulia handayani , &lt;\/div&gt;&lt;p&gt;tempat, tanggal lahir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Semarang, 24 April 1997 , &lt;\/p&gt;&lt;p&gt;alamat \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Jalan Beruang Dalam VII\/27 Semarang, &lt;\/p&gt;&lt;p&gt;pendidikan terakhir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Strata 1 Jurusan Teknik Kimia. &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63748",
+              "id_info_soal": "999",
+              "key_list": "gGsoxAPaOF",
+              "key_list_pil": "PhfavlKesZ",
+              "list_pil": "B",
+              "pilihan": "&lt;div&gt;nama \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Ulia handayani . &lt;\/div&gt;&lt;p&gt;tempat, tanggal lahir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Semarang, 24 April 1997 . &lt;\/p&gt;&lt;p&gt;alamat \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Jalan Beruang Dalam VII\/27 Semarang. &lt;\/p&gt;&lt;p&gt;pendidikan terakhir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Strata 1 Jurusan Teknik Kimia. &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63749",
+              "id_info_soal": "999",
+              "key_list": "gGsoxAPaOF",
+              "key_list_pil": "RzGjNeJCex",
+              "list_pil": "C",
+              "pilihan": "&lt;div&gt;nama \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Ulia handayani ; &lt;\/div&gt;&lt;p&gt;tempat, tanggal lahir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Semarang, 24 April 1997 ; &lt;\/p&gt;&lt;p&gt;alamat \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Jalan Beruang Dalam VII\/27 Semarang ; &lt;\/p&gt;&lt;p&gt;pendidikan terakhir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Strata 1 Jurusan Teknik Kimia ; &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63750",
+              "id_info_soal": "999",
+              "key_list": "gGsoxAPaOF",
+              "key_list_pil": "iYjmVrtGQm",
+              "list_pil": "D",
+              "pilihan": "&lt;div&gt;nama \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Ulia Handayani &lt;\/div&gt;&lt;p&gt;tempat, tanggal lahir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Semarang, 24 April 1997 &lt;\/p&gt;&lt;p&gt;alamat \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Jalan Beruang Dalam VII\/27 Semarang &lt;\/p&gt;&lt;p&gt;pendidikan terakhir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Strata 1 Jurusan Teknik Kimia. &lt;\/p&gt;",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63751",
+              "id_info_soal": "999",
+              "key_list": "gGsoxAPaOF",
+              "key_list_pil": "cGthGOtqTL",
+              "list_pil": "E",
+              "pilihan": "&lt;div&gt;nama \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Ulia handayani &lt;\/div&gt;&lt;p&gt;tempat, tanggal lahir \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Semarang, 24 April 1997 &lt;\/p&gt;&lt;p&gt;alamat \u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0\u00c2\u00a0: Jalan Beruang Dalam VII\/27 Semarang &lt;\/p&gt;",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12901",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "pLkWUXaEAe",
+      "number": "39",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Perhatikan kutipan artikel berikut!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Hujan \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Hujan adalah sebuah&nbsp;presipitasi berwujud cairan. Saat musim hujan tiba, beberapa masalah sering timbul, salah satunya banjir. Banjir ditimbulkan karena kurangnya daerah serapan. Banjir dapat membuat aktifitas jadi terhambat, salah satunya di bidang pendidikan. \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Fenomena banjir telah merendam seluruh gedung sekolah, jadi semua siswa diliburkan. Hal tersebut membuat aktifitas jadi terhambat. \n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p&gt;Kesalahan penggunaan paragraf kausalitas pada teks tersebut adalah.. \n&lt;\/p&gt;",
+      "jawaban": "A",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63752",
+              "id_info_soal": "999",
+              "key_list": "pLkWUXaEAe",
+              "key_list_pil": "cJdlVZCoGt",
+              "list_pil": "A",
+              "pilihan": "Saat musim hujan tiba, beberapa masalah sering timbul, seperti banjir.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63753",
+              "id_info_soal": "999",
+              "key_list": "pLkWUXaEAe",
+              "key_list_pil": "AIZUQFJjWD",
+              "list_pil": "B",
+              "pilihan": "Banjir bisa ditimbulkan oleh beberapa masalah.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63754",
+              "id_info_soal": "999",
+              "key_list": "pLkWUXaEAe",
+              "key_list_pil": "UmofijdiND",
+              "list_pil": "C",
+              "pilihan": "Fenomena banjir telah merendam seluruh gedung sekolah, jadi semua siswa diliburkan.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63755",
+              "id_info_soal": "999",
+              "key_list": "pLkWUXaEAe",
+              "key_list_pil": "nPnrairDwX",
+              "list_pil": "D",
+              "pilihan": "Hal tersebut membuat aktifitas jadi terhambat.",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63756",
+              "id_info_soal": "999",
+              "key_list": "pLkWUXaEAe",
+              "key_list_pil": "XXGWSwCBFy",
+              "list_pil": "E",
+              "pilihan": "Hujan adalah sebuah\u00c2\u00a0presipitasi berwujud cairan.",
+              "typepg": "text"
+          }
+      ]
+  },
+  {
+      "id_soal": "12902",
+      "id_register": "13",
+      "id_info_soal": "999",
+      "key_list": "eAKsGSBJbp",
+      "number": "40",
+      "type": "text",
+      "soal": "&lt;p style=&quot;text-align: justify&quot;&gt;Cermati paragraf berikut ini!\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;(1) Jakarta menduduki peringkat tertinggi kasus demam berdarah musim hujan kali ini. (2) Dari sekitar 90 ribu kasus Demam Berdarah (DB) yang sudah diaporkan, 30% di antaranya diderita warga jakarta. (3) penderitanya didominasi oleh anak-anak usia sekolah hamper 70% dari total kasus yang ada. (4) Salah satu faktornya adalah banyaknya nyamuk DB yang berkeliaran di ruang belajar anak-anak. (5) Sistem sanitasi yang buruk menjadikan DB mudah meluas di Jakarta.\n&lt;\/p&gt;&lt;p style=&quot;text-align: justify; margin-left: 32pt&quot;&gt;\n&nbsp;&lt;\/p&gt;&lt;p style=&quot;text-align: justify&quot;&gt;Kalimat opini dalam paragraf tersebut terdapat pada kalimat nomor &hellip;.\n&lt;\/p&gt;",
+      "jawaban": "D",
+      "jmlpg": "5",
+      "pilihan_ganda": [
+          {
+              "id_soal_list_pil": "63757",
+              "id_info_soal": "999",
+              "key_list": "eAKsGSBJbp",
+              "key_list_pil": "npeAGfIYJf",
+              "list_pil": "A",
+              "pilihan": "(1)",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63758",
+              "id_info_soal": "999",
+              "key_list": "eAKsGSBJbp",
+              "key_list_pil": "WGdCDVYfwE",
+              "list_pil": "B",
+              "pilihan": "(2)",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63759",
+              "id_info_soal": "999",
+              "key_list": "eAKsGSBJbp",
+              "key_list_pil": "DAfoTLguui",
+              "list_pil": "C",
+              "pilihan": "(3)",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63760",
+              "id_info_soal": "999",
+              "key_list": "eAKsGSBJbp",
+              "key_list_pil": "JHxOheUQcD",
+              "list_pil": "D",
+              "pilihan": "(4)",
+              "typepg": "text"
+          },
+          {
+              "id_soal_list_pil": "63761",
+              "id_info_soal": "999",
+              "key_list": "eAKsGSBJbp",
+              "key_list_pil": "VYkYANUzSq",
+              "list_pil": "E",
+              "pilihan": "(5)",
+              "typepg": "text"
+          }
+      ]
+  }
+]

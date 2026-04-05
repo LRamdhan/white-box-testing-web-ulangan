@@ -65,4 +65,4 @@ describe("1-2-3-4-5-6", function() {
     $page->assertValue("#nis", "");
     $page->assertDontSee("Kata-sandi atau nis tidak ditemukan");
   });
-})->group("current");
+});
