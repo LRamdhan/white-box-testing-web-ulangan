@@ -43,21 +43,4 @@ class UserModel extends DBConnection {
     // disconnect
     self::disconnect();
   }
-
-  public static function deleteLogLogin() {
-    // connect
-    self::connect();
-
-    // cek apakah log login dummy user sudah ada, jika ada hapus
-    $querySelect = "SELECT * FROM log_login WHERE nis='" . DummyUser::$nis . "';";
-    $selectUser = mysqli_query(self::$connection, $querySelect);
-    if(mysqli_num_rows($selectUser) >= 1) {
-      $deleteExistUserQuery = "DELETE FROM log_login WHERE nis='" . DummyUser::$nis . "';";
-      $deleteExistUser = mysqli_query(self::$connection, $deleteExistUserQuery);
-    }
-
-    // disconnect
-    self::disconnect();
-  }
-
 }

@@ -4,6 +4,7 @@ include "./vendor/autoload.php";
 
 use Tests\Data\DummyUser;
 use App\model\UserModel;
+use App\model\LogLoginModel;
 use App\utils\CookieUtils;
 use App\utils\WebUtils;
 
@@ -17,7 +18,7 @@ afterAll(function () {
   UserModel::deleteUser();
 
   // hapus log login
-  UserModel::deleteLogLogin();
+  LogLoginModel::deleteLogLogin();
 });
 
 describe("1) 1-2-3-11", function() {
