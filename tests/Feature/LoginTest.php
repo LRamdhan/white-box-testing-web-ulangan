@@ -2,7 +2,6 @@
 
 include "./vendor/autoload.php";
 
-use Tests\Data\DummyUser;
 use App\model\UserModel;
 use App\model\LogLoginModel;
 use App\utils\CookieUtils;
@@ -221,7 +220,6 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
   });
 
   test("T009: Halaman menampilkan notifikasi, jika login dengan nis yang benar dan password yang salah", function() {
-
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -231,7 +229,8 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     // - field password diisi dengan password yang salah
     // - tombol submit/login diklik
 
-    $correctNis = DummyUser::$nis;
+    $dummyUser = WebUtils::getDummyUser();
+    $correctNis = $dummyUser["nis"];
     $wrongPassword = "dummypass";
 
     $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
@@ -262,10 +261,11 @@ describe("3) 1-2-3-4-5-6-7-8-9-10-11", function() {
     // - field password diisi dengan password yang benar
     // - tombol submit/login diklik
 
-    $correctNis = DummyUser::$nis;
-    $correctPassword = DummyUser::$password;
-    $nama = DummyUser::$nama;
-    $kelas = DummyUser::$kelas;
+    $dummyUser = WebUtils::getDummyUser();
+    $correctNis = $dummyUser["nis"];
+    $correctPassword = $dummyUser["password"];
+    $nama = $dummyUser["nama"];
+    $kelas = $dummyUser["kelas"];
 
     $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
     $page->fill("#nis", $correctNis);
@@ -307,11 +307,12 @@ describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
     // - field password diisi dengan password yang benar
     // - tombol submit/login diklik
 
+    $dummyUser = WebUtils::getDummyUser();
     $unExistingNama = "Sjieijf";
-    $existingNama = DummyUser::$nama;
-    $ExistingKelas = DummyUser::$kelas;
-    $correctNis = DummyUser::$nis;
-    $correctPassword = DummyUser::$password;
+    $existingNama = $dummyUser["nama"];
+    $ExistingKelas = $dummyUser["kelas"];
+    $correctNis = $dummyUser["nis"];
+    $correctPassword = $dummyUser["password"];
 
     $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
     CookieUtils::setCookie($page, "cookie_nama", $unExistingNama);
@@ -344,11 +345,12 @@ describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
     // - field password diisi dengan password yang benar
     // - tombol submit/login diklik
 
-    $existingNama = DummyUser::$nama;
+    $dummyUser = WebUtils::getDummyUser();
+    $existingNama = $dummyUser["nama"];
     $unExistingKelas = "unexist_class";
-    $existingKelas = DummyUser::$kelas;
-    $correctNis = DummyUser::$nis;
-    $correctPassword = DummyUser::$password;
+    $existingKelas = $dummyUser["kelas"];
+    $correctNis = $dummyUser["nis"];
+    $correctPassword = $dummyUser["password"];
 
     $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
     CookieUtils::setCookie($page, "cookie_nama", $existingNama);
@@ -381,10 +383,11 @@ describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
     // - field password diisi dengan password yang benar
     // - tombol submit/login diklik
 
-    $existingNama = DummyUser::$nama;
-    $existingKelas = DummyUser::$kelas;
-    $correctNis = DummyUser::$nis;
-    $correctPassword = DummyUser::$password;
+    $dummyUser = WebUtils::getDummyUser();
+    $existingNama = $dummyUser["nama"];
+    $existingKelas = $dummyUser["kelas"];
+    $correctNis = $dummyUser["nis"];
+    $correctPassword = $dummyUser["password"];
 
     $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
     CookieUtils::setCookie($page, "cookie_kelas", $existingKelas);
@@ -416,10 +419,11 @@ describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
     // - field password diisi dengan password yang benar
     // - tombol submit/login diklik
 
-    $existingNama = DummyUser::$nama;
-    $existingKelas = DummyUser::$kelas;
-    $correctNis = DummyUser::$nis;
-    $correctPassword = DummyUser::$password;
+    $dummyUser = WebUtils::getDummyUser();
+    $existingNama = $dummyUser["nama"];
+    $existingKelas = $dummyUser["kelas"];
+    $correctNis = $dummyUser["nis"];
+    $correctPassword = $dummyUser["password"];
 
     $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
     CookieUtils::setCookie($page, "cookie_nama", $existingNama);

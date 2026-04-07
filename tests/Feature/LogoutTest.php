@@ -2,7 +2,6 @@
 
 include "./vendor/autoload.php";
 
-use Tests\Data\DummyUser;
 use App\model\UserModel;
 use App\model\LogLoginModel;
 use App\utils\WebUtils;
@@ -26,8 +25,9 @@ describe("1-2-3-4-5-6", function() {
     // - berada di halaman beranda
     // - sudah login
 
-    $correctNis = DummyUser::$nis;
-    $correctPassword = DummyUser::$password;
+    $dummyUser = WebUtils::getDummyUser();
+    $correctNis = $dummyUser["nis"];
+    $correctPassword = $dummyUser["password"];
 
     $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
     $page->fill("#nis", $correctNis);

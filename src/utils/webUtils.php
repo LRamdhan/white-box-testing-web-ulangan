@@ -16,6 +16,14 @@ Class WebUtils {
     $soalInfo = JsonUtils::readJson("./tests/data/soal_info.json");
     return $soalInfo[$propertName];
   }
+  
+  public static function getDummyUser() {
+    return JsonUtils::readJson("./tests/data/dummyuser1.json");
+  }
+
+  public static function getDummyUser2() {
+    return JsonUtils::readJson("./tests/data/dummyuser2.json");
+  }
 
   public static function parseSoaListSoalListPil() {
     $idInfoSoal = (int)self::getSoalInfoProperty("id_info_soal");

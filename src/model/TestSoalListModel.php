@@ -7,9 +7,9 @@ include "./vendor/autoload.php";
 use App\conf\DBConnection;
 use App\utils\WebUtils;
 
-class SoalListModel extends DBConnection {
+class TestSoalListModel extends DBConnection {
   // create soal_list
-  public static function createSoalList($soal) {
+  public static function createTestSoalList($soal) {
     // create sql insert
     $valueList = "";
     for($i = 0; $i < count($soal); $i++) {
@@ -27,8 +27,8 @@ class SoalListModel extends DBConnection {
         )$coma
       ";
     }    
-    $sqlInserSoalList = "
-      INSERT INTO soal_list (
+    $sqlInserTestSoalList = "
+      INSERT INTO test_soal_list (
         id_register,
         id_info_soal,
         key_list,
@@ -44,42 +44,42 @@ class SoalListModel extends DBConnection {
     self::connect();
 
     // execute
-    mysqli_query(self::$connection, $sqlInserSoalList);
+    mysqli_query(self::$connection, $sqlInserTestSoalList);
 
     // disconnect
     self::disconnect();
   }
-  
-  // check soal_list
-  public static function checkSoalList() {
+
+  // check test_soal_list
+  public static function checkTestSoalList() {
     // connect
     self::connect();
 
     // query read
     $idSoalInfo = (int)WebUtils::getSoalInfoProperty("id_info_soal");
-    $sqlSelectSoalList = "SELECT * FROM soal_list WHERE id_info_soal = $idSoalInfo;";
-    $querySelectSoalList = mysqli_query(self::$connection, $sqlSelectSoalList);
+    $sqlSelectTestSoalList = "SELECT * FROM test_soal_list WHERE id_info_soal = $idSoalInfo;";
+    $querySelectTestSoalList = mysqli_query(self::$connection, $sqlSelectTestSoalList);
 
     // disconnect
     self::disconnect();
 
     // return existance
-    if (mysqli_num_rows($querySelectSoalList) > 0) {
+    if (mysqli_num_rows($querySelectTestSoalList) > 0) {
       return true;
     } else {
       return false;
     }
   }
 
-  // delete soal_list
+  // delete test_soal_list
   public static function deleteSoalList() {
     // connect
     self::connect();
 
     // query delete
     $idSoalInfo = (int)WebUtils::getSoalInfoProperty("id_info_soal");
-    $sqlDeleteSoalList = "DELETE FROM soal_list WHERE id_info_soal = $idSoalInfo;";
-    mysqli_query(self::$connection, $sqlDeleteSoalList);
+    $sqlDeleteTestSoalList = "DELETE FROM test_soal_list WHERE id_info_soal = $idSoalInfo;";
+    mysqli_query(self::$connection, $sqlDeleteTestSoalList);
 
     // disconnect
     self::disconnect();

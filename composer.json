@@ -15,7 +15,7 @@
     "scripts": {
         "test-init": "./vendor/bin/pest --init",
         "test-all": "./vendor/bin/pest --headed",
-        "test-file": "./vendor/bin/pest tests/Feature/StartExamTest.php --headed",
+        "test-file": "./vendor/bin/pest tests/Feature/StartExamTest.php --headed --debug",
         "test-group": "./vendor/bin/pest --headed --group=current"
     },
     "require-dev": {

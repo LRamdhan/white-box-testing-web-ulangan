@@ -30,6 +30,8 @@ expect()->extend('toBeOne', function () {
     return $this->toBe(1);
 });
 
+pest()->browser()->timeout(5000);
+
 /*
 |--------------------------------------------------------------------------
 | Functions

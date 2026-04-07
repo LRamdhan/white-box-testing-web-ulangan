@@ -7,9 +7,9 @@ include "./vendor/autoload.php";
 use App\conf\DBConnection;
 use App\utils\WebUtils;
 
-class SoalListPilModel extends DBConnection {
-  // create soal_list_pil
-  public static function createSoalListPil($pil) {
+class TestSoalListPilModel extends DBConnection {
+  // create test_soal_list_pil
+  public static function createTestSoalListPil($pil) {
     // create sql insert
     $valueList = "";
     for($i = 0; $i < count($pil); $i++) {
@@ -25,8 +25,8 @@ class SoalListPilModel extends DBConnection {
         )$coma
       ";
     }    
-    $sqlInserSoalListPil = "
-      INSERT INTO soal_list_pil (
+    $sqlInserTestSoalListPil = "
+      INSERT INTO test_soal_list_pil (
         id_info_soal,
         key_list,
         key_list_pil,
@@ -40,42 +40,42 @@ class SoalListPilModel extends DBConnection {
     self::connect();
 
     // execute
-    mysqli_query(self::$connection, $sqlInserSoalListPil);
+    mysqli_query(self::$connection, $sqlInserTestSoalListPil);
 
     // disconnect
     self::disconnect();
   }
 
-  // check soal_list_pil
-  public static function checkSoalListPil() {
+  // check test_soal_list_pil
+  public static function checkTestSoalListPil() {
     // connect
     self::connect();
 
     // query read
     $idSoalInfo = (int)WebUtils::getSoalInfoProperty("id_info_soal");
-    $sqlSelectSoalListPil = "SELECT * FROM soal_list_pil WHERE id_info_soal = $idSoalInfo;";
-    $querySelectSoalListPil = mysqli_query(self::$connection, $sqlSelectSoalListPil);
+    $sqlSelectTestSoalListPil = "SELECT * FROM test_soal_list_pil WHERE id_info_soal = $idSoalInfo;";
+    $querySelectTestSoalListPil = mysqli_query(self::$connection, $sqlSelectTestSoalListPil);
 
     // disconnect
     self::disconnect();
 
     // return existance
-    if (mysqli_num_rows($querySelectSoalListPil) > 0) {
+    if (mysqli_num_rows($querySelectTestSoalListPil) > 0) {
       return true;
     } else {
       return false;
     }
   }
 
-  // delete soal_list_pil
-  public static function deleteSoalListPil() {
+  // delete test_soal_list_pil
+  public static function deleteTestSoalListPil() {
     // connect
     self::connect();
 
     // query delete
     $idSoalInfo = (int)WebUtils::getSoalInfoProperty("id_info_soal");
-    $sqlDeleteSoalListPil = "DELETE FROM soal_list_pil WHERE id_info_soal = $idSoalInfo;";
-    mysqli_query(self::$connection, $sqlDeleteSoalListPil);
+    $sqlDeleteTestSoalListPil = "DELETE FROM test_soal_list_pil WHERE id_info_soal = $idSoalInfo;";
+    mysqli_query(self::$connection, $sqlDeleteTestSoalListPil);
 
     // disconnect
     self::disconnect();
