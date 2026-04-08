@@ -100,8 +100,8 @@ afterAll(function() {
   TestListTestModel::deleteTestListTest();
 });
 
-describe("1) 1-2-3-4-5-9-10", function() {
-  it("T017: Tetap di halaman mulai ulangan, jika memasukan token yang salah", function() {
+describe("F09-P01 | 1-2-3-4-5-9-10", function() {
+  it("F09-P01-T01 | Tetap di halaman mulai ulangan, jika memasukan token yang salah", function() {
     // Prakondisi
     // - sudah login
     // - berada di halaman mulai ulangan
@@ -130,11 +130,12 @@ describe("1) 1-2-3-4-5-9-10", function() {
     $ulanganName = WebUtils::getSoalInfoProperty("nama_pelajaran");
     $page->assertPathEndsWith("/start.php");
     $page->assertSee($ulanganName);
+    $page->assertDontSee("Warning:");
   });
 });
 
-describe("2) 1-2-3-4-5-6-7-8", function() {
-  it("T018: Berpindah ke halaman kerjakan soal, jika memasukan token yang benar", function() {
+describe("F09-P02 | 1-2-3-4-5-6-7-8", function() {
+  it("F09-P02-T01 | Berpindah ke halaman kerjakan soal, jika memasukan token yang benar", function() {
     // Prakondisi
     // - sudah login
     // - berada di halaman mulai ulangan
@@ -163,5 +164,6 @@ describe("2) 1-2-3-4-5-6-7-8", function() {
     $ulanganName = WebUtils::getSoalInfoProperty("nama_pelajaran");
     $page->assertPathEndsWith("/test.php");
     $page->assertSee($ulanganName);
+    $page->assertDontSee("Warning:");
   });
 });

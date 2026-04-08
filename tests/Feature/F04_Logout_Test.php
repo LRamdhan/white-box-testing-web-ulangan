@@ -19,8 +19,8 @@ afterAll(function () {
   LogLoginModel::deleteLogLogin();
 });
 
-describe("1-2-3-4-5-6", function() {
-  test("T015: Halaman berpindah ke login, jika tombol logout diklik", function() {
+describe("F04-P01 | 1-2-3-4-5-6", function() {
+  test("F04-P01-T01 | Halaman berpindah ke login, jika tombol logout diklik", function() {
     // Prakondisi
     // - berada di halaman beranda
     // - sudah login
@@ -46,9 +46,10 @@ describe("1-2-3-4-5-6", function() {
     $page->assertPathEndsWith("/login.php");
     $page->assertValue("#nis", "");
     $page->assertDontSee("Kata-sandi atau nis tidak ditemukan");
+    $page->assertDontSee("Warning:");
   });
 
-  test("T016: Halaman berpindah ke login, jika mengakses url logout.php melaui url bar", function() {
+  test("F04-P01-T02 | Halaman berpindah ke login, jika mengakses url logout.php melaui url bar", function() {
     // Prakondisi
     // - berada di halaman beranda
     // - belum login
@@ -65,5 +66,6 @@ describe("1-2-3-4-5-6", function() {
     $page->assertPathEndsWith("/login.php");
     $page->assertValue("#nis", "");
     $page->assertDontSee("Kata-sandi atau nis tidak ditemukan");
+    $page->assertDontSee("Warning:");
   });
 });

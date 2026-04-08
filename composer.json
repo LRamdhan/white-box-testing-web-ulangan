@@ -15,8 +15,8 @@
     "scripts": {
         "test-init": "./vendor/bin/pest --init",
         "test-all": "./vendor/bin/pest --headed",
-        "test-file": "./vendor/bin/pest tests/Feature/StartExamTest.php --headed --debug",
-        "test-group": "./vendor/bin/pest --headed --group=current"
+        "test-file": "./vendor/bin/pest tests/Feature/NavigasiSoalTest.php --headed --debug",
+        "test-group": "./vendor/bin/pest --headed --group=current --debug"
     },
     "require-dev": {
         "pestphp/pest": "^4.4",

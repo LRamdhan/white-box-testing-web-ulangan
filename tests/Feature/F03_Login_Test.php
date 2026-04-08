@@ -20,8 +20,8 @@ afterAll(function () {
   LogLoginModel::deleteLogLogin();
 });
 
-describe("1) 1-2-3-11", function() {
-  test("T001: Form harus menampilkan teks 'Harap di Isi', jika nis dan password kosong", function() {
+describe("P03-P01 | 1-2-3-11", function() {
+  test("P03-P01-01 | Menampilkan teks 'Harap di Isi', jika login dengan nis dan password yang kosong", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -39,9 +39,10 @@ describe("1) 1-2-3-11", function() {
 
     $page->assertPathEndsWith("/login.php");
     $page->assertSee("Harap di Isi");
+    $page->assertDontSee("Warning:");
   });
 
-  test("T002: Form harus menampilkan teks 'Harap di Isi', jika nis diisi space kosong", function() {
+  test("P03-P01-02 | Menampilkan teks 'Harap di Isi', jika login dengan nis yang diisi space kosong", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -65,9 +66,10 @@ describe("1) 1-2-3-11", function() {
 
     $page->assertPathEndsWith("/login.php");
     $page->assertSee("Harap di Isi");
+    $page->assertDontSee("Warning:");
   });
 
-  test("T003: Form harus menampilkan teks 'Harap di Isi', jika password diisi space kosong", function() {
+  test("P03-P01-03 | Menampilkan teks 'Harap di Isi', jika login dengan password yang diisi space kosong", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -91,11 +93,12 @@ describe("1) 1-2-3-11", function() {
 
     $page->assertPathEndsWith("/login.php");
     $page->assertSee("Harap di Isi");
+    $page->assertDontSee("Warning:");
   });
 });
 
-describe("2) 1-2-3-4-5-12-13-11", function() {
-  test("T004: Halaman tidak menampilkan error, jika login menggunakan nis dengan panjang lebih dari 20 karakter", function() {
+describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
+  test("P03-P02-T01 | Halaman tidak menampilkan error, jika login menggunakan nis dengan panjang lebih dari 20 karakter", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -117,9 +120,10 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     // - tetap berada di halaman login
 
     $page->assertPathEndsWith("/login.php");
+    $page->assertDontSee("Warning:");
   });
   
-  test("T005: Halaman tidak menampilkan error, jika login menggunakan password dengan panjang lebih dari 20 karakter", function() {
+  test("P03-P02-T02 | Halaman tidak menampilkan error, jika login menggunakan password dengan panjang lebih dari 20 karakter", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -141,9 +145,10 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     // - tetap berada di halaman login
 
     $page->assertPathEndsWith("/login.php");
+    $page->assertDontSee("Warning:");
   });
   
-  test("T006: Halaman tidak menampilkan error, jika login menggunakan nis yang berisi karakter kode", function() {
+  test("P03-P02-T03 | Halaman tidak menampilkan error, jika login menggunakan nis yang berisi karakter kode", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -165,9 +170,10 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     // - tetap berada di halaman login
 
     $page->assertPathEndsWith("/login.php");
+    $page->assertDontSee("Warning:");
   });
 
-  test("T007: Halaman tidak menampilkan error, jika login menggunakan password yang berisi karakter kode", function() {
+  test("P03-P02-T04 | Halaman tidak menampilkan error, jika login menggunakan password yang berisi karakter kode", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -189,9 +195,10 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     // - tetap berada di halaman login
 
     $page->assertPathEndsWith("/login.php");
+    $page->assertDontSee("Warning:");
   });
 
-  test("T008: Halaman menampilkan notifikasi, jika login dengan nis yang salah", function() {
+  test("P03-P02-T05 | Halaman menampilkan notifikasi, jika login dengan nis yang salah", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -217,9 +224,10 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     $page->assertPathEndsWith("/login.php");
     $page->assertSee("Kata-sandi atau nis tidak ditemukan");
     $page->assertValue("#nis", $wrongNis);
+    $page->assertDontSee("Warning:");
   });
 
-  test("T009: Halaman menampilkan notifikasi, jika login dengan nis yang benar dan password yang salah", function() {
+  test("P03-P02-T06 | Halaman menampilkan notifikasi, jika login dengan nis yang benar dan password yang salah", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -246,11 +254,12 @@ describe("2) 1-2-3-4-5-12-13-11", function() {
     $page->assertPathEndsWith("/login.php");
     $page->assertSee("Kata-sandi atau nis tidak ditemukan");
     $page->assertValue("#nis", $correctNis);
+    $page->assertDontSee("Warning:");
   });
 });
 
-describe("3) 1-2-3-4-5-6-7-8-9-10-11", function() {
-  test("T010: Halaman menampilkan beranda, jika login menggunakan nis dan password yang benar", function() {
+describe("P03-P03 | 1-2-3-4-5-6-7-8-9-10-11", function() {
+  test("P03-P03-T01 | Halaman menampilkan beranda, jika login menggunakan nis dan password yang benar", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -290,11 +299,12 @@ describe("3) 1-2-3-4-5-6-7-8-9-10-11", function() {
     expect($cookieNama)->toBe($nama);
     expect($cookieKelas)->toBe($kelas);
     expect($phpsessid)->not->toBeNull();
+    $page->assertDontSee("Warning:");
   });
 });
 
-describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
-  test("T011: Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_nama tidak ada di database", function() {
+describe("P03-P04 | 1-2-3-4-5-6-7-8-10-11", function() {
+  test("P03-P04-T01 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_nama tidak ada di database", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -331,9 +341,10 @@ describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
     $cookieKelasValue = CookieUtils::getCookie($page, "cookie_kelas");
     expect($cookieNamaValue)->toBe($existingNama);
     expect($cookieKelasValue)->toBe($existingKelas);
+    $page->assertDontSee("Warning:");
   });
 
-  test("T012: Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_kelas tidak ada di database", function() {
+  test("P03-P04-T02 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_kelas tidak ada di database", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -369,9 +380,10 @@ describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
     $cookieKelasValue = CookieUtils::getCookie($page, "cookie_kelas");
     expect($cookieKelasValue)->toBe($existingKelas);
     expect($cookieNamaValue)->toBe($existingNama);
+    $page->assertDontSee("Warning:");
   });
   
-  test("T013: Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_nama tidak ada", function() {
+  test("P03-P04-T03 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_nama tidak ada", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -405,9 +417,10 @@ describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
     $cookieKelasValue = CookieUtils::getCookie($page, "cookie_kelas");
     expect($cookieNamaValue)->toBe($existingNama);
     expect($cookieKelasValue)->toBe($existingKelas);
+    $page->assertDontSee("Warning:");
   });
   
-  test("T014: Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_kelas tidak ada", function() {
+  test("P03-P04-T04 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_kelas tidak ada", function() {
     // Prakondisi
     // - berada di halaman login
     // - belum login
@@ -441,5 +454,6 @@ describe("4) 1-2-3-4-5-6-7-8-10-11", function() {
     $cookieKelasValue = CookieUtils::getCookie($page, "cookie_kelas");
     expect($cookieNamaValue)->toBe($existingNama);
     expect($cookieKelasValue)->toBe($existingKelas);
+    $page->assertDontSee("Warning:");
   });
 });
