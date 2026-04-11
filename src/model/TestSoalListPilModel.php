@@ -81,4 +81,24 @@ class TestSoalListPilModel extends DBConnection {
     self::disconnect();
   }
 
+  public static function getTestSoalListPil($keysoal) {
+    // connect
+    self::connect();
+
+    // query read
+    $idSoalInfo = (int)WebUtils::getSoalInfoProperty("id_info_soal");
+    $sqlSelectTestSoalListPil = "SELECT * FROM test_soal_list_pil WHERE id_info_soal = $idSoalInfo AND key_list = '$keysoal';";
+    $querySelectTestSoalListPil = mysqli_query(self::$connection, $sqlSelectTestSoalListPil);
+    $testSoalListPil = [];
+    while($raw = mysqli_fetch_assoc($querySelectTestSoalListPil)) {
+      $testSoalListPil[] = $raw;
+    }
+
+    // disconnect
+    self::disconnect();
+
+    // return
+    return $testSoalListPil;
+  }
+
 }

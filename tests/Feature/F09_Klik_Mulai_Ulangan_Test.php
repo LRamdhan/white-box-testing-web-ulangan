@@ -53,7 +53,7 @@ beforeAll(function() {
   // test_soal_list
   $testSoalListExist = TestSoalListModel::checkTestSoalList();
   if($testSoalListExist) {
-    TestSoalListModel::deleteSoalList();
+    TestSoalListModel::deleteTestSoalList();
   }
   TestSoalListModel::createTestSoalList($soal);
 
@@ -77,6 +77,8 @@ afterAll(function() {
   SoalListModel::deleteSoalList();
   SoalListPilModel::deleteSoalListPil();
   SoalJadwalModel::deleteSoalJadwal();
+  TestSoalListModel::deleteTestSoalList();
+  TestSoalListPilModel::deleteTestSoalListPil();
 
   // delete member_tes
   MemberTesModel::deleteMemberTes();

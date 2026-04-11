@@ -22,4 +22,22 @@ class TestMemberTesModel extends DBConnection {
     // disconnect
     self::disconnect();
   }
+  
+  public static function getTestMemberTes() {
+    $dummyUser = WebUtils::getDummyUser();
+    $keyMember = $dummyUser["keyMember"];
+
+    // connect
+    self::connect();
+
+    // query
+    $sqlSelectTestMemberTes = "SELECT * FROM test_member_tes WHERE key_member = '$keyMember';";
+    $selectTestMemberTesQuery = mysqli_query(self::$connection, $sqlSelectTestMemberTes);
+    $testMembertes = mysqli_fetch_assoc($selectTestMemberTesQuery);
+
+    // disconnect
+    self::disconnect();
+
+    return $testMembertes;
+  }
 }

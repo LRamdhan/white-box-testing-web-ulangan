@@ -72,7 +72,7 @@ class TestSoalListModel extends DBConnection {
   }
 
   // delete test_soal_list
-  public static function deleteSoalList() {
+  public static function deleteTestSoalList() {
     // connect
     self::connect();
 
@@ -83,5 +83,22 @@ class TestSoalListModel extends DBConnection {
 
     // disconnect
     self::disconnect();
+  }
+
+  public static function getTestSoalList($keysoal) {
+    // connect
+    self::connect();
+
+    // query read
+    $idSoalInfo = (int)WebUtils::getSoalInfoProperty("id_info_soal");
+    $sqlSelectTestSoalList = "SELECT * FROM test_soal_list WHERE id_info_soal = $idSoalInfo AND key_list = '$keysoal';";
+    $querySelectTestSoalList = mysqli_query(self::$connection, $sqlSelectTestSoalList);
+    $soal = mysqli_fetch_assoc($querySelectTestSoalList);
+
+    // disconnect
+    self::disconnect();
+
+    // return
+    return $soal;
   }
 }
