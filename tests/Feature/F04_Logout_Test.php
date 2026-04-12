@@ -21,7 +21,7 @@ afterAll(function () {
 
 describe("F04-P01 | 1-2-3-4-5-6", function() {
   test("F04-P01-T01 | Halaman berpindah ke login, jika tombol logout diklik", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman beranda
     // - sudah login
 
@@ -50,7 +50,7 @@ describe("F04-P01 | 1-2-3-4-5-6", function() {
   });
 
   test("F04-P01-T02 | Halaman berpindah ke login, jika mengakses url logout.php melaui url bar", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman beranda
     // - belum login
     

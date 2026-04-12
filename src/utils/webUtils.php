@@ -18,11 +18,11 @@ Class WebUtils {
   }
   
   public static function getDummyUser() {
-    return JsonUtils::readJson("./tests/data/dummyuser1.json");
+    return JsonUtils::readJson("./tests/data/user1.json");
   }
 
   public static function getDummyUser2() {
-    return JsonUtils::readJson("./tests/data/dummyuser2.json");
+    return JsonUtils::readJson("./tests/data/user2.json");
   }
 
   public static function parseSoaListSoalListPil() {

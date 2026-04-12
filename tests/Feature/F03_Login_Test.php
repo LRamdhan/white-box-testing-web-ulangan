@@ -22,7 +22,7 @@ afterAll(function () {
 
 describe("P03-P01 | 1-2-3-11", function() {
   test("P03-P01-01 | Menampilkan teks 'Harap di Isi', jika login dengan nis dan password yang kosong", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
 
@@ -43,7 +43,7 @@ describe("P03-P01 | 1-2-3-11", function() {
   });
 
   test("P03-P01-02 | Menampilkan teks 'Harap di Isi', jika login dengan nis yang diisi space kosong", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
 
@@ -70,7 +70,7 @@ describe("P03-P01 | 1-2-3-11", function() {
   });
 
   test("P03-P01-03 | Menampilkan teks 'Harap di Isi', jika login dengan password yang diisi space kosong", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
 
@@ -99,7 +99,7 @@ describe("P03-P01 | 1-2-3-11", function() {
 
 describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
   test("P03-P02-T01 | Halaman tidak menampilkan error, jika login menggunakan nis dengan panjang lebih dari 20 karakter", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
 
@@ -124,7 +124,7 @@ describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
   });
   
   test("P03-P02-T02 | Halaman tidak menampilkan error, jika login menggunakan password dengan panjang lebih dari 20 karakter", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
 
@@ -149,7 +149,7 @@ describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
   });
   
   test("P03-P02-T03 | Halaman tidak menampilkan error, jika login menggunakan nis yang berisi karakter kode", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
 
@@ -174,7 +174,7 @@ describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
   });
 
   test("P03-P02-T04 | Halaman tidak menampilkan error, jika login menggunakan password yang berisi karakter kode", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
 
@@ -199,7 +199,7 @@ describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
   });
 
   test("P03-P02-T05 | Halaman menampilkan notifikasi, jika login dengan nis yang salah", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
 
@@ -228,7 +228,7 @@ describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
   });
 
   test("P03-P02-T06 | Halaman menampilkan notifikasi, jika login dengan nis yang benar dan password yang salah", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
 
@@ -260,7 +260,7 @@ describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
 
 describe("P03-P03 | 1-2-3-4-5-6-7-8-9-10-11", function() {
   test("P03-P03-T01 | Halaman menampilkan beranda, jika login menggunakan nis dan password yang benar", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
     // - tidak memiliki cookie_nama dan cookie_kelas
@@ -305,7 +305,7 @@ describe("P03-P03 | 1-2-3-4-5-6-7-8-9-10-11", function() {
 
 describe("P03-P04 | 1-2-3-4-5-6-7-8-10-11", function() {
   test("P03-P04-T01 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_nama tidak ada di database", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
     // - cookie_nama tidak ada di database
@@ -345,7 +345,7 @@ describe("P03-P04 | 1-2-3-4-5-6-7-8-10-11", function() {
   });
 
   test("P03-P04-T02 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_kelas tidak ada di database", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
     // - cookie_nama ada di database
@@ -384,7 +384,7 @@ describe("P03-P04 | 1-2-3-4-5-6-7-8-10-11", function() {
   });
   
   test("P03-P04-T03 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_nama tidak ada", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
     // - cookie_nama tidak ada
@@ -421,7 +421,7 @@ describe("P03-P04 | 1-2-3-4-5-6-7-8-10-11", function() {
   });
   
   test("P03-P04-T04 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_kelas tidak ada", function() {
-    // Prakondisi
+    // Prakondisi :
     // - berada di halaman login
     // - belum login
     // - cookie_nama ada

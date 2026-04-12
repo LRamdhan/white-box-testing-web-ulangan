@@ -43,27 +43,6 @@ class SoalJadwalModel extends DBConnection {
     self::disconnect();
   }
 
-   // check soal_jadwal
-  public static function checkSoalJadwal() {
-    // connect
-    self::connect();
-
-    // query read
-    $idSoalInfo = (int)WebUtils::getSoalInfoProperty("id_info_soal");
-    $sqlSelectSoalJadwal = "SELECT * FROM soal_jadwal WHERE id_info_soal = $idSoalInfo;";
-    $querySelectSoalJadwal = mysqli_query(self::$connection, $sqlSelectSoalJadwal);
-
-    // disconnect
-    self::disconnect();
-
-    // return existance
-    if (mysqli_num_rows($querySelectSoalJadwal) > 0) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
   // delete soal_jadwal
   public static function deleteSoalJadwal() {
     // connect

@@ -104,7 +104,7 @@ afterAll(function() {
 
 describe("F09-P01 | 1-2-3-4-5-9-10", function() {
   it("F09-P01-T01 | Tetap di halaman mulai ulangan, jika memasukan token yang salah", function() {
-    // Prakondisi
+    // Prakondisi :
     // - sudah login
     // - berada di halaman mulai ulangan
     // - soal sudah aktif
@@ -138,7 +138,7 @@ describe("F09-P01 | 1-2-3-4-5-9-10", function() {
 
 describe("F09-P02 | 1-2-3-4-5-6-7-8", function() {
   it("F09-P02-T01 | Berpindah ke halaman kerjakan soal, jika memasukan token yang benar", function() {
-    // Prakondisi
+    // Prakondisi :
     // - sudah login
     // - berada di halaman mulai ulangan
     // - soal sudah aktif

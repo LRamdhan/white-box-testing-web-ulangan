@@ -50,27 +50,6 @@ class TestSoalListModel extends DBConnection {
     self::disconnect();
   }
 
-  // check test_soal_list
-  public static function checkTestSoalList() {
-    // connect
-    self::connect();
-
-    // query read
-    $idSoalInfo = (int)WebUtils::getSoalInfoProperty("id_info_soal");
-    $sqlSelectTestSoalList = "SELECT * FROM test_soal_list WHERE id_info_soal = $idSoalInfo;";
-    $querySelectTestSoalList = mysqli_query(self::$connection, $sqlSelectTestSoalList);
-
-    // disconnect
-    self::disconnect();
-
-    // return existance
-    if (mysqli_num_rows($querySelectTestSoalList) > 0) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
   // delete test_soal_list
   public static function deleteTestSoalList() {
     // connect
