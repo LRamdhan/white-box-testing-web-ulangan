@@ -28,7 +28,7 @@ afterAll(function() {
   UlanganHelper::clenupUlangan();
 });
 
-describe("F14_P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
+describe("F14-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
   afterEach(function() {
     // cleanup pengerjaan
     UlanganHelper::cleanupPengerjaan();
@@ -610,5 +610,209 @@ describe("F14_P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     // - salah satu input radio sudah terisi
     $checkStatus = $page->script("document.getElementById(\"A\").checked;");
     expect($checkStatus)->tobe(true);
+  });
+});
+
+describe("F14-P02 | 1-2-3-14-15-4-5-6-7-8-9-10-11-12-13", function() {
+  afterEach(function() {
+    // cleanup pengerjaan
+    UlanganHelper::cleanupPengerjaan();
+  });
+
+  test("P14-P02-T01 | menampilkan kembali status pengerjaan sebelumnya (soal belum dijawab), jika data pengerjaan pada session hilang", function() {
+    // prakondisi :
+    // - sudah mulai mengerjakan soal sebelumnya
+    // - sebelumnya, tidak menjawab soal
+    // - session pengerjaan hilang
+
+    // ambil data
+    $dummyUser = WebUtils::getDummyUser();
+    $correctNis = $dummyUser["nis"];
+    $correctPassword = $dummyUser["password"];
+    $ulanganCode = WebUtils::getSoalInfoProperty("id_info_soal");
+
+    // login dan mulai ulangan
+    $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
+    $page->fill("#nis", $correctNis);
+    $page->fill("#password", $correctPassword);
+    $page->click('#submit');
+    $page->navigate(WebUtils::url("/start.php?kode=" . $ulanganCode));
+    $correctToken = TokenModel::getToken()["token"];
+    $page->fill("input[name=\"token\"]", $correctToken);
+    $page->click("input[value=\"Mulai Kerjakan\"]");
+
+    // buka halaman soal pertama
+    $memberTest = TestMemberTesModel::getTestMemberTes();
+    $keysoal = explode(",", $memberTest["value_random"]);
+    $keysoal1 = $keysoal[0];
+    $soalNo1 = TestSoalListModel::getTestSoalList($keysoal1);
+    $page->navigate(WebUtils::url("/test.php?keysoal=$keysoal1"));
+
+    // ambil content untuk dibandingkan nanti
+    $noSoalContent1 = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
+    $noSoalContentRaw1 = explode(" ", $noSoalContent1);
+    $noSoalContent1 = $noSoalContentRaw1[count($noSoalContentRaw1) - 1];
+    $innerHtml1 = html_entity_decode($page->script("document.getElementsByClassName(\"soal\")[0].innerHTML;"));
+    
+    // kasus uji :
+    // - hapus PHPSESSID di browser
+    // - login kembali
+    // - masuk ke halaman pengerjaan soal
+
+    // login kembali
+    $page2 = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
+    $page2->fill("#nis", $correctNis);
+    $page2->fill("#password", $correctPassword);
+    $page2->click('#submit');
+
+    // lanjut mengerjakan
+    $correctToken = TokenModel::getToken()["token"];
+    $page2->fill("input[name=\"token\"]", $correctToken);
+    $page2->click("input[value=\"Lanjut Mengerjakan\"]");
+
+    // hasil yang diharapkan :
+    // status pengerjaan masih sama seperti sebelumnya, mencakup:
+    // - soal yang belum dijawab masih tidak terjawab
+    // - soal acak masih sama seperti sebelumnya
+    // - navigasi kotak masih sama seperti sebelumnya
+
+    // buka halaman soal pertama
+    $page2->navigate(WebUtils::url("/test.php?keysoal=$keysoal1"));
+    
+    // - nomor soal harus sama seperti sebelumnya | soal acak masih sama seperti sebelumnya
+    $noSoalContent2 = html_entity_decode($page2->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
+    $noSoalContentRaw2 = explode(" ", $noSoalContent2);
+    $noSoalContent2 = $noSoalContentRaw2[count($noSoalContentRaw2) - 1];
+    expect($noSoalContent2)->tobe($noSoalContent1);
+
+    // - menampilkan soal yang sama seperti sebelumnya | soal acak masih sama seperti sebelumnya
+    $innerHtml2 = html_entity_decode($page2->script("document.getElementsByClassName(\"soal\")[0].innerHTML;"));
+    expect($innerHtml2)->tobe($innerHtml1);
+
+    // - menampilkan pilihan ganda yang sama seperti sebelumnya | soal acak masih sama seperti sebelumnya
+    $pilihanGanda = TestSoalListPilModel::getTestSoalListPil($keysoal1); // hanya digunakan untuk jumlah perulangan
+    for($i = 0; $i < count($pilihanGanda); $i++) {
+      $alphabet = $pilihanGanda[$i]["list_pil"];
+      $option1 = html_entity_decode($page->script("document.getElementById(\"$alphabet\").parentElement.nextElementSibling.innerHTML;"));
+      $option2 = html_entity_decode($page2->script("document.getElementById(\"$alphabet\").parentElement.nextElementSibling.innerHTML;"));
+      expect($option2)->tobe($option1);
+    }
+
+    // - soal yang belum dijawab masih tidak terjawab
+    for($i = 0; $i < count($pilihanGanda); $i++) {
+      $alphabet = $pilihanGanda[$i]["list_pil"];
+      $checkStatus = $page2->script("document.getElementById(\"$alphabet\").checked;");
+      expect($checkStatus)->tobe(false);
+    }
+
+    // - navigasi kotak untuk soal saat ini harus berwarna biru | navigasi kotak masih sama seperti sebelumnya
+    $page2->assertAttributeContains("#box-number-$keysoal1", "class", "box-number-sel-b");
+  });
+
+  test("P14-P02-T02 | menampilkan kembali status pengerjaan sebelumnya (soal sudah dijawab), jika data pengerjaan pada session hilang", function() {
+    // prakondisi :
+    // - sudah mulai mengerjakan soal sebelumnya
+    // - sebelumnya, sudah menjawab soal
+    // - session pengerjaan hilang
+
+    // ambil data
+    $dummyUser = WebUtils::getDummyUser();
+    $correctNis = $dummyUser["nis"];
+    $correctPassword = $dummyUser["password"];
+    $ulanganCode = WebUtils::getSoalInfoProperty("id_info_soal");
+
+    // login dan mulai ulangan
+    $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
+    $page->fill("#nis", $correctNis);
+    $page->fill("#password", $correctPassword);
+    $page->click('#submit');
+    $page->navigate(WebUtils::url("/start.php?kode=" . $ulanganCode));
+    $correctToken = TokenModel::getToken()["token"];
+    $page->fill("input[name=\"token\"]", $correctToken);
+    $page->click("input[value=\"Mulai Kerjakan\"]");
+
+    // buka halaman soal pertama dan jawab soal
+    $memberTest = TestMemberTesModel::getTestMemberTes();
+    $keysoal = explode(",", $memberTest["value_random"]);
+    $keysoal1 = $keysoal[0];
+    $soalNo1 = TestSoalListModel::getTestSoalList($keysoal1);
+    $page->navigate(WebUtils::url("/test.php?keysoal=$keysoal1"));
+    $page->click("#A");
+
+    // ambil content di halaman soal pertama untuk dibandingkan nanti
+    $noSoalContent1 = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
+    $noSoalContentRaw1 = explode(" ", $noSoalContent1);
+    $noSoalContent1 = $noSoalContentRaw1[count($noSoalContentRaw1) - 1];
+    $innerHtml1 = html_entity_decode($page->script("document.getElementsByClassName(\"soal\")[0].innerHTML;"));
+    $pilihanGanda = TestSoalListPilModel::getTestSoalListPil($keysoal1); // hanya digunakan untuk jumlah perulangan
+    $options1 = [];
+    for($i = 0; $i < count($pilihanGanda); $i++) {
+      $alphabet = $pilihanGanda[$i]["list_pil"];
+      $options1[] = html_entity_decode($page->script("document.getElementById(\"$alphabet\").parentElement.nextElementSibling.innerHTML;"));
+    }
+
+    // buka halaman soal ketiga dan jawab soal
+    $keysoal3 = $keysoal[2];
+    $page->navigate(WebUtils::url("/test.php?keysoal=$keysoal3"));
+    $page->click("#B");
+    
+    // kasus uji :
+    // - hapus PHPSESSID di browser
+    // - login kembali
+    // - masuk ke halaman pengerjaan soal
+
+    // login kembali
+    $page2 = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
+    $page2->fill("#nis", $correctNis);
+    $page2->fill("#password", $correctPassword);
+    $page2->click('#submit');
+
+    // lanjut mengerjakan
+    $correctToken = TokenModel::getToken()["token"];
+    $page2->fill("input[name=\"token\"]", $correctToken);
+    $page2->click("input[value=\"Lanjut Mengerjakan\"]");
+
+    // hasil yang diharapkan :
+    // status pengerjaan masih sama seperti sebelumnya, mencakup:
+    // - soal yang sudah dijawab masih terjawab
+    // - soal acak masih sama seperti sebelumnya
+    // - navigasi kotak masih sama seperti sebelumnya
+
+    // buka halaman soal pertama
+    $page2->navigate(WebUtils::url("/test.php?keysoal=$keysoal1"));
+    
+    // - nomor soal harus sama seperti sebelumnya | soal acak masih sama seperti sebelumnya
+    $noSoalContent2 = html_entity_decode($page2->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
+    $noSoalContentRaw2 = explode(" ", $noSoalContent2);
+    $noSoalContent2 = $noSoalContentRaw2[count($noSoalContentRaw2) - 1];
+    expect($noSoalContent2)->tobe($noSoalContent1);
+
+    // - menampilkan soal yang sama seperti sebelumnya | soal acak masih sama seperti sebelumnya
+    $innerHtml2 = html_entity_decode($page2->script("document.getElementsByClassName(\"soal\")[0].innerHTML;"));
+    expect($innerHtml2)->tobe($innerHtml1);
+
+    // - menampilkan pilihan ganda yang sama seperti sebelumnya | soal acak masih sama seperti sebelumnya
+    for($i = 0; $i < count($pilihanGanda); $i++) {
+      $alphabet = $pilihanGanda[$i]["list_pil"];
+      $option2 = html_entity_decode($page2->script("document.getElementById(\"$alphabet\").parentElement.nextElementSibling.innerHTML;"));
+      expect($option2)->tobe($options1[$i]);
+    }
+
+    // - soal saat ini sudah dijawab seperti sebelumnya | soal yang sudah dijawab masih terjawab
+    for($i = 0; $i < count($pilihanGanda); $i++) {
+      $alphabet = $pilihanGanda[$i]["list_pil"];
+      $checkStatus = $page2->script("document.getElementById(\"$alphabet\").checked;");
+      if($alphabet == "A") {
+        expect($checkStatus)->tobe(true);
+      } else {
+        expect($checkStatus)->tobe(false);
+      }
+    }
+
+    // - navigasi kotak untuk soal saat ini harus berwarna biru | navigasi kotak masih sama seperti sebelumnya
+    $page2->assertAttributeContains("#box-number-$keysoal1", "class", "box-number-sel-b");
+
+    // - navigasi kotak untuk soal yang sudah dijawab harus berwarna hijau | navigasi kotak masih sama seperti sebelumnya
+    $page2->assertAttributeContains("#box-number-$keysoal3", "class", "box-number-sel-g");
   });
 });
