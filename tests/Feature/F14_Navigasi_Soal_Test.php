@@ -244,6 +244,11 @@ describe("F14-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     // - klik tombol navigasi kotak untuk soal no 2
 
     $keysoal2 = $keysoal[1];
+
+    // pengecekan alamat pada navigasi kotak 2
+    $page->assertAttributeContains(".box-number:nth-child(2)", "href", $keysoal2);
+
+    // click navigasi kotak no 2
     $page->click("#box-number-$keysoal2");
 
     // Hasil yang diharapkan :
@@ -329,6 +334,11 @@ describe("F14-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     // - klik tombol navigasi kotak untuk soal kedua
 
     $keysoal2 = $keysoal[1];
+
+    // pengecekan alamat pada navigasi kotak 2
+    $page->assertAttributeContains(".box-number:nth-child(2)", "href", $keysoal2);
+
+    // pengecekan alamat pada navigasi kotak 2
     $page->click("#box-number-$keysoal2");
 
     // Hasil yang diharapkan :
@@ -568,6 +578,11 @@ describe("F14-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     // - navigasi ke soal yang sudah dijawab (soal pertama)
 
     $keysoal1 = $keysoal[0];
+
+    // pengecekan alamat pada navigasi kotak 1
+    $page->assertAttributeContains(".box-number:nth-child(1)", "href", $keysoal1);
+
+    // pengecekan alamat pada navigasi kotak 2
     $page->click("#box-number-$keysoal1");
 
     // Hasil yang diharapkan :
@@ -814,5 +829,250 @@ describe("F14-P02 | 1-2-3-14-15-4-5-6-7-8-9-10-11-12-13", function() {
 
     // - navigasi kotak untuk soal yang sudah dijawab harus berwarna hijau | navigasi kotak masih sama seperti sebelumnya
     $page2->assertAttributeContains("#box-number-$keysoal3", "class", "box-number-sel-g");
+  });
+});
+
+describe("F14-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
+  afterEach(function() {
+    // cleanup pengerjaan
+    UlanganHelper::cleanupPengerjaan();
+  });
+  
+  test("P14-P03-T01 | Menampilkan soal pertama dengan data yang benar, jika query keysoal tidak valid", function() {
+    // prakondisi :
+    // - sudah login
+    // - berada di halaman pengerjaan ulangan
+
+    // ambil data
+    $dummyUser = WebUtils::getDummyUser();
+    $correctNis = $dummyUser["nis"];
+    $correctPassword = $dummyUser["password"];
+    $ulanganCode = WebUtils::getSoalInfoProperty("id_info_soal");
+
+    // login dan mulai ulangan
+    $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
+    $page->fill("#nis", $correctNis);
+    $page->fill("#password", $correctPassword);
+    $page->click('#submit');
+    $page->navigate(WebUtils::url("/start.php?kode=" . $ulanganCode));
+    $correctToken = TokenModel::getToken()["token"];
+    $page->fill("input[name=\"token\"]", $correctToken);
+    $page->click("input[value=\"Mulai Kerjakan\"]");    
+    
+    // Kasus Uji :
+    // - berpindah halaman soal dengan mengubah query keysoal menjadi tidak valid
+    $invalidKeysoal = "ieOf92Iw";
+    $page->navigate(WebUtils::url("/test.php?keysoal=$invalidKeysoal"));
+
+    // hasil yang diharapkan :
+    // - menampilkan soal pertama dengan data yang benar
+    // - menampilkan pilihan ganda yang sesuai
+    // - navigasi kotak untuk soal pertama harus berwarna biru
+    // - nomor di tampilan dan di database harus berbeda
+
+    $memberTest = TestMemberTesModel::getTestMemberTes();
+    $keysoal = explode(",", $memberTest["value_random"]);
+    $keysoal1 = $keysoal[0];
+    $soalNo1 = TestSoalListModel::getTestSoalList($keysoal1);
+
+    // - nomor soal di tampilan dan di database harus berbeda
+    $page->assertPresent(".soal-no");
+    $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
+    $noSoalContentRaw = explode(" ", $noSoalContent);
+    $noSoalContent = $noSoalContentRaw[count($noSoalContentRaw) - 1];
+    expect($soalNo1["number"])->not->tobe($noSoalContent);
+
+    // - menampilkan soal yang sesuai
+    $page->assertPresent(".soal");
+    $soalNo1Content = html_entity_decode($soalNo1["soal"]);
+    $innerHtml = html_entity_decode($page->script("document.getElementsByClassName(\"soal\")[0].innerHTML;"));
+    expect($innerHtml)->tobe($soalNo1Content);
+
+    // - menampilkan pilihan ganda yang sesuai
+    $pilihanGanda = TestSoalListPilModel::getTestSoalListPil($keysoal1);
+    for($i = 0; $i < count($pilihanGanda); $i++) {
+      $pilihanGandaContent = html_entity_decode($pilihanGanda[$i]["pilihan"]);
+      $alphabet = $pilihanGanda[$i]["list_pil"];
+      $page->assertPresent("#$alphabet");
+      $option = html_entity_decode($page->script("document.getElementById(\"$alphabet\").parentElement.nextElementSibling.innerHTML;"));
+      if($pilihanGanda[$i]["typepg"] == "png") {
+        $expected = '<img src='.html_entity_decode($pilihanGanda[$i]['pilihan']).' alt='.$pilihanGanda[$i]['pilihan'].'/>';
+        expect($option)->tobe($expected);
+      } else {
+        expect($option)->tobe($pilihanGandaContent);
+      }
+    }
+  });
+
+  test("P14-P03-T02 | Menampilkan soal pertama dengan data yang benar, jika query keysoal kosong", function() {
+    // prakondisi :
+    // - sudah login
+    // - berada di halaman pengerjaan ulangan
+
+    // ambil data
+    $dummyUser = WebUtils::getDummyUser();
+    $correctNis = $dummyUser["nis"];
+    $correctPassword = $dummyUser["password"];
+    $ulanganCode = WebUtils::getSoalInfoProperty("id_info_soal");
+
+    // login dan mulai ulangan
+    $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
+    $page->fill("#nis", $correctNis);
+    $page->fill("#password", $correctPassword);
+    $page->click('#submit');
+    $page->navigate(WebUtils::url("/start.php?kode=" . $ulanganCode));
+    $correctToken = TokenModel::getToken()["token"];
+    $page->fill("input[name=\"token\"]", $correctToken);
+    $page->click("input[value=\"Mulai Kerjakan\"]");    
+    
+    // Kasus Uji :
+    // - berpindah halaman soal dengan mengubah query keysoal menjadi kosong
+    $page->navigate(WebUtils::url("/test.php?keysoal="));
+
+    // hasil yang diharapkan :
+    // - menampilkan soal pertama dengan data yang benar
+    // - menampilkan pilihan ganda yang sesuai
+    // - navigasi kotak untuk soal pertama harus berwarna biru
+    // - nomor di tampilan dan di database harus berbeda
+
+    $memberTest = TestMemberTesModel::getTestMemberTes();
+    $keysoal = explode(",", $memberTest["value_random"]);
+    $keysoal1 = $keysoal[0];
+    $soalNo1 = TestSoalListModel::getTestSoalList($keysoal1);
+
+
+    // - nomor soal di tampilan dan di database harus berbeda
+    $page->assertPresent(".soal-no");
+    $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
+    $noSoalContentRaw = explode(" ", $noSoalContent);
+    $noSoalContent = $noSoalContentRaw[count($noSoalContentRaw) - 1];
+    expect($soalNo1["number"])->not->tobe($noSoalContent);
+
+    // - menampilkan soal yang sesuai
+    $page->assertPresent(".soal");
+    $soalNo1Content = html_entity_decode($soalNo1["soal"]);
+    $innerHtml = html_entity_decode($page->script("document.getElementsByClassName(\"soal\")[0].innerHTML;"));
+    expect($innerHtml)->tobe($soalNo1Content);
+
+    // - menampilkan pilihan ganda yang sesuai
+    $pilihanGanda = TestSoalListPilModel::getTestSoalListPil($keysoal1);
+    for($i = 0; $i < count($pilihanGanda); $i++) {
+      $pilihanGandaContent = html_entity_decode($pilihanGanda[$i]["pilihan"]);
+      $alphabet = $pilihanGanda[$i]["list_pil"];
+      $page->assertPresent("#$alphabet");
+      $option = html_entity_decode($page->script("document.getElementById(\"$alphabet\").parentElement.nextElementSibling.innerHTML;"));
+      if($pilihanGanda[$i]["typepg"] == "png") {
+        $expected = '<img src='.html_entity_decode($pilihanGanda[$i]['pilihan']).' alt='.$pilihanGanda[$i]['pilihan'].'/>';
+        expect($option)->tobe($expected);
+      } else {
+        expect($option)->tobe($pilihanGandaContent);
+      }
+    }
+  });
+
+  test("P14-P03-T03 | Menampilkan soal pertama dengan data yang benar, jika query keysoal tidak ada", function() {
+    // prakondisi :
+    // - sudah login
+    // - berada di halaman pengerjaan ulangan
+
+    // ambil data
+    $dummyUser = WebUtils::getDummyUser();
+    $correctNis = $dummyUser["nis"];
+    $correctPassword = $dummyUser["password"];
+    $ulanganCode = WebUtils::getSoalInfoProperty("id_info_soal");
+
+    // login dan mulai ulangan
+    $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
+    $page->fill("#nis", $correctNis);
+    $page->fill("#password", $correctPassword);
+    $page->click('#submit');
+    $page->navigate(WebUtils::url("/start.php?kode=" . $ulanganCode));
+    $correctToken = TokenModel::getToken()["token"];
+    $page->fill("input[name=\"token\"]", $correctToken);
+    $page->click("input[value=\"Mulai Kerjakan\"]");    
+    
+    // Kasus Uji :
+    // - berpindah halaman soal dengan mengubah query keysoal menjadi tidak ada
+    $page->navigate(WebUtils::url("/test.php"));
+
+    // hasil yang diharapkan :
+    // - menampilkan soal pertama dengan data yang benar
+    // - menampilkan pilihan ganda yang sesuai
+    // - navigasi kotak untuk soal pertama harus berwarna biru
+    // - nomor di tampilan dan di database harus berbeda
+
+    $memberTest = TestMemberTesModel::getTestMemberTes();
+    $keysoal = explode(",", $memberTest["value_random"]);
+    $keysoal1 = $keysoal[0];
+    $soalNo1 = TestSoalListModel::getTestSoalList($keysoal1);
+
+
+    // - nomor soal di tampilan dan di database harus berbeda
+    $page->assertPresent(".soal-no");
+    $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
+    $noSoalContentRaw = explode(" ", $noSoalContent);
+    $noSoalContent = $noSoalContentRaw[count($noSoalContentRaw) - 1];
+    expect($soalNo1["number"])->not->tobe($noSoalContent);
+
+    // - menampilkan soal yang sesuai
+    $page->assertPresent(".soal");
+    $soalNo1Content = html_entity_decode($soalNo1["soal"]);
+    $innerHtml = html_entity_decode($page->script("document.getElementsByClassName(\"soal\")[0].innerHTML;"));
+    expect($innerHtml)->tobe($soalNo1Content);
+
+    // - menampilkan pilihan ganda yang sesuai
+    $pilihanGanda = TestSoalListPilModel::getTestSoalListPil($keysoal1);
+    for($i = 0; $i < count($pilihanGanda); $i++) {
+      $pilihanGandaContent = html_entity_decode($pilihanGanda[$i]["pilihan"]);
+      $alphabet = $pilihanGanda[$i]["list_pil"];
+      $page->assertPresent("#$alphabet");
+      $option = html_entity_decode($page->script("document.getElementById(\"$alphabet\").parentElement.nextElementSibling.innerHTML;"));
+      if($pilihanGanda[$i]["typepg"] == "png") {
+        $expected = '<img src='.html_entity_decode($pilihanGanda[$i]['pilihan']).' alt='.$pilihanGanda[$i]['pilihan'].'/>';
+        expect($option)->tobe($expected);
+      } else {
+        expect($option)->tobe($pilihanGandaContent);
+      }
+    }
+  });
+});
+
+describe("F14-P04 | 1-2-3-4-5-6-7-8-17-13", function() {
+  test("P14-P04-T01 | Menampilkan menampilkan pesan 'Soal tidak ditemukan', jika soal di database hilang", function() {
+    // prakondisi :
+    // - sudah login
+    // - berada di halaman pengerjaan ulangan
+    // - soal tidak ada di database
+  
+    // ambil data
+    $dummyUser = WebUtils::getDummyUser();
+    $correctNis = $dummyUser["nis"];
+    $correctPassword = $dummyUser["password"];
+    $ulanganCode = WebUtils::getSoalInfoProperty("id_info_soal");
+  
+    // login dan mulai ulangan
+    $page = visit(WebUtils::url("/login.php"), $this->browserContextOptions());
+    $page->fill("#nis", $correctNis);
+    $page->fill("#password", $correctPassword);
+    $page->click('#submit');
+    $page->navigate(WebUtils::url("/start.php?kode=" . $ulanganCode));
+    $correctToken = TokenModel::getToken()["token"];
+    $page->fill("input[name=\"token\"]", $correctToken);
+    $page->click("input[value=\"Mulai Kerjakan\"]");    
+  
+    // kasus uji
+    // - masuk ke halaman ulangan dengan query keysoal yang benar
+
+    TestSoalListModel::deleteTestSoalList();
+
+    $memberTest = TestMemberTesModel::getTestMemberTes();
+    $keysoal = explode(",", $memberTest["value_random"]);
+    $keysoal1 = $keysoal[0];
+    $page->navigate(WebUtils::url("/test.php?keysoal=$keysoal1"));
+
+    // hasil yang diharapkan :
+    // - menampilkan pesan "Soal tidak ditemukan."
+
+    $page->assertSee("Soal tidak ditemukan.");
   });
 });
