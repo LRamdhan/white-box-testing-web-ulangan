@@ -28,13 +28,13 @@ afterAll(function() {
   UlanganHelper::clenupUlangan();
 });
 
-describe("F14-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
+describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
   afterEach(function() {
     // cleanup pengerjaan
     UlanganHelper::cleanupPengerjaan();
   });
 
-  test("P14-P01-T01 | Menampilkan soal yang sesuai, jika men-klik tombol navigasi berikutnya", function() {
+  test("F11-P01-T01 | Menampilkan soal yang sesuai, jika men-klik tombol navigasi berikutnya", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -119,7 +119,7 @@ describe("F14-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     }
   });
 
-  test("P14-P01-T02 | Menampilkan soal yang sesuai, jika men-klik tombol navigasi sebelumnya", function() {
+  test("F11-P01-T02 | Menampilkan soal yang sesuai, jika men-klik tombol navigasi sebelumnya", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -208,7 +208,7 @@ describe("F14-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     }
   });
 
-  test("P14-P01-T03 | Menampilkan soal yang sesuai, jika men-klik tombol navigasi kotak", function() {
+  test("F11-P01-T03 | Menampilkan soal yang sesuai, jika men-klik tombol navigasi kotak", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -302,7 +302,7 @@ describe("F14-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     }
   });
 
-  test("P14-P01-T04 | Menampilkan soal yang sesuai, jika men-klik tombol navigasi kotak di halaman pertama", function() {
+  test("F11-P01-T04 | Menampilkan soal yang sesuai, jika men-klik tombol navigasi kotak di halaman pertama", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -392,7 +392,7 @@ describe("F14-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     }
   });
 
-  test("P14-P01-T05 | Hanya menampilkan tombol berikutnya, jika berada di halaman pertama", function() {
+  test("F11-P01-T05 | Hanya menampilkan tombol berikutnya, jika berada di halaman pertama", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -466,7 +466,7 @@ describe("F14-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     expect($navigationContent)->toBe("Berikutnya >");
   });
 
-  test("P14-P01-T06 | Hanya menampilkan tombol berikutnya dan selesai, jika berada di halaman terakhir", function() {
+  test("F11-P01-T06 | Hanya menampilkan tombol berikutnya dan selesai, jika berada di halaman terakhir", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -542,7 +542,7 @@ describe("F14-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     expect($navigationContent2)->toBe("Selesai >");
   });
 
-  test("P14-P01-T07 | Menampilkan pilihan ganda yang sudah dijawab, jika masuk ke halaman soal yang sudah dijawab", function() {
+  test("F11-P01-T07 | Menampilkan pilihan ganda yang sudah dijawab, jika masuk ke halaman soal yang sudah dijawab", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -628,13 +628,13 @@ describe("F14-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
   });
 });
 
-describe("F14-P02 | 1-2-3-14-15-4-5-6-7-8-9-10-11-12-13", function() {
+describe("F11-P02 | 1-2-3-14-15-4-5-6-7-8-9-10-11-12-13", function() {
   afterEach(function() {
     // cleanup pengerjaan
     UlanganHelper::cleanupPengerjaan();
   });
 
-  test("P14-P02-T01 | menampilkan kembali status pengerjaan sebelumnya (soal belum dijawab), jika data pengerjaan pada session hilang", function() {
+  test("F11-P02-T01 | menampilkan kembali status pengerjaan sebelumnya (soal belum dijawab), jika data pengerjaan pada session hilang", function() {
     // prakondisi :
     // - sudah mulai mengerjakan soal sebelumnya
     // - sebelumnya, tidak menjawab soal
@@ -724,7 +724,7 @@ describe("F14-P02 | 1-2-3-14-15-4-5-6-7-8-9-10-11-12-13", function() {
     $page2->assertAttributeContains("#box-number-$keysoal1", "class", "box-number-sel-b");
   });
 
-  test("P14-P02-T02 | menampilkan kembali status pengerjaan sebelumnya (soal sudah dijawab), jika data pengerjaan pada session hilang", function() {
+  test("F11-P02-T02 | menampilkan kembali status pengerjaan sebelumnya (soal sudah dijawab), jika data pengerjaan pada session hilang", function() {
     // prakondisi :
     // - sudah mulai mengerjakan soal sebelumnya
     // - sebelumnya, sudah menjawab soal
@@ -832,13 +832,13 @@ describe("F14-P02 | 1-2-3-14-15-4-5-6-7-8-9-10-11-12-13", function() {
   });
 });
 
-describe("F14-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
+describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
   afterEach(function() {
     // cleanup pengerjaan
     UlanganHelper::cleanupPengerjaan();
   });
   
-  test("P14-P03-T01 | Menampilkan soal pertama dengan data yang benar, jika query keysoal tidak valid", function() {
+  test("F11-P03-T01 | Menampilkan soal pertama dengan data yang benar, jika query keysoal tidak valid", function() {
     // prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -904,7 +904,7 @@ describe("F14-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     }
   });
 
-  test("P14-P03-T02 | Menampilkan soal pertama dengan data yang benar, jika query keysoal kosong", function() {
+  test("F11-P03-T02 | Menampilkan soal pertama dengan data yang benar, jika query keysoal kosong", function() {
     // prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -970,7 +970,7 @@ describe("F14-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     }
   });
 
-  test("P14-P03-T03 | Menampilkan soal pertama dengan data yang benar, jika query keysoal tidak ada", function() {
+  test("F11-P03-T03 | Menampilkan soal pertama dengan data yang benar, jika query keysoal tidak ada", function() {
     // prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -1037,8 +1037,8 @@ describe("F14-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
   });
 });
 
-describe("F14-P04 | 1-2-3-4-5-6-7-8-17-13", function() {
-  test("P14-P04-T01 | Menampilkan menampilkan pesan 'Soal tidak ditemukan', jika soal di database hilang", function() {
+describe("F11-P04 | 1-2-3-4-5-6-7-8-17-13", function() {
+  test("F11-P04-T01 | Menampilkan menampilkan pesan 'Soal tidak ditemukan', jika soal di database hilang", function() {
     // prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan

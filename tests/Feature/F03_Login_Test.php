@@ -6,6 +6,7 @@ use App\model\UserModel;
 use App\model\LogLoginModel;
 use App\utils\CookieUtils;
 use App\utils\WebUtils;
+use App\helper\TestHelper;
 
 beforeAll(function () {
   // buat dummy user
@@ -20,8 +21,8 @@ afterAll(function () {
   LogLoginModel::deleteLogLogin();
 });
 
-describe("P03-P01 | 1-2-3-11", function() {
-  test("P03-P01-01 | Menampilkan teks 'Harap di Isi', jika login dengan nis dan password yang kosong", function() {
+describe("F03-P01 | 1-2-3-11", function() {
+  test("F03-P01-T01 | Menampilkan teks 'Harap di Isi', jika login dengan nis dan password yang kosong", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -39,10 +40,10 @@ describe("P03-P01 | 1-2-3-11", function() {
 
     $page->assertPathEndsWith("/login.php");
     $page->assertSee("Harap di Isi");
-    $page->assertDontSee("Warning:");
+    TestHelper::assertNoErrorMessage($page);
   });
 
-  test("P03-P01-02 | Menampilkan teks 'Harap di Isi', jika login dengan nis yang diisi space kosong", function() {
+  test("F03-P01-T02 | Menampilkan teks 'Harap di Isi', jika login dengan nis yang diisi space kosong", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -69,7 +70,7 @@ describe("P03-P01 | 1-2-3-11", function() {
     $page->assertDontSee("Warning:");
   });
 
-  test("P03-P01-03 | Menampilkan teks 'Harap di Isi', jika login dengan password yang diisi space kosong", function() {
+  test("F03-P01-T03 | Menampilkan teks 'Harap di Isi', jika login dengan password yang diisi space kosong", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -97,8 +98,8 @@ describe("P03-P01 | 1-2-3-11", function() {
   });
 });
 
-describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
-  test("P03-P02-T01 | Halaman tidak menampilkan error, jika login menggunakan nis dengan panjang lebih dari 20 karakter", function() {
+describe("F03-P02 | 1-2-3-4-5-12-13-11", function() {
+  test("F03-P02-T01 | Halaman tidak menampilkan error, jika login menggunakan nis dengan panjang lebih dari 20 karakter", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -123,7 +124,7 @@ describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
     $page->assertDontSee("Warning:");
   });
   
-  test("P03-P02-T02 | Halaman tidak menampilkan error, jika login menggunakan password dengan panjang lebih dari 20 karakter", function() {
+  test("F03-P02-T02 | Halaman tidak menampilkan error, jika login menggunakan password dengan panjang lebih dari 20 karakter", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -148,7 +149,7 @@ describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
     $page->assertDontSee("Warning:");
   });
   
-  test("P03-P02-T03 | Halaman tidak menampilkan error, jika login menggunakan nis yang berisi karakter kode", function() {
+  test("F03-P02-T03 | Halaman tidak menampilkan error, jika login menggunakan nis yang berisi karakter kode", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -173,7 +174,7 @@ describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
     $page->assertDontSee("Warning:");
   });
 
-  test("P03-P02-T04 | Halaman tidak menampilkan error, jika login menggunakan password yang berisi karakter kode", function() {
+  test("F03-P02-T04 | Halaman tidak menampilkan error, jika login menggunakan password yang berisi karakter kode", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -198,7 +199,7 @@ describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
     $page->assertDontSee("Warning:");
   });
 
-  test("P03-P02-T05 | Halaman menampilkan notifikasi, jika login dengan nis yang salah", function() {
+  test("F03-P02-T05 | Halaman menampilkan notifikasi, jika login dengan nis yang salah", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -227,7 +228,7 @@ describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
     $page->assertDontSee("Warning:");
   });
 
-  test("P03-P02-T06 | Halaman menampilkan notifikasi, jika login dengan nis yang benar dan password yang salah", function() {
+  test("F03-P02-T06 | Halaman menampilkan notifikasi, jika login dengan nis yang benar dan password yang salah", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -258,8 +259,8 @@ describe("P03-P02 | 1-2-3-4-5-12-13-11", function() {
   });
 });
 
-describe("P03-P03 | 1-2-3-4-5-6-7-8-9-10-11", function() {
-  test("P03-P03-T01 | Halaman menampilkan beranda, jika login menggunakan nis dan password yang benar", function() {
+describe("F03-P03 | 1-2-3-4-5-6-7-8-9-10-11", function() {
+  test("F03-P03-T01 | Halaman menampilkan beranda, jika login menggunakan nis dan password yang benar", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -303,8 +304,8 @@ describe("P03-P03 | 1-2-3-4-5-6-7-8-9-10-11", function() {
   });
 });
 
-describe("P03-P04 | 1-2-3-4-5-6-7-8-10-11", function() {
-  test("P03-P04-T01 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_nama tidak ada di database", function() {
+describe("F03-P04 | 1-2-3-4-5-6-7-8-10-11", function() {
+  test("F03-P04-T01 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_nama tidak ada di database", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -344,7 +345,7 @@ describe("P03-P04 | 1-2-3-4-5-6-7-8-10-11", function() {
     $page->assertDontSee("Warning:");
   });
 
-  test("P03-P04-T02 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_kelas tidak ada di database", function() {
+  test("F03-P04-T02 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_kelas tidak ada di database", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -383,7 +384,7 @@ describe("P03-P04 | 1-2-3-4-5-6-7-8-10-11", function() {
     $page->assertDontSee("Warning:");
   });
   
-  test("P03-P04-T03 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_nama tidak ada", function() {
+  test("F03-P04-T03 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_nama tidak ada", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -420,7 +421,7 @@ describe("P03-P04 | 1-2-3-4-5-6-7-8-10-11", function() {
     $page->assertDontSee("Warning:");
   });
   
-  test("P03-P04-T04 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_kelas tidak ada", function() {
+  test("F03-P04-T04 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_kelas tidak ada", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
