@@ -15,7 +15,7 @@
     "scripts": {
         "test-init": "./vendor/bin/pest --init",
         "test-all": "./vendor/bin/pest --headed",
-        "test-file": "./vendor/bin/pest tests/Feature/F03_Login_Test.php --headed --debug",
+        "test-file": "./vendor/bin/pest tests/Feature/F12_Menjawab_Soal_Test.php --headed --debug",
         "test-group": "./vendor/bin/pest --headed --group=current --debug"
     },
     "require-dev": {
@@ -28,6 +28,7 @@
         }
     },
     "require": {
-        "vlucas/phpdotenv": "^5.6"
+        "vlucas/phpdotenv": "^5.6",
+        "guzzlehttp/guzzle": "^7.10"
     }
 }

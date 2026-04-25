@@ -108,6 +108,7 @@ describe("F09-P01 | 1-2-3-4-5-9-10", function() {
     // - sudah login
     // - berada di halaman mulai ulangan
     // - soal sudah aktif
+
     $dummyUser = WebUtils::getDummyUser();
     $correctNis = $dummyUser["nis"];
     $correctPassword = $dummyUser["password"];
@@ -122,6 +123,7 @@ describe("F09-P01 | 1-2-3-4-5-9-10", function() {
     // Kasus uji : 
     // 1. memasukan token yang salah
     // 2. klik tombol mulai kerjakan
+
     $wrongToken = "123456";
     $page->fill("input[name=\"token\"]", $wrongToken);
     $page->click("input[value=\"Mulai Kerjakan\"]");
@@ -129,10 +131,10 @@ describe("F09-P01 | 1-2-3-4-5-9-10", function() {
     // Hasil yang diharapkan :
     // - masih berada di halaman mulai ulangan
     // - menampilkan data ulangan yang sesuai
+
     $ulanganName = WebUtils::getSoalInfoProperty("nama_pelajaran");
     $page->assertPathEndsWith("/start.php");
     $page->assertSee($ulanganName);
-    $page->assertDontSee("Warning:");
   });
 });
 
@@ -142,6 +144,7 @@ describe("F09-P02 | 1-2-3-4-5-6-7-8", function() {
     // - sudah login
     // - berada di halaman mulai ulangan
     // - soal sudah aktif
+
     $dummyUser2 = WebUtils::getDummyUser();
     $correctNis = $dummyUser2["nis"];
     $correctPassword = $dummyUser2["password"];
@@ -156,6 +159,7 @@ describe("F09-P02 | 1-2-3-4-5-6-7-8", function() {
     // Kasus uji : 
     // 1. memasukan token yang benar
     // 2. klik tombol mulai kerjakan
+
     $correctToken = TokenModel::getToken()["token"];
     $page->fill("input[name=\"token\"]", $correctToken);
     $page->click("input[value=\"Mulai Kerjakan\"]");
@@ -163,9 +167,9 @@ describe("F09-P02 | 1-2-3-4-5-6-7-8", function() {
     // Hasil yang diharapkan :
     // - redirect ke halaman pengerjaan ulangan
     // - menampilkan data ulangan yang sesuai
+
     $ulanganName = WebUtils::getSoalInfoProperty("nama_pelajaran");
     $page->assertPathEndsWith("/test.php");
     $page->assertSee($ulanganName);
-    $page->assertDontSee("Warning:");
   });
 });

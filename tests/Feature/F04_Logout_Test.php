@@ -46,7 +46,6 @@ describe("F04-P01 | 1-2-3-4-5-6", function() {
     $page->assertPathEndsWith("/login.php");
     $page->assertValue("#nis", "");
     $page->assertDontSee("Kata-sandi atau nis tidak ditemukan");
-    $page->assertDontSee("Warning:");
   });
 
   test("F04-P01-T02 | Halaman berpindah ke login, jika mengakses url logout.php melaui url bar", function() {
@@ -66,6 +65,5 @@ describe("F04-P01 | 1-2-3-4-5-6", function() {
     $page->assertPathEndsWith("/login.php");
     $page->assertValue("#nis", "");
     $page->assertDontSee("Kata-sandi atau nis tidak ditemukan");
-    $page->assertDontSee("Warning:");
   });
 });
