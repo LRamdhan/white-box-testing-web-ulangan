@@ -77,4 +77,8 @@ Class WebUtils {
       "pil" => $newPil
     ];
   }
+
+  public static function getParam($page, $paramName) {
+    return $page->script("(new URLSearchParams(window.location.search)).get('$paramName');");
+  }
 }

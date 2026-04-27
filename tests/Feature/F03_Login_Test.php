@@ -198,7 +198,7 @@ describe("F03-P03 | 1-2-3-4-5-6-7", function() {
 });
 
 describe("F03-P04 | 1-2-3-4-6-7", function() {
-  test("F03-P04-T01 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_nama tidak ada di database", function() {
+  test("F03-P04-T01 | Value cookie cookie_nama dan cookie_kelas di browser harus sesuai dengan data yang ada di basis data, jika login dengan kondisi value cookie_nama tidak ada di basis data", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -237,7 +237,7 @@ describe("F03-P04 | 1-2-3-4-6-7", function() {
     expect($cookieKelasValue)->toBe($existingKelas);
   });
 
-  test("F03-P04-T02 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi value cookie_kelas tidak ada di database", function() {
+  test("F03-P04-T02 | Value cookie cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di basis data, jika login dengan kondisi value cookie_kelas tidak ada di basis data", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -275,7 +275,7 @@ describe("F03-P04 | 1-2-3-4-6-7", function() {
     expect($cookieNamaValue)->toBe($existingNama);
   });
   
-  test("F03-P04-T03 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_nama tidak ada", function() {
+  test("F03-P04-T03 | Value cookie cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di basis data, jika login dengan kondisi cookie_nama tidak ada", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -311,7 +311,7 @@ describe("F03-P04 | 1-2-3-4-6-7", function() {
     expect($cookieKelasValue)->toBe($existingKelas);
   });
   
-  test("F03-P04-T04 | Value cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di database, jika login dengan kondisi cookie_kelas tidak ada", function() {
+  test("F03-P04-T04 | Value cookie cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di basis data, jika login dengan kondisi cookie_kelas tidak ada", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
