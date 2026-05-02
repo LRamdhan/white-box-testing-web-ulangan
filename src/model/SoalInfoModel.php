@@ -75,25 +75,4 @@ class SoalInfoModel extends DBConnection {
     // disconnect
     self::disconnect();
   }
-
-   // check soal_info
-   public static function checkSoalInfo() {
-    // connect
-    self::connect();
-
-    // query read
-    $idSoalInfo = (int)WebUtils::getSoalInfoProperty("id_info_soal");
-    $sqlSelectSoalInfo = "SELECT * FROM soal_info WHERE id_info_soal = $idSoalInfo;";
-    $querySelectSoalInfo = mysqli_query(self::$connection, $sqlSelectSoalInfo);
-
-    // disconnect
-    self::disconnect();
-
-    // return existance
-    if (mysqli_num_rows($querySelectSoalInfo) > 0) {
-      return true;
-    } else {
-      return false;
-    }
-  } 
 }

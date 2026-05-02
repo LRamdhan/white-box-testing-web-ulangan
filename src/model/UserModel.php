@@ -87,5 +87,4 @@ class UserModel extends DBConnection {
     // disconnect
     self::disconnect();
   }
-
 }

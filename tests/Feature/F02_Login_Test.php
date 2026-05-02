@@ -8,20 +8,20 @@ use App\utils\CookieUtils;
 use App\utils\WebUtils;
 
 beforeAll(function () {
+  UserModel::deleteUser(); // hapus dummy user
+  LogLoginModel::deleteLogLogin(); // hapus log login
+  
   // buat dummy user
   UserModel::createUser();
 });
 
 afterAll(function () {
-  // hapus dummy user
-  UserModel::deleteUser();
-
-  // hapus log login
-  LogLoginModel::deleteLogLogin();
+  UserModel::deleteUser(); // hapus dummy user
+  LogLoginModel::deleteLogLogin(); // hapus log login
 });
 
-describe("F03-P01 | 1-2-7", function() {
-  test("F03-P01-T01 | Menampilkan teks 'Harap di Isi', jika login dengan nis dan password yang kosong", function() {
+describe("F02-P01 | 1-2-7", function() {
+  test("F02-P01-T01 | Menampilkan teks 'Harap di Isi' jika login dengan nis dan password yang kosong", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -41,7 +41,7 @@ describe("F03-P01 | 1-2-7", function() {
     $page->assertSee("Harap di Isi");
   });
 
-  test("F03-P01-T02 | Menampilkan teks 'Harap di Isi', jika login dengan nis yang diisi space kosong", function() {
+  test("F02-P01-T02 | Menampilkan teks 'Harap di Isi' jika login dengan nis yang diisi space kosong", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -67,7 +67,7 @@ describe("F03-P01 | 1-2-7", function() {
     $page->assertSee("Harap di Isi");
   });
 
-  test("F03-P01-T03 | Menampilkan teks 'Harap di Isi', jika login dengan password yang diisi space kosong", function() {
+  test("F02-P01-T03 | Menampilkan teks 'Harap di Isi' jika login dengan password yang diisi space kosong", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -94,8 +94,8 @@ describe("F03-P01 | 1-2-7", function() {
   });
 });
 
-describe("F03-P02 | 1-2-3-7", function() {
-  test("F03-P02-T01 | Halaman menampilkan notifikasi, jika login dengan nis yang salah", function() {
+describe("F02-P02 | 1-2-3-7", function() {
+  test("F02-P02-T01 | Halaman menampilkan notifikasi jika login dengan nis yang salah", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -123,7 +123,7 @@ describe("F03-P02 | 1-2-3-7", function() {
     $page->assertValue("#nis", $wrongNis);
   });
 
-  test("F03-P02-T02 | Halaman menampilkan notifikasi, jika login dengan nis yang benar dan password yang salah", function() {
+  test("F02-P02-T02 | Halaman menampilkan notifikasi jika login dengan nis yang benar dan password yang salah", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -153,8 +153,8 @@ describe("F03-P02 | 1-2-3-7", function() {
   });
 });
 
-describe("F03-P03 | 1-2-3-4-5-6-7", function() {
-  test("F03-P03-T01 | Halaman menampilkan beranda, jika login menggunakan nis dan password yang benar", function() {
+describe("F02-P03 | 1-2-3-4-5-6-7", function() {
+  test("F02-P03-T01 | Halaman menampilkan beranda jika login menggunakan nis dan password yang benar", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -197,13 +197,13 @@ describe("F03-P03 | 1-2-3-4-5-6-7", function() {
   });
 });
 
-describe("F03-P04 | 1-2-3-4-6-7", function() {
-  test("F03-P04-T01 | Value cookie cookie_nama dan cookie_kelas di browser harus sesuai dengan data yang ada di basis data, jika login dengan kondisi value cookie_nama tidak ada di basis data", function() {
+describe("F02-P04 | 1-2-3-4-6-7", function() {
+  test("F02-P04-T01 | Value cookie cookie_nama dan cookie_kelas di browser harus sesuai dengan data yang ada di basis data jika login dengan kondisi value cookie_nama tidak ada di basis data", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
-    // - cookie_nama tidak ada di database
-    // - cookie_kelas ada di database
+    // - cookie_nama tidak ada di basis data
+    // - cookie_kelas ada di basis data
 
 
     // Kasus uji : 
@@ -227,8 +227,8 @@ describe("F03-P04 | 1-2-3-4-6-7", function() {
 
     // Hasil yang diharapkan :
     // - berpindah ke halaman beranda
-    // - cookie_nama tersisi dengan value yang ada di database
-    // - cookie_kelas tersisi dengan value yang ada di database
+    // - cookie_nama tersisi dengan value yang ada di basis data
+    // - cookie_kelas tersisi dengan value yang ada di basis data
 
     $page->assertPathEndsWith("/index.php");
     $cookieNamaValue = CookieUtils::getCookie($page, "cookie_nama");
@@ -237,12 +237,12 @@ describe("F03-P04 | 1-2-3-4-6-7", function() {
     expect($cookieKelasValue)->toBe($existingKelas);
   });
 
-  test("F03-P04-T02 | Value cookie cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di basis data, jika login dengan kondisi value cookie_kelas tidak ada di basis data", function() {
+  test("F02-P04-T02 | Value cookie cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di basis data jika login dengan kondisi value cookie_kelas tidak ada di basis data", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
-    // - cookie_nama ada di database
-    // - cookie_kelas tidak ada di database
+    // - cookie_nama ada di basis data
+    // - cookie_kelas tidak ada di basis data
 
     // Kasus uji : 
     // - field nis diisi dengan nis yang benar
@@ -265,8 +265,8 @@ describe("F03-P04 | 1-2-3-4-6-7", function() {
 
     // Hasil yang diharapkan :
     // - berpindah ke halaman beranda
-    // - cookie_nama tersisi dengan value yang ada di database
-    // - cookie_kelas tersisi dengan value yang ada di database
+    // - cookie_nama tersisi dengan value yang ada di basis data
+    // - cookie_kelas tersisi dengan value yang ada di basis data
     
     $page->assertPathEndsWith("/index.php");
     $cookieNamaValue = CookieUtils::getCookie($page, "cookie_nama");
@@ -275,7 +275,7 @@ describe("F03-P04 | 1-2-3-4-6-7", function() {
     expect($cookieNamaValue)->toBe($existingNama);
   });
   
-  test("F03-P04-T03 | Value cookie cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di basis data, jika login dengan kondisi cookie_nama tidak ada", function() {
+  test("F02-P04-T03 | Value cookie cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di basis data jika login dengan kondisi cookie_nama tidak ada", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -301,8 +301,8 @@ describe("F03-P04 | 1-2-3-4-6-7", function() {
 
     // Hasil yang diharapkan :
     // - berpindah ke halaman beranda
-    // - cookie_nama tersisi dengan value yang ada di database
-    // - cookie_kelas tersisi dengan value yang ada di database
+    // - cookie_nama tersisi dengan value yang ada di basis data
+    // - cookie_kelas tersisi dengan value yang ada di basis data
     
     $page->assertPathEndsWith("/index.php");
     $cookieNamaValue = CookieUtils::getCookie($page, "cookie_nama");
@@ -311,7 +311,7 @@ describe("F03-P04 | 1-2-3-4-6-7", function() {
     expect($cookieKelasValue)->toBe($existingKelas);
   });
   
-  test("F03-P04-T04 | Value cookie cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di basis data, jika login dengan kondisi cookie_kelas tidak ada", function() {
+  test("F02-P04-T04 | Value cookie cookie_nama dan cookie_kelas harus sesuai dengan data yang ada di basis data jika login dengan kondisi cookie_kelas tidak ada", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -337,8 +337,8 @@ describe("F03-P04 | 1-2-3-4-6-7", function() {
 
     // Hasil yang diharapkan :
     // - berpindah ke halaman beranda
-    // - cookie_nama tersisi dengan value yang ada di database
-    // - cookie_kelas tersisi dengan value yang ada di database
+    // - cookie_nama tersisi dengan value yang ada di basis data
+    // - cookie_kelas tersisi dengan value yang ada di basis data
     
     $page->assertPathEndsWith("/index.php");
     $cookieNamaValue = CookieUtils::getCookie($page, "cookie_nama");

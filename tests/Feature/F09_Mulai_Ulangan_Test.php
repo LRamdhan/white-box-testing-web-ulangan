@@ -2,67 +2,22 @@
 
 include "./vendor/autoload.php";
 
-use App\model\SoalInfoModel;
-use App\model\SoalListModel;
-use App\model\SoalListPilModel;
-use App\model\SoalJadwalModel;
-use App\model\TestSoalListModel;
-use App\model\TestSoalListPilModel;
-use App\model\MemberTesModel;
-use App\model\TestMemberTesModel;
 use App\model\LogLoginModel;
 use App\model\TokenModel;
 use App\model\UserModel;
 use App\model\TestListTestModel;
 use App\utils\WebUtils;
+use App\helper\UlanganHelper;
 
 beforeAll(function() {
-  // parse soal_list & soal_list_pil
-  $soalPil = WebUtils::parseSoaListSoalListPil();
-  $soal = $soalPil["soal"];
-  $pil = $soalPil["pil"];
-
-  // soal_info
-  $soalInfoExist = SoalInfoModel::checkSoalInfo();
-  if($soalInfoExist) {
-    SoalInfoModel::deleteSoalInfo();
-  }
-  SoalInfoModel::createSoalInfo();
-
-  // soal_list
-  $soalListExist = SoalListModel::checkSoalList();
-  if($soalListExist) {
-    SoalListModel::deleteSoalList();
-  }
-  SoalListModel::createSoalList($soal);
-
-  // soal_list_pil
-  $soalListPilExist = SoalListPilModel::checkSoalListPil();
-  if($soalListPilExist) {
-    SoalListPilModel::deleteSoalListPil();
-  }
-  SoalListPilModel::createSoalListPil($pil);
-
-  // soal_jadwal
-  $soalJadwalExist = SoalJadwalModel::checkSoalJadwal();
-  if($soalJadwalExist) {
-    SoalJadwalModel::deleteSoalJadwal();
-  }
-  SoalJadwalModel::createSoalJadwal();
-
-  // test_soal_list
-  $testSoalListExist = TestSoalListModel::checkTestSoalList();
-  if($testSoalListExist) {
-    TestSoalListModel::deleteTestSoalList();
-  }
-  TestSoalListModel::createTestSoalList($soal);
-
-  // test_soal_list_pil
-  $testSoalListPilExist = TestSoalListPilModel::checkTestSoalListPil();
-  if($testSoalListPilExist) {
-    TestSoalListPilModel::deleteTestSoalListPil();
-  }
-  TestSoalListPilModel::createTestSoalListPil($pil);
+  UlanganHelper::clenupUlangan(); // cleanup ulangan
+  UserModel::deleteUser(); // hapus dummy user
+  UserModel::deleteUser2(); // hapus dummy user 2
+  LogLoginModel::deleteLogLogin(); // hapus log login
+  LogLoginModel::deleteLogLogin2(); // hapus log login 2
+  
+  // setup ulangan
+  UlanganHelper::setupUlangan();
 
   // buat dummy user
   UserModel::createUser();
@@ -72,38 +27,15 @@ beforeAll(function() {
 });
 
 afterAll(function() {
-  // delete all soal
-  SoalInfoModel::deleteSoalInfo();
-  SoalListModel::deleteSoalList();
-  SoalListPilModel::deleteSoalListPil();
-  SoalJadwalModel::deleteSoalJadwal();
-  TestSoalListModel::deleteTestSoalList();
-  TestSoalListPilModel::deleteTestSoalListPil();
-
-  // delete member_tes
-  MemberTesModel::deleteMemberTes();
-
-  // delete test_member_tes
-  TestMemberTesModel::deleteTestMemberTes();
-
-  // hapus dummy user
-  UserModel::deleteUser();
-
-  // hapus dummy user 2
-  UserModel::deleteUser2();
-
-  // hapus log login
-  LogLoginModel::deleteLogLogin();
-
-  // hapus log login 2
-  LogLoginModel::deleteLogLogin2();
-
-  // delete jawaban
-  TestListTestModel::deleteTestListTest();
+  UlanganHelper::clenupUlangan(); // cleanup ulangan
+  UserModel::deleteUser(); // hapus dummy user
+  UserModel::deleteUser2(); // hapus dummy user 2
+  LogLoginModel::deleteLogLogin(); // hapus log login
+  LogLoginModel::deleteLogLogin2(); // hapus log login 2
 });
 
 describe("F09-P01 | 1-2-3-4-5-9-10", function() {
-  it("F09-P01-T01 | Tetap di halaman mulai ulangan, jika memasukan token yang salah", function() {
+  it("F09-P01-T01 | Tetap di halaman mulai ulangan jika memasukan token yang salah", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman mulai ulangan
@@ -139,7 +71,7 @@ describe("F09-P01 | 1-2-3-4-5-9-10", function() {
 });
 
 describe("F09-P02 | 1-2-3-4-5-6-7-8", function() {
-  it("F09-P02-T01 | Berpindah ke halaman kerjakan soal, jika memasukan token yang benar", function() {
+  it("F09-P02-T01 | Berpindah ke halaman kerjakan soal jika memasukan token yang benar", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman mulai ulangan

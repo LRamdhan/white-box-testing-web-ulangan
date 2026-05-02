@@ -10,17 +10,10 @@ use App\utils\WebUtils;
 use App\helper\UlanganHelper;
 
 beforeAll(function () {
-  // hapus dummy user
-  UserModel::deleteUser();
-
-  // hapus log login
-  LogLoginModel::deleteLogLogin();
-
-  // hapus ulangan
-  UlanganHelper::clenupUlangan();
-
-  // cleanup pengerjaan
-  UlanganHelper::cleanupPengerjaan();
+  UserModel::deleteUser(); // hapus dummy user
+  LogLoginModel::deleteLogLogin();  // hapus log login
+  UlanganHelper::clenupUlangan();  // hapus ulangan
+  UlanganHelper::cleanupPengerjaan();  // cleanup pengerjaan
 
   // buat dummy user
   UserModel::createUser();
@@ -30,17 +23,10 @@ beforeAll(function () {
 });
 
 afterAll(function () {
-  // hapus dummy user
-  UserModel::deleteUser();
-
-  // hapus log login
-  LogLoginModel::deleteLogLogin();
-
-  // hapus ulangan
-  UlanganHelper::clenupUlangan();
-
-  // cleanup pengerjaan
-  UlanganHelper::cleanupPengerjaan();
+  UserModel::deleteUser(); // hapus dummy user
+  LogLoginModel::deleteLogLogin();  // hapus log login
+  UlanganHelper::clenupUlangan();  // hapus ulangan
+  UlanganHelper::cleanupPengerjaan();  // cleanup pengerjaan
 });
 
 describe("F01-P01 | 1-2-3-4", function() {
@@ -94,7 +80,7 @@ describe("F01-P01 | 1-2-3-4", function() {
 
     // Hasil yang diharapkan :
     // - url harus tetap berada di halaman mulai ulangan
-    // - query keysoal harus ada dalam url
+    // - param keysoal harus ada dalam url
 
     $param = WebUtils::getParam($page, "kode");
     $page->assertPathEndsWith($urlMulaiUlangan);

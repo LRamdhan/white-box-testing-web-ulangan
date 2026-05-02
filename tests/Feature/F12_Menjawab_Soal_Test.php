@@ -25,13 +25,13 @@ beforeAll(function() {
   UlanganHelper::setupUlangan();
 });
 
-afterAll(function() {
-  // clean up user
-  UserHelper::cleanupUser();
+// afterAll(function() {
+//   // clean up user
+//   UserHelper::cleanupUser();
 
-  // celan up ulangan
-  UlanganHelper::clenupUlangan();
-});
+//   // celan up ulangan
+//   UlanganHelper::clenupUlangan();
+// });
 
 
 // Pengujian :

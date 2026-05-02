@@ -23,47 +23,22 @@ class ulanganHelper {
     $pil = $soalPil["pil"];
 
     // soal_info
-    // $soalInfoExist = SoalInfoModel::checkSoalInfo();
-    // if($soalInfoExist) {
-    //   SoalInfoModel::deleteSoalInfo();
-    // }
     SoalInfoModel::createSoalInfo();
 
     // soal_list
-    // $soalListExist = SoalListModel::checkSoalList();
-    // if($soalListExist) {
-    //   SoalListModel::deleteSoalList();
-    // }
     SoalListModel::createSoalList($soal);
 
     // soal_list_pil
-    // $soalListPilExist = SoalListPilModel::checkSoalListPil();
-    // if($soalListPilExist) {
-    //   SoalListPilModel::deleteSoalListPil();
-    // }
     SoalListPilModel::createSoalListPil($pil);
 
     // soal_jadwal
-    // $soalJadwalExist = SoalJadwalModel::checkSoalJadwal();
-    // if($soalJadwalExist) {
-    //   SoalJadwalModel::deleteSoalJadwal();
-    // }
     SoalJadwalModel::createSoalJadwal();
 
     // test_soal_list
-    // $testSoalListExist = TestSoalListModel::checkTestSoalList();
-    // if($testSoalListExist) {
-    //   TestSoalListModel::deleteTestSoalList();
-    // }
     TestSoalListModel::createTestSoalList($soal);
 
     // test_soal_list_pil
-    // $testSoalListPilExist = TestSoalListPilModel::checkTestSoalListPil();
-    // if($testSoalListPilExist) {
-    //   TestSoalListPilModel::deleteTestSoalListPil();
-    // }
     TestSoalListPilModel::createTestSoalListPil($pil);
-
   }
 
   public static function clenupUlangan() {

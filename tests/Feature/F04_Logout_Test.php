@@ -7,20 +7,20 @@ use App\model\LogLoginModel;
 use App\utils\WebUtils;
 
 beforeAll(function () {
+  UserModel::deleteUser(); // hapus dummy user
+  LogLoginModel::deleteLogLogin(); // hapus log login
+  
   // buat dummy user
   UserModel::createUser();
 });
 
 afterAll(function () {
-  // hapus dummy user
-  UserModel::deleteUser();
-
-  // hapus log login
-  LogLoginModel::deleteLogLogin();
+  UserModel::deleteUser(); // hapus dummy user
+  LogLoginModel::deleteLogLogin(); // hapus log login
 });
 
 describe("F04-P01 | 1-2-3-4-5-6", function() {
-  test("F04-P01-T01 | Halaman berpindah ke login, jika tombol logout diklik", function() {
+  test("F04-P01-T01 | Halaman berpindah ke login jika tombol logout diklik", function() {
     // Prakondisi :
     // - berada di halaman beranda
     // - sudah login
@@ -48,7 +48,7 @@ describe("F04-P01 | 1-2-3-4-5-6", function() {
     $page->assertDontSee("Kata-sandi atau nis tidak ditemukan");
   });
 
-  test("F04-P01-T02 | Halaman berpindah ke login, jika mengakses url logout.php melaui url bar", function() {
+  test("F04-P01-T02 | Halaman berpindah ke login jika mengakses url logout.php melaui url bar", function() {
     // Prakondisi :
     // - berada di halaman beranda
     // - belum login

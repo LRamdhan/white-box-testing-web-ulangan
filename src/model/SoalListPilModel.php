@@ -59,25 +59,4 @@ class SoalListPilModel extends DBConnection {
     // disconnect
     self::disconnect();
   }
-
-  // check soal_list_pil
-  public static function checkSoalListPil() {
-    // connect
-    self::connect();
-
-    // query read
-    $idSoalInfo = (int)WebUtils::getSoalInfoProperty("id_info_soal");
-    $sqlSelectSoalListPil = "SELECT * FROM soal_list_pil WHERE id_info_soal = $idSoalInfo;";
-    $querySelectSoalListPil = mysqli_query(self::$connection, $sqlSelectSoalListPil);
-
-    // disconnect
-    self::disconnect();
-
-    // return existance
-    if (mysqli_num_rows($querySelectSoalListPil) > 0) {
-      return true;
-    } else {
-      return false;
-    }
-  }
 }

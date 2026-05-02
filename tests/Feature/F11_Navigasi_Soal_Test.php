@@ -11,21 +11,19 @@ use App\helper\UserHelper;
 use App\helper\UlanganHelper;
 
 beforeAll(function() {
-  // clean up and create user
-  UserHelper::cleanupUser();
+  UserHelper::cleanupUser(); // clean up user
+  UlanganHelper::clenupUlangan(); // clean up ulangan
+  
+  // create user
   UserHelper::setupUser();
 
-  // clean up and create ulangan
-  UlanganHelper::clenupUlangan();
+  // create ulangan
   UlanganHelper::setupUlangan();
 });
 
 afterAll(function() {
-  // clean up user
-  UserHelper::cleanupUser();
-
-  // celan up ulangan
-  UlanganHelper::clenupUlangan();
+  UserHelper::cleanupUser(); // clean up user
+  UlanganHelper::clenupUlangan(); // clean up ulangan
 });
 
 describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
@@ -34,7 +32,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     UlanganHelper::cleanupPengerjaan();
   });
 
-  test("F11-P01-T01 | Menampilkan soal yang sesuai, jika men-klik tombol navigasi berikutnya", function() {
+  test("F11-P01-T01 | Menampilkan soal yang sesuai jika men-klik tombol navigasi berikutnya", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -71,7 +69,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     // Hasil yang diharapkan :
     // - navigasi kotak untuk soal yang sudah dijawab harus berwarna hijau 
     // - navigasi kotak untuk soal saat ini harus berwarna biru
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     // - menampilkan soal yang sesuai
     // - menampilkan pilihan ganda yang sesuai
     // - soal saat ini belum dijawab
@@ -86,7 +84,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
 
     $soalNo2 = TestSoalListModel::getTestSoalList($keysoal2);
     
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
     $noSoalContentRaw = explode(" ", $noSoalContent);
     $noSoalContent = $noSoalContentRaw[count($noSoalContentRaw) - 1];
@@ -119,7 +117,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     }
   });
 
-  test("F11-P01-T02 | Menampilkan soal yang sesuai, jika men-klik tombol navigasi sebelumnya", function() {
+  test("F11-P01-T02 | Menampilkan soal yang sesuai jika men-klik tombol navigasi sebelumnya", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -160,7 +158,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     // Hasil yang diharapkan :
     // - navigasi kotak untuk soal yang sudah dijawab harus berwarna hijau 
     // - navigasi kotak untuk soal saat ini harus berwarna biru
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     // - menampilkan soal yang sesuai
     // - menampilkan pilihan ganda yang sesuai
     // - soal saat ini belum dijawab
@@ -175,7 +173,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
 
     $soalNo2 = TestSoalListModel::getTestSoalList($keysoal2);
     
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
     $noSoalContentRaw = explode(" ", $noSoalContent);
     $noSoalContent = $noSoalContentRaw[count($noSoalContentRaw) - 1];
@@ -208,7 +206,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     }
   });
 
-  test("F11-P01-T03 | Menampilkan soal yang sesuai, jika men-klik tombol navigasi kotak", function() {
+  test("F11-P01-T03 | Menampilkan soal yang sesuai jika men-klik tombol navigasi kotak", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -254,7 +252,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     // Hasil yang diharapkan :
     // - navigasi kotak untuk soal yang sudah dijawab harus berwarna hijau 
     // - navigasi kotak untuk soal saat ini harus berwarna biru    
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     // - menampilkan soal yang sesuai
     // - menampilkan pilihan ganda yang sesuai
     // - soal belum dijawab
@@ -269,7 +267,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
 
     $soalNo2 = TestSoalListModel::getTestSoalList($keysoal2);
     
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
     $noSoalContentRaw = explode(" ", $noSoalContent);
     $noSoalContent = $noSoalContentRaw[count($noSoalContentRaw) - 1];
@@ -302,7 +300,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     }
   });
 
-  test("F11-P01-T04 | Menampilkan soal yang sesuai, jika men-klik tombol navigasi kotak di halaman pertama", function() {
+  test("F11-P01-T04 | Menampilkan soal yang sesuai jika men-klik tombol navigasi kotak di halaman pertama", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -344,7 +342,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     // Hasil yang diharapkan :
     // - navigasi kotak untuk soal yang sudah dijawab harus berwarna hijau 
     // - navigasi kotak untuk soal saat ini harus berwarna biru    
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     // - menampilkan soal yang sesuai
     // - menampilkan pilihan ganda yang sesuai
     // - soal belum dijawab
@@ -359,7 +357,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
 
     $soalNo2 = TestSoalListModel::getTestSoalList($keysoal2);
     
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
     $noSoalContentRaw = explode(" ", $noSoalContent);
     $noSoalContent = $noSoalContentRaw[count($noSoalContentRaw) - 1];
@@ -392,7 +390,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     }
   });
 
-  test("F11-P01-T05 | Hanya menampilkan tombol berikutnya, jika berada di halaman pertama", function() {
+  test("F11-P01-T05 | Hanya menampilkan tombol berikutnya jika berada di halaman pertama", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -424,7 +422,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
 
     // Hasil yang diharapkan :
     // - navigasi kotak untuk soal saat ini harus berwarna biru    
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     // - menampilkan soal yang sesuai
     // - menampilkan pilihan ganda yang sesuai
     // - hanya menampilkan tombol navigasi berikutnya
@@ -434,7 +432,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
 
     $soalNo1 = TestSoalListModel::getTestSoalList($keysoal1);
     
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
     $noSoalContentRaw = explode(" ", $noSoalContent);
     $noSoalContent = $noSoalContentRaw[count($noSoalContentRaw) - 1];
@@ -466,7 +464,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     expect($navigationContent)->toBe("Berikutnya >");
   });
 
-  test("F11-P01-T06 | Hanya menampilkan tombol berikutnya dan selesai, jika berada di halaman terakhir", function() {
+  test("F11-P01-T06 | Hanya menampilkan tombol berikutnya dan selesai jika berada di halaman terakhir", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -498,7 +496,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
 
     // Hasil yang diharapkan :
     // - navigasi kotak untuk soal saat ini harus berwarna biru    
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     // - menampilkan soal yang sesuai
     // - menampilkan pilihan ganda yang sesuai
     // - hanya menampilkan tombol berikutnya dan tombol selesai
@@ -508,7 +506,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
 
     $soalLast = TestSoalListModel::getTestSoalList($keysoalLast);
     
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
     $noSoalContentRaw = explode(" ", $noSoalContent);
     $noSoalContent = $noSoalContentRaw[count($noSoalContentRaw) - 1];
@@ -542,7 +540,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     expect($navigationContent2)->toBe("Selesai >");
   });
 
-  test("F11-P01-T07 | Menampilkan pilihan ganda yang sudah dijawab, jika masuk ke halaman soal yang sudah dijawab", function() {
+  test("F11-P01-T07 | Menampilkan pilihan ganda yang sudah dijawab jika masuk ke halaman soal yang sudah dijawab", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -587,7 +585,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
 
     // Hasil yang diharapkan :
     // - navigasi kotak untuk soal saat ini harus berwarna biru    
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     // - menampilkan soal yang sesuai
     // - menampilkan pilihan ganda yang sesuai
     // - salah satu input radio sudah terisi
@@ -597,7 +595,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
 
     $soalNo1 = TestSoalListModel::getTestSoalList($keysoal1);
     
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
     $noSoalContentRaw = explode(" ", $noSoalContent);
     $noSoalContent = $noSoalContentRaw[count($noSoalContentRaw) - 1];
@@ -634,7 +632,7 @@ describe("F11-P02 | 1-2-3-14-15-4-5-6-7-8-9-10-11-12-13", function() {
     UlanganHelper::cleanupPengerjaan();
   });
 
-  test("F11-P02-T01 | menampilkan kembali status pengerjaan sebelumnya (soal belum dijawab), jika data pengerjaan pada session hilang", function() {
+  test("F11-P02-T01 | menampilkan kembali status pengerjaan sebelumnya (soal belum dijawab) jika data pengerjaan pada session hilang", function() {
     // prakondisi :
     // - sudah mulai mengerjakan soal sebelumnya
     // - sebelumnya, tidak menjawab soal
@@ -724,7 +722,7 @@ describe("F11-P02 | 1-2-3-14-15-4-5-6-7-8-9-10-11-12-13", function() {
     $page2->assertAttributeContains("#box-number-$keysoal1", "class", "box-number-sel-b");
   });
 
-  test("F11-P02-T02 | menampilkan kembali status pengerjaan sebelumnya (soal sudah dijawab), jika data pengerjaan pada session hilang", function() {
+  test("F11-P02-T02 | menampilkan kembali status pengerjaan sebelumnya (soal sudah dijawab) jika data pengerjaan pada session hilang", function() {
     // prakondisi :
     // - sudah mulai mengerjakan soal sebelumnya
     // - sebelumnya, sudah menjawab soal
@@ -838,7 +836,7 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     UlanganHelper::cleanupPengerjaan();
   });
   
-  test("F11-P03-T01 | Menampilkan soal pertama dengan data yang benar, jika query keysoal tidak valid", function() {
+  test("F11-P03-T01 | Menampilkan soal pertama dengan data yang benar jika param keysoal tidak valid", function() {
     // prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -860,7 +858,7 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     $page->click("input[value=\"Mulai Kerjakan\"]");    
     
     // Kasus Uji :
-    // - berpindah halaman soal dengan mengubah query keysoal menjadi tidak valid
+    // - berpindah halaman soal dengan mengubah param keysoal menjadi tidak valid
     $invalidKeysoal = "ieOf92Iw";
     $page->navigate(WebUtils::url("/test.php?keysoal=$invalidKeysoal"));
 
@@ -868,14 +866,14 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     // - menampilkan soal pertama dengan data yang benar
     // - menampilkan pilihan ganda yang sesuai
     // - navigasi kotak untuk soal pertama harus berwarna biru
-    // - nomor di tampilan dan di database harus berbeda
+    // - nomor di tampilan dan di basis data harus berbeda
 
     $memberTest = TestMemberTesModel::getTestMemberTes();
     $keysoal = explode(",", $memberTest["value_random"]);
     $keysoal1 = $keysoal[0];
     $soalNo1 = TestSoalListModel::getTestSoalList($keysoal1);
 
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     $page->assertPresent(".soal-no");
     $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
     $noSoalContentRaw = explode(" ", $noSoalContent);
@@ -904,7 +902,7 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     }
   });
 
-  test("F11-P03-T02 | Menampilkan soal pertama dengan data yang benar, jika query keysoal kosong", function() {
+  test("F11-P03-T02 | Menampilkan soal pertama dengan data yang benar jika param keysoal kosong", function() {
     // prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -926,14 +924,14 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     $page->click("input[value=\"Mulai Kerjakan\"]");    
     
     // Kasus Uji :
-    // - berpindah halaman soal dengan mengubah query keysoal menjadi kosong
+    // - berpindah halaman soal dengan mengubah param keysoal menjadi kosong
     $page->navigate(WebUtils::url("/test.php?keysoal="));
 
     // hasil yang diharapkan :
     // - menampilkan soal pertama dengan data yang benar
     // - menampilkan pilihan ganda yang sesuai
     // - navigasi kotak untuk soal pertama harus berwarna biru
-    // - nomor di tampilan dan di database harus berbeda
+    // - nomor di tampilan dan di basis data harus berbeda
 
     $memberTest = TestMemberTesModel::getTestMemberTes();
     $keysoal = explode(",", $memberTest["value_random"]);
@@ -941,7 +939,7 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     $soalNo1 = TestSoalListModel::getTestSoalList($keysoal1);
 
 
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     $page->assertPresent(".soal-no");
     $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
     $noSoalContentRaw = explode(" ", $noSoalContent);
@@ -970,7 +968,7 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     }
   });
 
-  test("F11-P03-T03 | Menampilkan soal pertama dengan data yang benar, jika query keysoal tidak ada", function() {
+  test("F11-P03-T03 | Menampilkan soal pertama dengan data yang benar jika param keysoal tidak ada", function() {
     // prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -992,14 +990,14 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     $page->click("input[value=\"Mulai Kerjakan\"]");    
     
     // Kasus Uji :
-    // - berpindah halaman soal dengan mengubah query keysoal menjadi tidak ada
+    // - berpindah halaman soal dengan mengubah param keysoal menjadi tidak ada
     $page->navigate(WebUtils::url("/test.php"));
 
     // hasil yang diharapkan :
     // - menampilkan soal pertama dengan data yang benar
     // - menampilkan pilihan ganda yang sesuai
     // - navigasi kotak untuk soal pertama harus berwarna biru
-    // - nomor di tampilan dan di database harus berbeda
+    // - nomor di tampilan dan di basis data harus berbeda
 
     $memberTest = TestMemberTesModel::getTestMemberTes();
     $keysoal = explode(",", $memberTest["value_random"]);
@@ -1007,7 +1005,7 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     $soalNo1 = TestSoalListModel::getTestSoalList($keysoal1);
 
 
-    // - nomor soal di tampilan dan di database harus berbeda
+    // - nomor soal di tampilan dan di basis data harus berbeda
     $page->assertPresent(".soal-no");
     $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
     $noSoalContentRaw = explode(" ", $noSoalContent);
@@ -1038,11 +1036,11 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
 });
 
 describe("F11-P04 | 1-2-3-4-5-6-7-8-17-13", function() {
-  test("F11-P04-T01 | Menampilkan menampilkan pesan 'Soal tidak ditemukan', jika soal di database hilang", function() {
+  test("F11-P04-T01 | Menampilkan menampilkan pesan 'Soal tidak ditemukan' jika soal di basis data hilang", function() {
     // prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
-    // - soal tidak ada di database
+    // - soal tidak ada di basis data
   
     // ambil data
     $dummyUser = WebUtils::getDummyUser();
@@ -1061,7 +1059,7 @@ describe("F11-P04 | 1-2-3-4-5-6-7-8-17-13", function() {
     $page->click("input[value=\"Mulai Kerjakan\"]");    
   
     // kasus uji
-    // - masuk ke halaman ulangan dengan query keysoal yang benar
+    // - masuk ke halaman ulangan dengan param keysoal yang benar
 
     TestSoalListModel::deleteTestSoalList();
 
