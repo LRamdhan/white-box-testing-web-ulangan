@@ -22,4 +22,27 @@ class MemberTesModel extends DBConnection {
     // disconnect
     self::disconnect();
   }
+
+  public static function insertMemberTesTemp() {
+    // connect
+    self::connect();
+
+    $dummyUser = WebUtils::getDummyUser();
+    $id_member = $dummyUser["id"];
+    $key_member = $dummyUser["nis"];
+    $nis = $dummyUser["nis"];
+    $nama = $dummyUser["nama"];
+    $kelas = $dummyUser["kelas"];
+    $id_info_soal = WebUtils::getSoalInfoProperty("id_info_soal");
+    $status_start = 1;
+    $status_run = 1;
+    $status_end = 1;
+
+    $sql = "INSERT INTO member_tes (id_member, key_member, nis, nama, kelas, id_info_soal, status_start, status_run, status_end) VALUES ($id_member, '$key_member', '$nis', '$nama', '$kelas', $id_info_soal, $status_start, $status_run, $status_end);";
+    mysqli_query(self::$connection, $sql);
+
+    // disconnect
+    self::disconnect();
+  }
+
 }

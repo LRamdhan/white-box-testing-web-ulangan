@@ -19,8 +19,8 @@ afterAll(function () {
   LogLoginModel::deleteLogLogin(); // hapus log login
 });
 
-describe("F04-P01 | 1-2-3-4-5-6", function() {
-  test("F04-P01-T01 | Halaman berpindah ke login jika tombol logout diklik", function() {
+describe("F03-P01 | 1-2-3-4-5-6", function() {
+  test("F03-P01-T01 | Halaman berpindah ke login jika tombol logout diklik", function() {
     // Prakondisi :
     // - berada di halaman beranda
     // - sudah login
@@ -48,7 +48,7 @@ describe("F04-P01 | 1-2-3-4-5-6", function() {
     $page->assertDontSee("Kata-sandi atau nis tidak ditemukan");
   });
 
-  test("F04-P01-T02 | Halaman berpindah ke login jika mengakses url logout.php melaui url bar", function() {
+  test("F03-P01-T02 | Halaman berpindah ke login jika mengakses URL logout.php melaui URL bar", function() {
     // Prakondisi :
     // - berada di halaman beranda
     // - belum login

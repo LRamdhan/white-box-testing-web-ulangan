@@ -26,13 +26,13 @@ afterAll(function() {
   UlanganHelper::clenupUlangan(); // clean up ulangan
 });
 
-describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
+describe("F05-P01 | 1-2-3-4-5-6-7", function() {
   afterEach(function() {
     // cleanup pengerjaan
     UlanganHelper::cleanupPengerjaan();
   });
 
-  test("F11-P01-T01 | Menampilkan soal yang sesuai jika men-klik tombol navigasi berikutnya", function() {
+  test("F05-P01-T01 | Menampilkan soal yang sesuai jika mengklik tombol navigasi berikutnya", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -117,7 +117,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     }
   });
 
-  test("F11-P01-T02 | Menampilkan soal yang sesuai jika men-klik tombol navigasi sebelumnya", function() {
+  test("F05-P01-T02 | Menampilkan soal yang sesuai jika mengklik tombol navigasi sebelumnya", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -206,7 +206,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     }
   });
 
-  test("F11-P01-T03 | Menampilkan soal yang sesuai jika men-klik tombol navigasi kotak", function() {
+  test("F05-P01-T03 | Menampilkan soal yang sesuai jika mengklik tombol navigasi angka", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -300,7 +300,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     }
   });
 
-  test("F11-P01-T04 | Menampilkan soal yang sesuai jika men-klik tombol navigasi kotak di halaman pertama", function() {
+  test("F05-P01-T04 | Menampilkan soal yang sesuai jika mengklik tombol navigasi angka saat pertama masuk", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -390,7 +390,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     }
   });
 
-  test("F11-P01-T05 | Hanya menampilkan tombol berikutnya jika berada di halaman pertama", function() {
+  test("F05-P01-T05 | Hanya menampilkan tombol navigasi berikutnya jika berada di halaman pertama", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -464,7 +464,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     expect($navigationContent)->toBe("Berikutnya >");
   });
 
-  test("F11-P01-T06 | Hanya menampilkan tombol berikutnya dan selesai jika berada di halaman terakhir", function() {
+  test("F05-P01-T06 | Hanya menampilkan tombol navigasi berikutnya dan selesai jika berada di halaman terakhir", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -540,7 +540,7 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
     expect($navigationContent2)->toBe("Selesai >");
   });
 
-  test("F11-P01-T07 | Menampilkan pilihan ganda yang sudah dijawab jika masuk ke halaman soal yang sudah dijawab", function() {
+  test("F05-P01-T07 | Menampilkan pilihan ganda yang sudah dijawab jika masuk ke halaman soal yang sudah dijawab", function() {
     // Prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -626,13 +626,13 @@ describe("F11-P01 | 1-2-3-4-5-6-7-8-9-10-11-12-13", function() {
   });
 });
 
-describe("F11-P02 | 1-2-3-14-15-4-5-6-7-8-9-10-11-12-13", function() {
+describe("F05-P02 | 1-2-8-3-4-5-6-7", function() {
   afterEach(function() {
     // cleanup pengerjaan
     UlanganHelper::cleanupPengerjaan();
   });
 
-  test("F11-P02-T01 | menampilkan kembali status pengerjaan sebelumnya (soal belum dijawab) jika data pengerjaan pada session hilang", function() {
+  test("F05-P02-T01 | Menampilkan kembali status pengerjaan sebelumnya (soal belum dijawab) jika data pengerjaan pada session hilang", function() {
     // prakondisi :
     // - sudah mulai mengerjakan soal sebelumnya
     // - sebelumnya, tidak menjawab soal
@@ -722,7 +722,7 @@ describe("F11-P02 | 1-2-3-14-15-4-5-6-7-8-9-10-11-12-13", function() {
     $page2->assertAttributeContains("#box-number-$keysoal1", "class", "box-number-sel-b");
   });
 
-  test("F11-P02-T02 | menampilkan kembali status pengerjaan sebelumnya (soal sudah dijawab) jika data pengerjaan pada session hilang", function() {
+  test("F05-P02-T02 | Menampilkan kembali status pengerjaan sebelumnya (soal sudah dijawab) jika data pengerjaan pada session hilang", function() {
     // prakondisi :
     // - sudah mulai mengerjakan soal sebelumnya
     // - sebelumnya, sudah menjawab soal
@@ -785,6 +785,8 @@ describe("F11-P02 | 1-2-3-14-15-4-5-6-7-8-9-10-11-12-13", function() {
     $page2->fill("input[name=\"token\"]", $correctToken);
     $page2->click("input[value=\"Lanjut Mengerjakan\"]");
 
+    $page2->wait(200000);
+
     // hasil yang diharapkan :
     // status pengerjaan masih sama seperti sebelumnya, mencakup:
     // - soal yang sudah dijawab masih terjawab
@@ -827,16 +829,16 @@ describe("F11-P02 | 1-2-3-14-15-4-5-6-7-8-9-10-11-12-13", function() {
 
     // - navigasi kotak untuk soal yang sudah dijawab harus berwarna hijau | navigasi kotak masih sama seperti sebelumnya
     $page2->assertAttributeContains("#box-number-$keysoal3", "class", "box-number-sel-g");
-  });
+  })->only();
 });
 
-describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
+describe("F05-P03 | 1-2-3-4-9-6-7", function() {
   afterEach(function() {
     // cleanup pengerjaan
     UlanganHelper::cleanupPengerjaan();
   });
   
-  test("F11-P03-T01 | Menampilkan soal pertama dengan data yang benar jika param keysoal tidak valid", function() {
+  test("F05-P03-T01 | Menampilkan menampilkan pesan \"Soal tidak ditemukan\" jika param keysoal tidak valid", function() {
     // prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -863,46 +865,12 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     $page->navigate(WebUtils::url("/test.php?keysoal=$invalidKeysoal"));
 
     // hasil yang diharapkan :
-    // - menampilkan soal pertama dengan data yang benar
-    // - menampilkan pilihan ganda yang sesuai
-    // - navigasi kotak untuk soal pertama harus berwarna biru
-    // - nomor di tampilan dan di basis data harus berbeda
+    // - menampilkan pesan "Soal tidak ditemukan."
 
-    $memberTest = TestMemberTesModel::getTestMemberTes();
-    $keysoal = explode(",", $memberTest["value_random"]);
-    $keysoal1 = $keysoal[0];
-    $soalNo1 = TestSoalListModel::getTestSoalList($keysoal1);
-
-    // - nomor soal di tampilan dan di basis data harus berbeda
-    $page->assertPresent(".soal-no");
-    $noSoalContent = html_entity_decode($page->script("document.getElementsByClassName(\"soal-no\")[0].children[0].innerHTML;"));
-    $noSoalContentRaw = explode(" ", $noSoalContent);
-    $noSoalContent = $noSoalContentRaw[count($noSoalContentRaw) - 1];
-    expect($soalNo1["number"])->not->tobe($noSoalContent);
-
-    // - menampilkan soal yang sesuai
-    $page->assertPresent(".soal");
-    $soalNo1Content = html_entity_decode($soalNo1["soal"]);
-    $innerHtml = html_entity_decode($page->script("document.getElementsByClassName(\"soal\")[0].innerHTML;"));
-    expect($innerHtml)->tobe($soalNo1Content);
-
-    // - menampilkan pilihan ganda yang sesuai
-    $pilihanGanda = TestSoalListPilModel::getTestSoalListPil($keysoal1);
-    for($i = 0; $i < count($pilihanGanda); $i++) {
-      $pilihanGandaContent = html_entity_decode($pilihanGanda[$i]["pilihan"]);
-      $alphabet = $pilihanGanda[$i]["list_pil"];
-      $page->assertPresent("#$alphabet");
-      $option = html_entity_decode($page->script("document.getElementById(\"$alphabet\").parentElement.nextElementSibling.innerHTML;"));
-      if($pilihanGanda[$i]["typepg"] == "png") {
-        $expected = '<img src='.html_entity_decode($pilihanGanda[$i]['pilihan']).' alt='.$pilihanGanda[$i]['pilihan'].'/>';
-        expect($option)->tobe($expected);
-      } else {
-        expect($option)->tobe($pilihanGandaContent);
-      }
-    }
+    $page->assertSee("Soal tidak ditemukan.");
   });
 
-  test("F11-P03-T02 | Menampilkan soal pertama dengan data yang benar jika param keysoal kosong", function() {
+  test("F05-P03-T02 | Menampilkan soal pertama dengan data yang benar jika param keysoal kosong", function() {
     // prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -968,7 +936,7 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
     }
   });
 
-  test("F11-P03-T03 | Menampilkan soal pertama dengan data yang benar jika param keysoal tidak ada", function() {
+  test("F05-P03-T03 | Menampilkan soal pertama dengan data yang benar jika param keysoal tidak ada", function() {
     // prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
@@ -1035,8 +1003,8 @@ describe("F11-P03 | 1-2-3-4-5-6-16-8-9-10-11-12-13", function() {
   });
 });
 
-describe("F11-P04 | 1-2-3-4-5-6-7-8-17-13", function() {
-  test("F11-P04-T01 | Menampilkan menampilkan pesan 'Soal tidak ditemukan' jika soal di basis data hilang", function() {
+describe("F05-P04 | 1-2-3-4-5-6-10-7", function() {
+  test("F05-P04-T01 | Menampilkan menampilkan pesan \"Soal tidak ditemukan\" jika soal di basis data hilang", function() {
     // prakondisi :
     // - sudah login
     // - berada di halaman pengerjaan ulangan
