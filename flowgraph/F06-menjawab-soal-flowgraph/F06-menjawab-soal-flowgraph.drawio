@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2026-05-05T11:38:47.001Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="l8ck-_5PL5SaKmvFmsAc" version="22.0.2" type="device">
+<mxfile host="Electron" modified="2026-05-06T07:24:16.112Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.2 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="qR6rM6MEl65oop4Kmv0l" version="22.0.2" type="device">
   <diagram name="Page-1" id="b0WgArgpfWfltQsdJUBt">
-    <mxGraphModel dx="1890" dy="884" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
+    <mxGraphModel dx="1678" dy="679" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -214,7 +214,7 @@
             <mxPoint x="19" y="-25" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="lxV2AKiuM31h_6eD60Fi-5" value="Validasi data &lt;br&gt;pada param" style="rhombus;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
+        <mxCell id="lxV2AKiuM31h_6eD60Fi-5" value="Validasi param" style="rhombus;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
           <mxGeometry x="-491.5" y="531" width="101" height="101" as="geometry" />
         </mxCell>
         <mxCell id="lxV2AKiuM31h_6eD60Fi-7" value="/api/savepil.php line 55&lt;br&gt;&lt;br&gt;Memastikan data yang ada di param benar-benar ada di basis data" style="text;html=1;strokeColor=none;fillColor=none;spacing=0;spacingTop=-20;overflow=hidden;rounded=0;whiteSpace=wrap;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;horizontal=1;" parent="1" vertex="1">
@@ -238,9 +238,6 @@
         </mxCell>
         <mxCell id="lxV2AKiuM31h_6eD60Fi-19" value="Cek session" style="rhombus;whiteSpace=wrap;html=1;fillColor=#6a00ff;fontColor=#ffffff;strokeColor=#3700CC;" parent="1" vertex="1">
           <mxGeometry x="-494" y="183" width="101" height="101" as="geometry" />
-        </mxCell>
-        <mxCell id="lxV2AKiuM31h_6eD60Fi-25" value="tidak ada di kode" style="text;html=1;strokeColor=none;fillColor=none;spacing=0;spacingTop=-20;overflow=hidden;rounded=0;whiteSpace=wrap;labelPosition=center;verticalLabelPosition=middle;align=left;verticalAlign=middle;horizontal=1;" parent="1" vertex="1">
-          <mxGeometry x="-331" y="191" width="190" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
