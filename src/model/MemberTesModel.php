@@ -6,17 +6,22 @@ include "./vendor/autoload.php";
 
 use App\conf\DBConnection;
 use App\utils\WebUtils;
+use App\utils\JsonUtils;
 
 class MemberTesModel extends DBConnection {
   public static function deleteMemberTes() {
     $dummyUser = WebUtils::getDummyUser();
     $keyMember = $dummyUser["keyMember"];
 
+    // read data in json
+    $soalInfo = JsonUtils::readJson('./tests/Data/soal_info.json');
+    $idSoal = $soalInfo['id_info_soal'];
+
     // connect
     self::connect();
 
     // query
-    $sqlDeleteMemberTes = "DELETE FROM member_tes WHERE key_member = '$keyMember';";
+    $sqlDeleteMemberTes = "DELETE FROM member_tes WHERE key_member = '$keyMember' OR id_info_soal = $idSoal;";
     mysqli_query(self::$connection, $sqlDeleteMemberTes);
 
     // disconnect

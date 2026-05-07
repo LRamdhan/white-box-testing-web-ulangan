@@ -829,7 +829,7 @@ describe("F05-P02 | 1-2-8-3-4-5-6-7", function() {
 
     // - navigasi kotak untuk soal yang sudah dijawab harus berwarna hijau | navigasi kotak masih sama seperti sebelumnya
     $page2->assertAttributeContains("#box-number-$keysoal3", "class", "box-number-sel-g");
-  })->only();
+  });
 });
 
 describe("F05-P03 | 1-2-3-4-9-6-7", function() {
