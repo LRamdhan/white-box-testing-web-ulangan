@@ -21,7 +21,7 @@ afterAll(function () {
 });
 
 describe("F02-P01 | 1-2-7", function() {
-  test("F02-P01-T01 | Menampilkan teks 'Harap di Isi' jika login dengan nis dan password yang kosong", function() {
+  test("F02-P01-T01 | Menampilkan teks \"Harap di Isi\" jika login dengan nis dan password yang kosong", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -41,7 +41,7 @@ describe("F02-P01 | 1-2-7", function() {
     $page->assertSee("Harap di Isi");
   });
 
-  test("F02-P01-T02 | Menampilkan teks 'Harap di Isi' jika login dengan nis yang diisi space kosong", function() {
+  test("F02-P01-T02 | Menampilkan teks \"Harap di Isi\" jika login dengan nis yang diisi space kosong", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login
@@ -67,7 +67,7 @@ describe("F02-P01 | 1-2-7", function() {
     $page->assertSee("Harap di Isi");
   });
 
-  test("F02-P01-T03 | Menampilkan teks 'Harap di Isi' jika login dengan password yang diisi space kosong", function() {
+  test("F02-P01-T03 | Menampilkan teks \"Harap di Isi\" jika login dengan password yang diisi space kosong", function() {
     // Prakondisi :
     // - berada di halaman login
     // - belum login

@@ -785,8 +785,6 @@ describe("F05-P02 | 1-2-8-3-4-5-6-7", function() {
     $page2->fill("input[name=\"token\"]", $correctToken);
     $page2->click("input[value=\"Lanjut Mengerjakan\"]");
 
-    $page2->wait(200000);
-
     // hasil yang diharapkan :
     // status pengerjaan masih sama seperti sebelumnya, mencakup:
     // - soal yang sudah dijawab masih terjawab
@@ -1004,6 +1002,11 @@ describe("F05-P03 | 1-2-3-4-9-6-7", function() {
 });
 
 describe("F05-P04 | 1-2-3-4-5-6-10-7", function() {
+  afterEach(function() {
+    // cleanup pengerjaan
+    UlanganHelper::cleanupPengerjaan();
+  });
+
   test("F05-P04-T01 | Menampilkan menampilkan pesan \"Soal tidak ditemukan\" jika soal di basis data hilang", function() {
     // prakondisi :
     // - sudah login

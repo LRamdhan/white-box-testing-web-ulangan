@@ -24,7 +24,7 @@ afterAll(function() {
   UlanganHelper::clenupUlangan(); // clean up ulangan
 });
 
-describe("F07-P01 |", function () {
+describe("F07-P01 | 1-2-7-6", function () {
   afterEach(function() {
     UlanganHelper::cleanupPengerjaan();  
   });
@@ -45,7 +45,7 @@ describe("F07-P01 |", function () {
   });
 });
 
-describe("F07-P02 |", function () {
+describe("F07-P02 | 1-2-3-9-6", function () {
   afterEach(function() {
     UlanganHelper::cleanupPengerjaan();  
   });
@@ -92,7 +92,7 @@ describe("F07-P02 |", function () {
   });
 });
 
-describe("F07-P03 |", function () {
+describe("F07-P03 | 1-2-3-4-9-6", function () {
   afterEach(function() {
     UlanganHelper::cleanupPengerjaan();  
   });
@@ -136,7 +136,7 @@ describe("F07-P03 |", function () {
   });
 });
 
-describe("F07-P04 |", function () {
+describe("F07-P04 | 1-2-3-4-5-8-6", function () {
   afterEach(function() {
     UlanganHelper::cleanupPengerjaan();  
   });
@@ -180,7 +180,7 @@ describe("F07-P04 |", function () {
   });
 });
 
-describe("F07-P05 |", function () {
+describe("F07-P05 | 1-2-3-4-5-6", function () {
   afterEach(function() {
     UlanganHelper::cleanupPengerjaan();  
   });
